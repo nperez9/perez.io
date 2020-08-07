@@ -1,15 +1,13 @@
 import React, { Suspense } from 'react';
 import './translator.js';
-import './index.css';
-import './App.css';
-import Hello from './components/Hello';
 import Lenguage from './components/LenguagePicker';
+import Home from './components/Home/Home';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App nes-text">
       <Suspense fallback={null}>
-        <Hello />
+        <Home />
         <Lenguage />
       </Suspense>
     </div>
