@@ -1,11 +1,21 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 
-import HomeHeader from './HomeHeader';
+import HomeTitle from './HomeTitle';
+import HomeContent from './HomeContent';
+
+const style = {
+  maxWidth: 1000,
+  margin: '0 auto',
+};
 
 const Home = () => {
-
-  return <HomeHeader/>;
+  return (
+    <main css={style}>
+      <HomeTitle />
+      <HomeContent />
+    </main>
+  );
 };
 
 export default Home;
