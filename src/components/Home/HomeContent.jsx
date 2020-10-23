@@ -20,8 +20,8 @@ const HomeContent = () => {
   let content = null;
   content = socialLinks.map((sl) => {
     return (
-      <div>
-        <a class="nes-btn" href={sl.link} target="_blank" rel="noopener noreferrer">
+      <div key={sl.name}>
+        <a className="nes-btn" href={sl.link} target="_blank" rel="noopener noreferrer">
           {sl.name}
         </a>
       </div>
@@ -31,7 +31,7 @@ const HomeContent = () => {
   return (
     <section css={style}>
       <h4>You can find me in:</h4>
-      <div class="social-block">{content}</div>
+      <div className="social-block">{content}</div>
     </section>
   );
 };

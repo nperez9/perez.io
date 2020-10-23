@@ -23,7 +23,7 @@ const HomeTitle = () => {
     <div css={style}>
       <h1>{t('home.title')}</h1>
       <h3>{t('home.subtitle')}</h3>
-      <i class="nes-octocat animate is-small"></i>
+      <i className="nes-octocat animate is-small"></i>
       <div className="divider">-----------------------------------------------</div>
     </div>
   );
