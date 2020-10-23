@@ -1,12 +1,12 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 
+import { container } from './../../library/grid';
 import HomeTitle from './HomeTitle';
 import HomeContent from './HomeContent';
 
 const style = {
-  maxWidth: 1000,
-  margin: '0 auto',
+  ...container
 };
 
 const Home = () => {

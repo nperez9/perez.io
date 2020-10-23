@@ -5,7 +5,6 @@ import { useTranslation } from 'react-i18next';
 const style = {
   textAlign: 'center',
   position: 'relative',
-  marginTop: 50,
   '.divider': {
     margin: '30px auto',
   },

@@ -1,5 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
+import { useTranslation } from 'react-i18next';
+
 import { socialLinks } from '../../data/socialLinks';
 
 const style = {
@@ -18,6 +20,8 @@ const style = {
 
 const HomeContent = () => {
   let content = null;
+  const { t } = useTranslation();
+
   content = socialLinks.map((sl) => {
     return (
       <div key={sl.name}>
@@ -30,7 +34,7 @@ const HomeContent = () => {
 
   return (
     <section css={style}>
-      <h4>You can find me in:</h4>
+      <h4>{ t('home.findMe') }</h4>
       <div className="social-block">{content}</div>
     </section>
   );

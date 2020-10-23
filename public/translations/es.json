@@ -1,4 +1,9 @@
 {
+  "header.about": "Sobre mi",
+  "header.contact": "Contacto",
   "home.title": "Hola! Soy Nicolas",
-  "home.subtitle": "Desarrollador de software argentino"
+  "home.subtitle": "Desarrollador de software argentino",
+  "home.findMe": "Puedes encontrarme en:",
+  "contact.gmail": "Enviame un email",
+  "contact.linkedin": "Hablame en LinkedIn"
 }
