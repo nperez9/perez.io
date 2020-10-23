@@ -15,7 +15,7 @@ export const socialLinks = [
     text: 'contact.linkedin',
   },
   {
-    link: 'nicolasperez95.a@gmail.com',
+    link: 'mailto:nicolasperez95.a@gmail.com',
     name: 'Gmail',
     text: 'contact.gmail',
   },
