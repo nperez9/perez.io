@@ -1,16 +1,21 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-import { container } from '../../library';
+import { Container } from '../../library';
 import LenguagePicker from '../LenguagePicker';
 
 const style = {
-  ...container
-}
+  marginTop: 40,
+  backgroundColor: '#111',
+  color: 'white',
+  padding: 20,
+};
 
 const HomeHeader = () => {
   return (
     <footer css={style}>
-      <LenguagePicker />
+      <Container>
+        <LenguagePicker />
+      </Container>
     </footer>
   );
 };

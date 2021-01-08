@@ -8,10 +8,17 @@ const style = {
   '.divider': {
     margin: '30px auto',
   },
-  i: {
-    position: 'absolute',
-    right: '40px',
-    top: 0,
+  img: {
+    width: '200px',
+    heigth: '200px',
+  },
+  '.img-container': {
+    width: '240px',
+    display: 'inline-block',
+    height: '220px',
+    border: '2px solid black',
+    marginBottom: '25px',
+    borderRadius: '24px',
   },
 };
 
@@ -20,9 +27,11 @@ const HomeTitle = () => {
 
   return (
     <div css={style}>
+      <div className="img-container">
+        <img src="me.gif" alt="Nicolas Perez, software developer" />
+      </div>
       <h1>{t('home.title')}</h1>
       <h3>{t('home.subtitle')}</h3>
-      <i className="nes-octocat animate is-small"></i>
       <div className="divider">-----------------------------------------------</div>
     </div>
   );
