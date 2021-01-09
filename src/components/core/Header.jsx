@@ -26,11 +26,11 @@ const Header = () => {
 
   return (
     <nav css={style}>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Link to="/portfolio">Portfolio</Link>
         <Link to="/about">{ t('header.about') }</Link>
         <Link to="/contact">{ t('header.contact') }</Link>
-      </BrowserRouter>
+      </BrowserRouter> */}
       <LenguagePicker />
     </nav>
   );
