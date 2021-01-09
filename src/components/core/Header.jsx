@@ -2,6 +2,8 @@
 import { jsx } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
 import { Link, BrowserRouter } from 'react-router-dom';
+import LenguagePicker from '../LenguagePicker.jsx';
+
 
 import { container } from '../../library';
 
@@ -13,6 +15,9 @@ const style = {
   '> a': {
     marginRight: 25,
     color: 'black', 
+  },
+  LenguagePicker: {
+    float: 'right',
   }
 };
 
@@ -26,6 +31,7 @@ const Header = () => {
         <Link to="/about">{ t('header.about') }</Link>
         <Link to="/contact">{ t('header.contact') }</Link>
       </BrowserRouter>
+      <LenguagePicker />
     </nav>
   );
 }
