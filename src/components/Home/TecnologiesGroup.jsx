@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
+import { publicResource } from '../../utils';
 
 const style = {
   '.tec-group-title': {
@@ -38,7 +39,7 @@ const TecnologiesGroup = ({ tecGroup }) => {
           tecGroup.tecs.map((t) => {
             return (
               <div className='tec-item'>
-                <img src={`images/${t.logo}`} alt={t.name} />
+                <img src={publicResource(`/images/${t.logo}`)} alt={t.name} />
                 <span>{t.name}</span>
               </div>
             );
