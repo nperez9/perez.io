@@ -42,7 +42,7 @@ const HomeContent = () => {
   content = socialLinks.map((sl) => {
     return (
       <div key={sl.name}>
-        <a className="nes-btn" href={sl.link} target="_blank" rel="noopener noreferrer">
+        <a className="nes-btn is-primary" href={sl.link} target="_blank" rel="noopener noreferrer">
           {sl.name}
         </a>
       </div>
@@ -53,7 +53,7 @@ const HomeContent = () => {
   return (
     <section css={style}>
       <div>
-        <h4>Tecnologies with i usually work:</h4>
+      <h4>{ t('home.tecnologies') }</h4>
         <div>
           { tecnologiesContent }
         </div>

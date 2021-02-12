@@ -28,10 +28,6 @@ export const tecnologies = [
         logo: 'nodejs-logo.png'
       },
       {
-        name: 'PHP',
-        logo: 'php-logo.png'
-      },
-      {
         name: 'MongoDB',
         logo: 'mongo-logo.png'
       },
