@@ -3,11 +3,16 @@ import { jsx } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
 
 import { socialLinks } from '../../data/socialLinks';
+import { tecnologies } from '../../data/tecnologies';
+import { Divider } from '../../library';
+
+import TecnologiesGroup from './TecnologiesGroup';
 
 const style = {
   textAlign: 'center',
   h4: {
     marginBottom: 30,
+    fontSize: 18
   },
   '.social-block': {
     display: 'flex',
@@ -26,8 +31,13 @@ const style = {
 };
 
 const HomeContent = () => {
+  let tecnologiesContent = null;
   let content = null;
   const { t } = useTranslation();
+
+  tecnologiesContent = tecnologies.map((tecGroup) => {
+    return <TecnologiesGroup tecGroup={tecGroup} />
+  });
 
   content = socialLinks.map((sl) => {
     return (
@@ -39,10 +49,20 @@ const HomeContent = () => {
     );
   });
 
+
   return (
     <section css={style}>
-      <h4>{ t('home.findMe') }</h4>
-      <div className="social-block">{content}</div>
+      <div>
+        <h4>Tecnologies with i usually work:</h4>
+        <div>
+          { tecnologiesContent }
+        </div>
+      </div>
+      <Divider />
+      <div>
+        <h4>{ t('home.findMe') }</h4>
+        <div className="social-block">{content}</div>
+      </div>
     </section>
   );
 };

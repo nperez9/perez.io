@@ -26,6 +26,7 @@ const Header = () => {
 
   return (
     <nav css={style}>
+      <Link to="/home">Home</Link>
       <Link to="/portfolio">Portfolio</Link>
       <Link to="/about">{ t('header.about') }</Link>
       <Link to="/contact">{ t('header.contact') }</Link>
