@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
-import { Link, BrowserRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import LenguagePicker from '../LenguagePicker.jsx';
 
 
@@ -26,11 +26,9 @@ const Header = () => {
 
   return (
     <nav css={style}>
-      {/* <BrowserRouter>
-        <Link to="/portfolio">Portfolio</Link>
-        <Link to="/about">{ t('header.about') }</Link>
-        <Link to="/contact">{ t('header.contact') }</Link>
-      </BrowserRouter> */}
+      <Link to="/portfolio">Portfolio</Link>
+      <Link to="/about">{ t('header.about') }</Link>
+      <Link to="/contact">{ t('header.contact') }</Link>
       <LenguagePicker />
     </nav>
   );

@@ -7,7 +7,6 @@ import Contact from './Contact/Contact';
 
 const router = () => {
   return (
-    <BrowserRouter>
       <Switch>
         <Route path="/home" exact component={Home} />      
         <Route path="/about" exact component={About} />
@@ -15,7 +14,6 @@ const router = () => {
         <Route path="/contact" exact component={Contact} />
         <Redirect exact from="/" to="/home" />
       </Switch>
-    </BrowserRouter>
   );
 };
 

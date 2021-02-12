@@ -1,11 +1,13 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 
+import { Container } from '../../library';
+
 const Portfolio = () => {
   return (
-    <div>
+    <Container>
       
-    </div>
+    </Container>
   );
 };
 

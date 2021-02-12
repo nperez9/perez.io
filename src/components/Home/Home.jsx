@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 
-import { container } from './../../library/grid';
+import { container } from './../../library';
 import HomeTitle from './HomeTitle';
 import HomeContent from './HomeContent';
 
