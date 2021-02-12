@@ -12,6 +12,13 @@ const style = {
   '.social-block': {
     display: 'flex',
     justifyContent: 'center',
+    flexDirection: 'row',
+    '@media (max-width: 780px)': {
+      flexDirection: 'column',
+      '> div': {
+        margin: '10px auto',
+      },
+    },
     '> div': {
       padding: '0 20px',
     },

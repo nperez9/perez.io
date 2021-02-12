@@ -7,7 +7,7 @@ const style = {
 };
 
 const Container = ({ children }) => {
-  return <section css={style}> {children} </section>
+  return <section css={style}> {children} </section>;
 }
 
-export default Container
+export default Container;
