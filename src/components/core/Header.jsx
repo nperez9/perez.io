@@ -2,7 +2,7 @@
 import { jsx } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import LenguagePicker from '../LenguagePicker.jsx';
+import LenguagePicker from './LenguagePicker';
 
 
 import { container } from '../../library';

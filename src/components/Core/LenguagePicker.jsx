@@ -14,7 +14,7 @@ const style = {
   },
 };
 
-const LanguageSelector = () => {
+const LanguagePicker = () => {
   const { i18n } = useTranslation();
 
   const changeLanguage = (event) => {
@@ -37,4 +37,4 @@ const LanguageSelector = () => {
   );
 };
 
-export default LanguageSelector;
+export default LanguagePicker;
