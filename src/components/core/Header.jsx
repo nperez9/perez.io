@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+// import { useTranslation } from 'react-i18next';
+// import { Link } from 'react-router-dom';
 import LenguagePicker from './LenguagePicker';
 
 
@@ -22,7 +22,7 @@ const style = {
 };
 
 const Header = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <nav css={style}>

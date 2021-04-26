@@ -20,6 +20,9 @@ const style = {
     marginLeft: 'auto',
     borderRadius: '24px',
   },
+  span: {
+    color: '#F92672'
+  }
 };
 
 const HomeTitle = () => {
@@ -30,8 +33,16 @@ const HomeTitle = () => {
       <div className="img-container">
         <img src="me.gif" alt="Nicolas Perez, software developer" />
       </div>
-      <h1>{t('home.title')}</h1>
-      <h3>{t('home.subtitle')}</h3>
+      <h1>
+        <span> {'<h1> '} </span> 
+        { t('home.title') } 
+        <span>{' </h1>'}</span>
+      </h1>
+      <h2>
+        <span> {'<h2> '} </span> 
+        {t('home.subtitle')}
+        <span> {' </h2>'} </span>
+      </h2>
       <Divider />
     </div>
   );
