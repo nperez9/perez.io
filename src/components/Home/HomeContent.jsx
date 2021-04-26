@@ -42,7 +42,7 @@ const HomeContent = () => {
   content = socialLinks.map((sl) => {
     return (
       <div key={sl.name}>
-        <a className="nes-btn is-primary" href={sl.link} target="_blank" rel="noopener noreferrer">
+        <a className="btn btn-primary" href={sl.link} target="_blank" rel="noopener noreferrer">
           {sl.name}
         </a>
       </div>
