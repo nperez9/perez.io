@@ -22,8 +22,8 @@ Divider.propTypes = {
 };
 
 Divider.defaultProps = {
-  color: '#111',
-  height: 3,
+  color: '#d6d6d6',
+  height: 1,
 };
 
 export default Divider;

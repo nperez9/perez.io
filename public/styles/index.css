@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,400&display=swap');
+
 html {
   background-color: #111;
+  color: #EEE;
 }
 
 a {
   color: black;
   text-decoration: none;
+}
+
+body {
+  color: #d6d6d6;
+  background-color: #272822;
+  font-family: 'Roboto Mono', monospace;
+  min-height: 100vh;
 }

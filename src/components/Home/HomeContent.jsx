@@ -7,6 +7,7 @@ import { tecnologies } from '../../data/tecnologies';
 import { Divider } from '../../library';
 
 import TecnologiesGroup from './TecnologiesGroup';
+import { ShowCode } from './../core/ShowCode';
 
 const style = {
   textAlign: 'center',
@@ -42,8 +43,10 @@ const HomeContent = () => {
   content = socialLinks.map((sl) => {
     return (
       <div key={sl.name}>
-        <a className="nes-btn is-primary" href={sl.link} target="_blank" rel="noopener noreferrer">
-          {sl.name}
+        <a className="btn btn-outline-light" href={sl.link} target="_blank" rel="noopener noreferrer">
+          <ShowCode tag="a">
+            {sl.name}
+          </ShowCode>
         </a>
       </div>
     );
