@@ -7,7 +7,7 @@ import Footer from './components/core/Footer';
 
 function App() {
   return (
-    <div className="App nes-text">
+    <div className="App">
       <Suspense fallback={null}>
         <Header />
         <Router />
