@@ -12,6 +12,11 @@ const style = {
       padding: '2px'
     }
   },
+  select: {
+    backgroundColor: '#272822',
+    color: '#d6d6d6',
+    fontFamily: "'Roboto Mono', monospace",
+  }
 };
 
 const LanguagePicker = () => {
@@ -22,14 +27,14 @@ const LanguagePicker = () => {
   };
 
   return (
-    <div style={style}>
-      <div className="nes-select" id="lng_select" style={style}>
+    <div css={style}>
+      <div id="lng_select" >
         <select onChange={changeLanguage}>
           <option value="en" name="language" defaultValue>
-            ENG
+            eng
           </option>
           <option value="es" name="language">
-            ESP
+            esp
           </option>
         </select>
       </div>

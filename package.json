@@ -2,7 +2,7 @@
   "name": "perez.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nperez9.github.io/perez.io/",
+  "homepage": "/",
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@testing-library/jest-dom": "^4.2.4",
