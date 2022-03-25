@@ -2,7 +2,7 @@
 import { jsx } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
 
-import { ShowCode } from './../core/ShowCode';
+import { ShowCode } from '../core/ShowCode';
 
 const style = {
   heigth: '100vh',

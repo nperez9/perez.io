@@ -3,8 +3,8 @@
 import { jsx } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
 
-import { container } from './../../library/grid';
-import { socialLinks } from './../../data/socialLinks';
+import { container } from '../../library/grid';
+import { socialLinks } from '../../data/socialLinks';
 
 const style = {
   ...container,

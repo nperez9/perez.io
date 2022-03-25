@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-import { Container } from '../../library';
 
 const style = {
   bottom: 0,
@@ -18,7 +17,7 @@ const style = {
   },
 };
 
-const HomeHeader = () => {
+const Footer = () => {
   return (
     <footer css={style}>
       <div className="left-side">
@@ -33,4 +32,4 @@ const HomeHeader = () => {
   );
 };
 
-export default HomeHeader;
+export default Footer;

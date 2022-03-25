@@ -7,7 +7,7 @@ import { tecnologies } from '../../data/tecnologies';
 import { Divider } from '../../library';
 
 import TecnologiesGroup from './TecnologiesGroup';
-import { ShowCode } from './../core/ShowCode';
+import { ShowCode } from '../core/ShowCode';
 
 const style = {
   textAlign: 'center',
