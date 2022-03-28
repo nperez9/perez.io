@@ -1,11 +1,10 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-// import { useTranslation } from 'react-i18next';
-// import { Link } from 'react-router-dom';
-import LenguagePicker from './LenguagePicker';
-
+import { Link } from 'react-router-dom';
 
 import { container } from '../../library';
+
+import LenguagePicker from './LenguagePicker';
 
 const style = {
   ...container,
@@ -14,7 +13,7 @@ const style = {
   marginBottom: 30,
   '> a': {
     marginRight: 25,
-    color: 'black', 
+    color: '#d6d6d6',
   },
   LenguagePicker: {
     float: 'right',
@@ -22,14 +21,10 @@ const style = {
 };
 
 const Header = () => {
-  // const { t } = useTranslation();
-
   return (
     <nav css={style}>
-      {/*<Link to="/home">Home</Link>
+      <Link to="/home">Home</Link>
       <Link to="/portfolio">Portfolio</Link>
-      <Link to="/about">{ t('header.about') }</Link>
-  <Link to="/contact">{ t('header.contact') }</Link>*/}
       <LenguagePicker />
     </nav>
   );

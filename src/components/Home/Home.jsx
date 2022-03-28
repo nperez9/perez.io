@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 
-import { container } from '../../library';
+import { container, Divider } from '../../library';
 import HomeTitle from './HomeTitle';
 import HomeContent from './HomeContent';
 
@@ -13,6 +13,7 @@ const Home = () => {
   return (
     <main css={style}>
       <HomeTitle />
+      <Divider />
       <HomeContent />
     </main>
   );

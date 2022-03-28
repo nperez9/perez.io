@@ -3,21 +3,17 @@ export const tecnologies = [
     groupName: 'Videogames',
     tecs: [
       {
-        name: 'React',
-        logo: 'react-icon.svg'
+        name: 'Unity',
+        logo: 'unity-logo.png'
       },
       {
-        name: 'Angular',
-        logo: 'angular-logo.png',
+        name: 'C#',
+        logo: 'c-logo.png',
       },
       {
-        name: 'Webpack',
-        logo: 'webpack-logo.png',
-      },
-      {
-        name: 'TS',
-        logo: 'ts-logo.png',
-      }
+        name: 'Aseprite',
+        logo: 'asesprite-logo.png',
+      },      
     ]
   },
   {
