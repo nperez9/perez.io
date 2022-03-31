@@ -36,7 +36,7 @@ const HomeContent = () => {
   const { t } = useTranslation();
 
   tecnologiesContent = tecnologies.map((tecGroup) => {
-    return <TecnologiesGroup tecGroup={tecGroup} />
+    return <TecnologiesGroup tecGroup={tecGroup} key={tecGroup.groupName} />
   });
 
   content = socialLinks.map((sl) => {

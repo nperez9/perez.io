@@ -38,7 +38,7 @@ const TecnologiesGroup = ({ tecGroup }) => {
         {
           tecGroup.tecs.map((t) => {
             return (
-              <div className='tec-item'>
+              <div className='tec-item' key={t.name}>
                 <img src={publicResource(`/images/${t.logo}`)} alt={t.name} />
                 <span>{t.name}</span>
               </div>

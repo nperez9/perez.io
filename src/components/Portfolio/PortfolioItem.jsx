@@ -48,7 +48,7 @@ const PortfolioItem = ({ item }) => {
 	return (
 		<div className='item-container' css={style}>
 			<div className='item-image'>
-				<img alt={item.name} src={item.cover_image} />
+				<img alt={item.name} src={publicResource(item.cover_image)} />
 			</div>
 			<div className='item-content'>
 				<div>
@@ -61,7 +61,7 @@ const PortfolioItem = ({ item }) => {
 						// item.id && (<ButtonLink link={publicResource(`/portfolio/${item.id}`)} isExternal={false}>Details</ButtonLink>)
 					}
 					{item.github_url && (<ButtonLink link={item.github_url}>Code</ButtonLink>)}
-					{item.play_url && (<ButtonLink link={item.play_url}>Play</ButtonLink>)}
+					{item.play_url && (<ButtonLink link={publicResource(item.play_url)} >Play</ButtonLink>)}
 				</div>
 			</div>
 		</div>
