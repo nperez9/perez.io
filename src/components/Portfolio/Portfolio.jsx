@@ -5,24 +5,24 @@ import { ShowCode } from '../core/ShowCode';
 import { Container, Divider } from '../../library';
 
 import { useTranslation } from 'react-i18next';
+import PortfolioList from './PortfolioList';
 
 const style = {
-  h1: {
-    textAlign: "center"
-  }
+  textAlign: "center"
 };
 
 const Portfolio = () => {
   const { t } = useTranslation();
   
   return (
-    <Container css={style}>
-      <h1>
+    <Container>
+      <h1 style={style}>
         <ShowCode tag={"h1"}>
           {t("portfolio.title")}
         </ShowCode>
       </h1>
       <Divider />
+      <PortfolioList />
     </Container>
   );
 };

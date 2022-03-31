@@ -2,21 +2,24 @@
 import { jsx } from '@emotion/core';
 import { Link } from 'react-router-dom';
 
-import { container } from '../../library';
-
 import LenguagePicker from './LenguagePicker';
 
 const style = {
-  ...container,
+  maxWidth: '1200px',
+  display: 'block',
+  margin: '0 auto',
   padding: '10px 0',
   textAling: 'center',
-  marginBottom: 30,
+  marginBottom: 20,
   '> a': {
     marginRight: 25,
     color: '#d6d6d6',
   },
   LenguagePicker: {
     float: 'right',
+  },
+  '@media (max-width: 1200px)': {
+    paddingLeft: '10px',
   }
 };
 

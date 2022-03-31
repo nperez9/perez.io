@@ -2,6 +2,8 @@
 import { jsx } from '@emotion/core';
 
 import { portfolioList } from '../../data';
+import { Container } from '../../library';
+
 import PortfolioItem from './PortfolioItem';
 
 const PortfolioList = () => {
@@ -11,11 +13,13 @@ const PortfolioList = () => {
 				<PortfolioItem item={item} />
 			</article>
 		);
-	}); 
+	});
+
+	console.info(itemList);
 
 	return (
 		<Container>
-				{itemList}
+			{itemList}
 		</Container>
 	);
 }

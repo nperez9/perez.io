@@ -1,22 +1,71 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 
-const PortfolioItem = (item) => (
-	<div className='item-container'>
-		<div className='item-image'>
-			<img alt={item.name} src={item.cover_image} />
+import { ButtonLink, Divider } from '../../library';
+import { publicResource } from '../../utils';
+
+const style = {
+	display: 'flex',
+	maxHeight: '300px',
+	width: '100%',
+	padding: '20px 0',
+	'.item-image': {
+		width: '35%',
+		'img': {
+			width: '100%',
+			borderRadius: '10px',
+		}
+	},
+	'.item-content': {
+		padding: '0 20px',
+		width: '65%',
+		display: 'flex',
+		flexFlow: 'column',
+		justifyContent: 'space-between',
+		'.item-buttons': {
+			display: 'flex',
+			flexWrap: 'wrap',
+			flexFlow: 'row',
+			gap: '10px',
+			justifyContent: 'flex-start',
+		}
+	},
+	'@media (max-width: 780px)': {
+		flexFlow: 'column',
+		maxHeight: 'none',
+		'.item-image': {
+			width: '100%',
+			padding: '10px',
+		},
+		'.item-content': {
+			width: '100%',
+			padding: '0 10px',
+		}
+	}
+}
+
+const PortfolioItem = ({ item }) => {
+	return (
+		<div className='item-container' css={style}>
+			<div className='item-image'>
+				<img alt={item.name} src={item.cover_image} />
+			</div>
+			<div className='item-content'>
+				<div>
+					<h4>{item.name}</h4>
+					<Divider />
+					<p>{item.short_description}</p>
+				</div>
+				<div className='item-buttons'>
+					{
+						// item.id && (<ButtonLink link={publicResource(`/portfolio/${item.id}`)} isExternal={false}>Details</ButtonLink>)
+					}
+					{item.github_url && (<ButtonLink link={item.github_url}>Code</ButtonLink>)}
+					{item.play_url && (<ButtonLink link={item.play_url}>Play</ButtonLink>)}
+				</div>
+			</div>
 		</div>
-		<div className='item-text'>
-			<h4>{item.name}</h4>
-			<p>{item.short_description}</p>
-		</div>
-		<div className='item-buttons'>
-			{
-			// item.github_url && <Button>Github</Button>}
-			//item.github_url && <Button>Github</Button>
-			}
-		</div>
-	</div>
-);
+	);
+}
 
 export default PortfolioItem;

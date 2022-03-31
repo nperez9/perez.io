@@ -11,10 +11,10 @@ export const portfolioList = [
 		],
 		"videos": [],
 		"description": "A full action arcade game, inspired by donkey kong country",
-		"short_description":"An arcade 2D game full of action",		
+		"short_description":"An arcade 2D game full of action, based in barrel mechanincs, go to the end of the level and grab the coins!",		
 		"github_url": "https://github.com/nperez9/cannon-blast",
 		"isPlayable": true,
 		"play_url": "/proyects/cannon-blast",
 		"itch_url": "",
-	}	
+	}
 ];
