@@ -61,6 +61,7 @@ const PortfolioItem = ({ item }) => {
 						// item.id && (<ButtonLink link={publicResource(`/portfolio/${item.id}`)} isExternal={false}>Details</ButtonLink>)
 					}
 					{item.github_url && (<ButtonLink link={item.github_url}>Code</ButtonLink>)}
+					{item.devlog_url && (<ButtonLink link={item.devlog_url}>DevLog</ButtonLink>)}
 					{item.play_url && (<ButtonLink link={publicResource(item.play_url)} >Play</ButtonLink>)}
 				</div>
 			</div>

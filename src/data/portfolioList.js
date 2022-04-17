@@ -32,7 +32,8 @@ export const portfolioList = [
 		"description": "A full action arcade game, inspired by donkey kong country",
 		"short_description":"A fan mande pokemon game made in unity",		
 		"github_url": "https://github.com/nperez9/poketSouls",
-		"isPlayable": true,
+		"isPlayable": false,
+		"devlog_url": "https://github.com/nperez9/poketSouls/wiki/Devlog",
 		"play_url": "",
 		"itch_url": "",
 	}
