@@ -19,6 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build-git": "set PUBLIC_URL=https://nperez9.github.io/nperez.io&& npm run build",
+    "build-prod": "set PUBLIC_URL=/&& npm run build",
     "pre-deploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",

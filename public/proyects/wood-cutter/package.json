@@ -1,0 +1,20 @@
+{
+  "name": "lenador",
+  "version": "1.0.0",
+  "description": "test proyect",
+  "main": "index.html",
+  "scripts": {
+    "test": "supertest"
+  },
+  "keywords": [
+    "game",
+    "phaser",
+    "phaser",
+    "2"
+  ],
+  "author": "Nicolas Perez",
+  "license": "ISC",
+  "dependencies": {
+    "phaser-ce": "^2.11.1"
+  }
+}

@@ -13,7 +13,7 @@ export const portfolioList = [
 		"description": "A full action arcade game, inspired by donkey kong country",
 		"short_description":"An arcade 2D game full of action, based in barrel mechanincs, go to the end of the level and grab the coins!",		
 		"github_url": "https://github.com/nperez9/cannon-blast",
-		"isPlayable": true,
+		"isPlayable": false,
 		"play_url": "/proyects/cannon-blast",
 		"itch_url": "",
 	},
@@ -35,6 +35,23 @@ export const portfolioList = [
 		"isPlayable": false,
 		"devlog_url": "https://github.com/nperez9/poketSouls/wiki/Devlog",
 		"play_url": "",
+		"itch_url": "",
+	},
+	{
+		"id": 3,
+		"type": "videogame",
+		"name": "Wood-Cutter",
+		"cover_image": "/images/portfolio/wood-cutter/front.png",
+		"description_images": [
+			"/images/portfolio/wood-cutter/front.png",
+		],
+		"videos": [],
+		"description": "A full action arcade game, inspired by donkey kong country",
+		"short_description":"A 2D arcade videogame made in JS, with parser",		
+		"github_url": "https://github.com/nperez9/wood-axe-game",
+		"isPlayable": true,
+		"devlog_url": "",
+		"play_url": "/proyects/wood-cutter",
 		"itch_url": "",
 	}
 ];
