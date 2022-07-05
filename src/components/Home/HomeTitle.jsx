@@ -5,13 +5,15 @@ import { useTranslation } from 'react-i18next';
 import { ShowCode } from '../core/ShowCode';
 
 const style = {
-  heigth: '100vh',
   textAlign: 'center',
   position: 'relative',
   img: {
     width: '200px',
     heigth: '200px',
   },
+  '> *': {
+    marginBottom: '20px'
+  }
 };
 
 const HomeTitle = () => {
@@ -29,6 +31,9 @@ const HomeTitle = () => {
           {t('home.subtitle')}
         </ShowCode>
       </h2>
+      <h4>       
+        {t('home.posttitle')}        
+      </h4>
     </section>
   );
 };

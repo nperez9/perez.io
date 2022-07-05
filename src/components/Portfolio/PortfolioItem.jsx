@@ -9,6 +9,7 @@ const style = {
 	maxHeight: '300px',
 	width: '100%',
 	padding: '20px 0',
+	marginTop: '25px',
 	'.item-image': {
 		width: '35%',
 		'img': {

@@ -3,9 +3,11 @@
   "header.contact": "Contact",
   "home.title": "Hello! I'm Nicolas",
   "home.subtitle": "Videogames and web developer",
+  "home.posttitle": "The website made with the creatibity of a guy who see's his code editor a lot",
   "home.tecnologies": "Technologies I work with",
   "home.findMe": "You can find me in",
   "contact.gmail": "Send me an email",
   "contact.linkedin": "Talk me on LinkedIn",
-  "portfolio.title": "Some of my works"
+  "portfolio.title": "Some of my works",
+  "portfolio.subtitle": "At least the ones that don't have copyright"
 }

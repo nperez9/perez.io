@@ -3,9 +3,11 @@
   "header.contact": "Contacto",
   "home.title": "Hola! Soy Nicolas",
   "home.subtitle": "Desarrollador de videojuegos y web",
+  "home.posttitle": "La web hecha con la creatividad de un tipo que ve mucho su editor de código",
   "home.tecnologies": "Tecnologías con las que trabajo",
   "home.findMe": "Puedes encontrarme en",
   "contact.gmail": "Enviame un email",
   "contact.linkedin": "Hablame en LinkedIn",
-  "portfolio.title": "Algunos de mis trabajos"
+  "portfolio.title": "Algunos de mis trabajos",
+  "portfolio.subtitle": "Al menos los que no tiene copyright"
 }

@@ -1,12 +1,15 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 
-import { portfolioList } from '../../data';
-import { Container, Divider } from '../../library';
+import { Divider } from '../../library';
 
 import PortfolioItem from './PortfolioItem';
 
-const PortfolioList = () => {
+const style = {
+	marginTop: '25px'
+};
+
+const PortfolioList = ({ portfolioList }) => {
 	const itemList = portfolioList.map(item => {
 		return (
 			<article key={item.id}>
@@ -16,13 +19,7 @@ const PortfolioList = () => {
 		);
 	});
 
-	console.info(itemList);
-
-	return (
-		<Container>
-			{itemList}
-		</Container>
-	);
+	return <div style={style}>{itemList}</div>;
 }
 
 export default PortfolioList;
