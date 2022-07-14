@@ -13,7 +13,7 @@ const ButtonLink = ({ link, children, isExternal }) => {
 		</a>
 	);
 	const internal = (
-		<Link className="btn btn-outline-light" target="_blank" rel="noopener noreferrer">
+		<Link to={link} className="btn btn-outline-light" target="_blank" rel="noopener noreferrer">
 			<ShowCode tag={"a"}>
 				{children}
 			</ShowCode>

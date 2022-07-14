@@ -25,10 +25,14 @@ const style = {
 		justifyContent: 'space-between',
 		'.item-buttons': {
 			display: 'flex',
-			flexWrap: 'wrap',
+			flexWrap: 'wrap!important',
 			flexFlow: 'row',
 			gap: '10px',
 			justifyContent: 'flex-start',
+			width: '100%',
+			'> a': {
+				minWidth: '200px'
+			}
 		}
 	},
 	'@media (max-width: 780px)': {
@@ -59,7 +63,7 @@ const PortfolioItem = ({ item }) => {
 				</div>
 				<div className='item-buttons'>
 					{
-						// item.id && (<ButtonLink link={publicResource(`/portfolio/${item.id}`)} isExternal={false}>Details</ButtonLink>)
+						item.id && (<ButtonLink link={`/portfolio/${item.id}`} isExternal={false}>Details</ButtonLink>)
 					}
 					{item.github_url && (<ButtonLink link={item.github_url}>Code</ButtonLink>)}
 					{item.devlog_url && (<ButtonLink link={item.devlog_url}>DevLog</ButtonLink>)}

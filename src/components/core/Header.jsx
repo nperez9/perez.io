@@ -12,11 +12,16 @@ const style = {
   textAling: 'center',
   marginBottom: 20,
   '> a': {
+    ':hover': {
+      textDecoration: 'underline',
+    },
     marginRight: 25,
     color: '#d6d6d6',
+    fontSize: '1.2em',
   },
   LenguagePicker: {
     float: 'right',
+    fontSize: '1.2em',
   },
   '@media (max-width: 1200px)': {
     paddingLeft: '10px',
