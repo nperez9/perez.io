@@ -10,6 +10,7 @@ const style = {
 	width: '100%',
 	padding: '20px 0',
 	marginTop: '25px',
+	cursor: 'pointer',
 	'.item-image': {
 		width: '35%',
 		'img': {
@@ -50,8 +51,12 @@ const style = {
 }
 
 const PortfolioItem = ({ item }) => {
+	const goToDetail = () => {
+		
+	}
+
 	return (
-		<div className='item-container' css={style}>
+		<div className='item-container' css={style} onClick={goToDetail}>
 			<div className='item-image'>
 				<img alt={item.name} src={publicResource(item.cover_image)} />
 			</div>

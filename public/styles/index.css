@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,400&display=swap');
 
+:root {
+  --page-color: #d6d6d6;
+  --page-background-color: #1e1e1e;
+  --ui-footer-bg: #191b1e;
+  --ui-footer-color: #808a95;  
+}
+
 html {
   background-color: #111;
   color: #EEE;
@@ -11,8 +18,8 @@ a {
 }
 
 body {
-  color: #d6d6d6;
-  background-color: #272822;
+  color: var(--page-color);
+  background-color: var(--page-background-color);
   font-family: 'Roboto Mono', monospace;
   min-height: 100vh;
 }
