@@ -72,7 +72,8 @@ const PortfolioItem = ({ item }) => {
 					}
 					{item.github_url && (<ButtonLink link={item.github_url}>Code</ButtonLink>)}
 					{item.devlog_url && (<ButtonLink link={item.devlog_url}>DevLog</ButtonLink>)}
-					{item.play_url && item.isPlayable && (<ButtonLink link={publicResource(item.play_url)} >Play</ButtonLink>)}
+					{item.play_url && item.isPlayable && (<ButtonLink link={publicResource(item.play_url)}>Play</ButtonLink>)}
+					{item.itch_url && (<ButtonLink link={item.itch_url}>Itch.io</ButtonLink>)}
 				</div>
 			</div>
 		</div>

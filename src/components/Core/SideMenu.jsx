@@ -7,11 +7,11 @@ const style = {
 
 const SideMenu = () => {
   return (
-    <aside css={style}>
+    <section css={style}>
       <div>
         this is test
       </div>
-    </aside>
+    </section>
   );
 };
 

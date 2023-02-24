@@ -3,18 +3,22 @@ import { jsx } from '@emotion/core';
 import { Link } from 'react-router-dom';
 
 import LenguagePicker from './LenguagePicker';
+import { container } from '../../library';
 
 const style = {
-  maxWidth: '1200px',
-  display: 'block',
-  margin: '0 auto',
-  padding: '10px 0',
-  textAling: 'center',
+  ...container,
+  height: '100%',
   marginBottom: 20,
-  '> a': {
+  padding: 0,
+  display: 'flow-root',
+  '> div': {
+    marginTop:'10px',
+  },
+  'a': {
     ':hover': {
       textDecoration: 'underline',
     },
+    padding: '10px',
     marginRight: 25,
     color: '#d6d6d6',
     fontSize: '1.2em',
@@ -31,9 +35,11 @@ const style = {
 const Header = () => {
   return (
     <nav css={style}>
-      <Link to="/home">Home</Link>
-      <Link to="/portfolio">Portfolio</Link>
-      <LenguagePicker />
+      <div>
+        <Link to="/home">Home.jsx</Link>
+        <Link to="/portfolio">Portfolio</Link>
+        <LenguagePicker />
+      </div>
     </nav>
   );
 }

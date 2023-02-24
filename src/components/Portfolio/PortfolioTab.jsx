@@ -22,12 +22,12 @@ const PortfolioTab = () => {
   const games = portfolioList.filter(p => p.type === 'videogame');
 
   return (
-    <Tabs defaultActiveKey="web" id="uncontrolled-tab-example" css={style}>
+    <Tabs defaultActiveKey="games" id="uncontrolled-tab-example" css={style}>
+       <Tab eventKey="games" title="Games">
+        <PortfolioList portfolioList={games} />
+      </Tab>
       <Tab eventKey="web" title="Web">
         <PortfolioList portfolioList={web} />
-      </Tab>
-      <Tab eventKey="games" title="Games">
-        <PortfolioList portfolioList={games} />
       </Tab>
     </Tabs>
   );
