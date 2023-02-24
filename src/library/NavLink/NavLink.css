@@ -5,7 +5,7 @@
   display: inline;
   font-family: sans-serif;
   border: 1px solid var(--page-color);
-  transform: 1s all;
+  transform: 0.3s all;
 }
 
 .nav-link:hover {

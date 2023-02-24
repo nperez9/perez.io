@@ -8,9 +8,6 @@ const style = {
 const SideMenu = () => {
   return (
     <section css={style}>
-      <div>
-        this is test
-      </div>
     </section>
   );
 };

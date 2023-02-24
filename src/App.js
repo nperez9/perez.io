@@ -2,16 +2,15 @@ import React, { Suspense } from 'react';
 
 import './translator.js';
 import Router from './components/Router';
-import Header from './components/core/Header';
-import Footer from './components/core/Footer';
+import Layout from './components/core/Layout';
 
 function App() {
   return (
     <div className="App">
       <Suspense fallback={null}>
-        <Header />
-        <Router />
-        <Footer />
+        <Layout>
+          <Router />
+        </Layout>
       </Suspense>
     </div>
   );

@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
+import { useLocation } from 'react-router-dom';
 
 import LenguagePicker from './LenguagePicker';
 import { colors, container, NavLink } from '../../library';
@@ -11,8 +12,9 @@ const style = {
   padding: 0,
   backgroundColor: colors.uiBg,
   display: 'flow-root',
+  borderBottom: `1px solid ${colors.pageColor}`,
   '> div': {
-    marginTop:'10px',
+    marginTop: '10px',
     marginBottom: 5,
   },
   LenguagePicker: {
@@ -21,19 +23,28 @@ const style = {
   },
   '@media (max-width: 1200px)': {
     paddingLeft: '10px',
-  }
+  },
 };
 
 const Header = () => {
+  const { pathname } = useLocation();
+
   return (
     <nav css={style}>
       <div>
-        <NavLink href="/home" active>Home.jsx</NavLink>
-        <NavLink href="/portfolio">Portfolio.jsx</NavLink>
+        <NavLink href="/home" active={pathname === '/home'}>
+          Home.jsx
+        </NavLink>
+        <NavLink href="/portfolio" active={pathname === '/portfolio'}>
+          Portfolio.jsx
+        </NavLink>
+        <NavLink href="/about" active={pathname === '/about'}>
+          About.jsx
+        </NavLink>   
         <LenguagePicker />
       </div>
     </nav>
   );
-}
+};
 
 export default Header;

@@ -15,7 +15,7 @@ const style = {
   select: {
     backgroundColor: '#272822',
     color: '#d6d6d6',
-    fontFamily: "'Roboto Mono', monospace",
+    fontFamily: "sans-serif",
   }
 };
 
@@ -31,10 +31,10 @@ const LanguagePicker = () => {
       <div id="lng_select" >
         <select onChange={changeLanguage}>
           <option value="en" name="language" defaultValue>
-            eng
+            ENG
           </option>
           <option value="es" name="language">
-            esp
+            ESP
           </option>
         </select>
       </div>
