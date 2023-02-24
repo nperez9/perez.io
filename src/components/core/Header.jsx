@@ -1,27 +1,19 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-import { Link } from 'react-router-dom';
 
 import LenguagePicker from './LenguagePicker';
-import { container } from '../../library';
+import { colors, container, NavLink } from '../../library';
 
 const style = {
   ...container,
   height: '100%',
   marginBottom: 20,
   padding: 0,
+  backgroundColor: colors.uiBg,
   display: 'flow-root',
   '> div': {
     marginTop:'10px',
-  },
-  'a': {
-    ':hover': {
-      textDecoration: 'underline',
-    },
-    padding: '10px',
-    marginRight: 25,
-    color: '#d6d6d6',
-    fontSize: '1.2em',
+    marginBottom: 5,
   },
   LenguagePicker: {
     float: 'right',
@@ -36,8 +28,8 @@ const Header = () => {
   return (
     <nav css={style}>
       <div>
-        <Link to="/home">Home.jsx</Link>
-        <Link to="/portfolio">Portfolio</Link>
+        <NavLink href="/home" active>Home.jsx</NavLink>
+        <NavLink href="/portfolio">Portfolio.jsx</NavLink>
         <LenguagePicker />
       </div>
     </nav>

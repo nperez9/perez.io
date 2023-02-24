@@ -1,0 +1,31 @@
+.nav-link {
+  padding: 10px 20px;
+  color: #d6d6d6;
+  font-size: 1.2em;
+  display: inline;
+  font-family: sans-serif;
+  border: 1px solid var(--page-color);
+  transform: 1s all;
+}
+
+.nav-link:hover {
+  color: #d6d6d6;
+  background-color: #333;
+}
+
+.nav-link-icon-container {
+  margin-right: 5px;
+}
+
+.nav-link-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.nav-link-active {
+  background-color: var(--page-background-color);
+  border-top: 2px solid var(--ui-header-nav-active);
+  border-right: 1px solid var(--page-color);
+  border-left: 1px solid var(--page-color);
+  border-bottom: 1px solid  var(--page-background-color);
+}

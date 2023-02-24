@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-import { container } from './grid';
+import { container } from './styles/grid';
 import PropTypes from 'prop-types';
 
 const style = {
