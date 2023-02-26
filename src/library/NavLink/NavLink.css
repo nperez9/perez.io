@@ -4,7 +4,7 @@
   font-size: 1.2em;
   display: inline;
   font-family: sans-serif;
-  border: 1px solid var(--page-color);
+  border: 1px solid var(--ui-border);
   transform: 0.3s all;
 }
 
@@ -25,7 +25,7 @@
 .nav-link-active {
   background-color: var(--page-background-color);
   border-top: 2px solid var(--ui-header-nav-active);
-  border-right: 1px solid var(--page-color);
-  border-left: 1px solid var(--page-color);
-  border-bottom: 1px solid  var(--page-background-color);
+  border-right: 1px solid var(--ui-border);
+  border-left: 1px solid var(--ui-border);
+  border-bottom: 1px solid  var(--ui-border);
 }

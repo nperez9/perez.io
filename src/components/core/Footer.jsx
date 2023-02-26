@@ -11,7 +11,7 @@ const style = {
   marginTop: 40,
   backgroundColor: colors.uiFooterBg,
   color: colors.uiFooterColor,
-  borderTop: `1px solid ${colors.uiFooterColor}`,
+  borderTop: `1px solid ${colors.uiBorder}`,
   fontSize: '0.8rem',
   padding: '4px',
   fontFamily: 'sans-serif',

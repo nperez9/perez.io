@@ -12,7 +12,7 @@ const style = {
   padding: 0,
   backgroundColor: colors.uiBg,
   display: 'flow-root',
-  borderBottom: `1px solid ${colors.pageColor}`,
+  borderBottom: `1px solid ${colors.uiBorder}`,
   '> div': {
     marginTop: '10px',
     marginBottom: 5,
