@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 
-import { colors } from '../../library';
+import { colors, Icons } from '../../library';
 
 const style = {
   position: 'fixed', 
@@ -15,9 +15,12 @@ const style = {
     fontSize: '1.2em',
     borderRight: `1px solid ${colors.uiBorder}`,
     '> div': {
-      padding: '5px 10px',
+      padding: '5px 5px',
       cursor: 'pointer',
       marginTop: '10px',
+      '& :hover': {
+        backgroundColor: 'white',
+      }
     }
   }
 };
@@ -26,11 +29,11 @@ const SideMenu = () => {
   return (
     <aside css={style}>
       <div className="side-icon-menu">
-        <div>E</div>
-        <div>S</div>
-        <div>T</div>
-        <div>G</div>
-        <div>E</div>
+        <div><Icons icon={"files"} /></div>
+        <div><Icons icon={"search"} /></div>
+        <div><Icons icon={"git"} /></div>
+        <div><Icons icon={"debug"} /></div>
+        <div><Icons icon={"extensions"} /></div>
       </div>
       <div>
         <div>src</div>
