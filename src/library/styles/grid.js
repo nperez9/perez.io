@@ -1,9 +1,8 @@
 export const container = {
-  maxWidth: '1200px',
   display: 'block',
-  margin: '0 auto',
+  marginLeft: '50px',
+  padding: 10,
   '@media (max-width: 1200px)': {
-    padding: 10,
     'padding-bottom': 60,
   },
   'padding-bottom': 60

@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
+import { useEffect, useState } from 'react';
 import { CloudIcon } from '../../library/Icons';
 import { colors } from '../../library/styles';
 
@@ -32,6 +33,25 @@ const style = {
 };
 
 const Footer = () => {
+  const [mousePos, setMousePos] = useState({ x: 1, y: 1});
+
+  useEffect(() => {
+    const handleMouseMove = (event) => {
+      const x = Math.round((event.clientX > 45 ? event.clientX : 0) / 32);
+      const y = Math.round((event.clientY > 28 ? event.clientY : 0) / 32);
+      setMousePos({ x, y });
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener(
+        'mousemove',
+        handleMouseMove
+      );
+    };
+  }, []);
+
   return (
     <footer css={style}>
       <div>
@@ -40,7 +60,7 @@ const Footer = () => {
           <span>master</span>
         </span>
         <span className="right-side">
-          <span>Ln 29, Col 29</span>
+          <span>Ln {mousePos.y}, Col {mousePos.x}</span>
           <span>Spaces: 2</span>
           <span>UTF-8</span>
         </span>

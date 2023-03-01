@@ -1,46 +1,63 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
+import { useState } from 'react';
+import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 import { colors, Icons } from '../../library';
 
 const style = {
-  position: 'fixed', 
+  position: 'fixed',
   display: 'flex',
   flexFlow: 'row',
   '.side-icon-menu': {
-    width: '40px',
+    width: '44px',
+    borderRight: `1px solid ${colors.uiBorder}`,
     backgroundColor: colors.uiBg,
     textAlign: 'center',
     height: '100vh',
     fontSize: '1.2em',
-    borderRight: `1px solid ${colors.uiBorder}`,
     '> div': {
-      padding: '5px 5px',
+      padding: '14px 5px',
       cursor: 'pointer',
-      marginTop: '10px',
-      '& :hover': {
-        backgroundColor: 'white',
-      }
-    }
-  }
+    },
+    '> div:hover': {
+      backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    },
+    '.active': {
+      borderLeft: `2px solid ${colors.uiHeaderNavActive}`,
+    },
+  },
 };
 
+const menuItems = [{ key: 'files' }, { key: 'search' }, { key: 'git' }, { key: 'debug' }, { key: 'extensions' }];
+
 const SideMenu = () => {
+  const [activeMenu, setActiveMenu] = useState(null);
+
+  const clickIcon = (menuItem) => {
+    setActiveMenu(menuItem);
+  };
+
+  const closeMenu = () => {
+    setActiveMenu(null);
+  };
+
+  // builds the icons menu
+  const sideIconMenu = menuItems.map((mi) => {
+    const classname = activeMenu?.key === mi.key ? 'active' : '';
+    return (
+      <OverlayTrigger key={mi.key} overlay={<Tooltip id={`tooltip-${mi.key}`} placement="bottom">{mi.key}</Tooltip>}>
+        <div onClick={() => clickIcon(mi)} className={classname}>
+          <Icons icon={mi.key} />
+        </div>
+      </OverlayTrigger>
+    );
+  });
+
   return (
     <aside css={style}>
-      <div className="side-icon-menu">
-        <div><Icons icon={"files"} /></div>
-        <div><Icons icon={"search"} /></div>
-        <div><Icons icon={"git"} /></div>
-        <div><Icons icon={"debug"} /></div>
-        <div><Icons icon={"extensions"} /></div>
-      </div>
-      <div>
-        <div>src</div>
-        <div>Contact</div>
-        <div>Layout</div>
-        <div>LenguagePicker</div>
-      </div>
+      <section className="side-icon-menu">{sideIconMenu}</section>
+      <section className="active-menu"></section>
     </aside>
   );
 };

@@ -3,12 +3,12 @@ import { jsx } from '@emotion/core';
 import { useLocation } from 'react-router-dom';
 
 import LenguagePicker from './LenguagePicker';
-import { colors, container, NavLink } from '../../library';
+import { colors, NavLink } from '../../library';
 
 const style = {
-  ...container,
   height: '100%',
   marginBottom: 20,
+  marginLeft: 44,
   padding: 0,
   backgroundColor: colors.uiBg,
   display: 'flow-root',

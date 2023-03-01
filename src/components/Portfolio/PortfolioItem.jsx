@@ -13,6 +13,7 @@ const style = {
 	cursor: 'pointer',
 	'.item-image': {
 		width: '35%',
+		overflow: 'hidden',
 		'img': {
 			width: '100%',
 			borderRadius: '10px',
@@ -46,6 +47,15 @@ const style = {
 		'.item-content': {
 			width: '100%',
 			padding: '0 10px',
+		}
+	},
+	'@media (min-width: 1280px)': {
+		maxHeight: '400px',
+		'.item-image': {
+			width: '45%',
+		},
+		'.item-content': {
+			width: '55%',
 		}
 	}
 }
