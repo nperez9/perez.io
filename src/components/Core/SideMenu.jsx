@@ -4,13 +4,15 @@ import { useState } from 'react';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 import { colors, Icons } from '../../library';
+import { ActiveMenu } from './AsideMenu/ActiveMenu'
 
 const style = {
   position: 'fixed',
   display: 'flex',
   flexFlow: 'row',
+  zIndex: 1,
   '.side-icon-menu': {
-    width: '44px',
+    minWidth: '44px',
     borderRight: `1px solid ${colors.uiBorder}`,
     backgroundColor: colors.uiBg,
     textAlign: 'center',
@@ -46,7 +48,7 @@ const SideMenu = () => {
   const sideIconMenu = menuItems.map((mi) => {
     const classname = activeMenu?.key === mi.key ? 'active' : '';
     return (
-      <OverlayTrigger key={mi.key} overlay={<Tooltip id={`tooltip-${mi.key}`} placement="bottom">{mi.key}</Tooltip>}>
+      <OverlayTrigger key={mi.key} placement="right" overlay={<Tooltip id={`tooltip-${mi.key}`}>{mi.key}</Tooltip>}>
         <div onClick={() => clickIcon(mi)} className={classname}>
           <Icons icon={mi.key} />
         </div>
@@ -57,7 +59,7 @@ const SideMenu = () => {
   return (
     <aside css={style}>
       <section className="side-icon-menu">{sideIconMenu}</section>
-      <section className="active-menu"></section>
+      <ActiveMenu isActiveMenu={activeMenu}  closeMenu={closeMenu} />
     </aside>
   );
 };

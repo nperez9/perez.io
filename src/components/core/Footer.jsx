@@ -16,6 +16,7 @@ const style = {
   fontSize: '0.8rem',
   padding: '4px',
   fontFamily: 'sans-serif',
+  zIndex: 3,
   '.left-side': {
     marginLeft: '6px',
     float: 'left',
