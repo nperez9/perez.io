@@ -1,12 +1,13 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 import React from 'react';
-import { Icons } from '../../../library';
+import { Icons, colors } from '../../../library';
 
 const style = {
   width: '300px',
   backgroundColor: 'black',
   fontFamily: 'sans-serif',
+  borderRight: `1px solid ${colors.uiBorder}`,
   '.title': {
     padding: '15px',
     display: 'flex',
@@ -19,6 +20,9 @@ const style = {
       width: 20,
     },
   },
+  '.menu-container': {
+    
+  }
 };
 
 const overlay = {
