@@ -27,5 +27,5 @@
   border-top: 2px solid var(--ui-header-nav-active);
   border-right: 1px solid var(--ui-border);
   border-left: 1px solid var(--ui-border);
-  border-bottom: 1px solid  var(--ui-border);
+  border-bottom: 1px solid  var(--page-background-color);
 }

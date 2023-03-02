@@ -12,6 +12,8 @@ const style = {
     padding: '15px',
     display: 'flex',
     justifyContent: 'space-between',
+    textTransform: 'uppercase',
+    fontSize: 18,
     '.icon': {
       cursor: 'pointer',
     },
@@ -21,8 +23,8 @@ const style = {
     },
   },
   '.menu-container': {
-    
-  }
+    padding: 15,
+  },
 };
 
 const overlay = {
@@ -32,18 +34,20 @@ const overlay = {
   cursor: 'pointer',
 };
 
-export const ActiveMenu = ({ isActiveMenu, closeMenu }) => {
+export const ActiveMenu = ({ isActiveMenu, closeMenu, activeMenu }) => {
   return (
     isActiveMenu && (
       <React.Fragment>
         <section css={style}>
           <div className="title">
-            <span>Mock Title</span>
-            <span onClick={closeMenu}>              
+            <span>{activeMenu?.title}</span>
+            <span onClick={closeMenu}>
               <Icons icon="closeAll" classname="icon" />
             </span>
           </div>
-          <div>here should go the components</div>
+          <div className="menu-container">
+            
+          </div>
         </section>
         <section css={overlay} onClick={closeMenu} />
       </React.Fragment>

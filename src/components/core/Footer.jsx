@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 import { useEffect, useState } from 'react';
-import { CloudIcon } from '../../library/Icons';
+import { Icons } from '../../library/Icons';
 import { colors } from '../../library/styles';
 
 const style = {
@@ -22,6 +22,10 @@ const style = {
     float: 'left',
     '> span': {
       marginLeft: '6px',
+    },
+    '.icon > svg': {
+      height: 16,
+      width: 16,
     }
   },
   '.right-side': {
@@ -57,8 +61,8 @@ const Footer = () => {
     <footer css={style}>
       <div>
         <span className="left-side">
-          <CloudIcon />
-          <span>master</span>
+          <Icons icon="git" classname='icon' />
+          <span>release v3.0.2</span>
         </span>
         <span className="right-side">
           <span>Ln {mousePos.y}, Col {mousePos.x}</span>

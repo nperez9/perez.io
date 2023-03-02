@@ -19,4 +19,9 @@ export const socialLinks = [
     name: 'Gmail',
     text: 'contact.gmail',
   },
+  {
+    link: 'https://nperez9.itch.io/',
+    name: 'Itch.io',
+    text: 'contact.gmail',
+  },
 ];

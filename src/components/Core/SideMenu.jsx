@@ -31,7 +31,7 @@ const style = {
   },
 };
 
-const menuItems = [{ key: 'files' }, { key: 'search' }, { key: 'git' }, { key: 'debug' }, { key: 'extensions' }];
+const menuItems = [{ key: 'files', tooltip: 'portfolio', title: 'Portfolio' }, { key: 'search', tooltip: 'social networks' }, { key: 'git' }, { key: 'debug' }, { key: 'extensions' }];
 
 const SideMenu = () => {
   const [activeMenu, setActiveMenu] = useState(null);
@@ -48,7 +48,7 @@ const SideMenu = () => {
   const sideIconMenu = menuItems.map((mi) => {
     const classname = activeMenu?.key === mi.key ? 'active' : '';
     return (
-      <OverlayTrigger key={mi.key} placement="right" overlay={<Tooltip id={`tooltip-${mi.key}`}>{mi.key}</Tooltip>}>
+      <OverlayTrigger key={mi.key} placement="right" overlay={<Tooltip id={`tooltip-${mi.key}`}>{(mi.tooltip) ? mi.tooltip : mi.key}</Tooltip>}>
         <div onClick={() => clickIcon(mi)} className={classname}>
           <Icons icon={mi.key} />
         </div>
@@ -59,7 +59,7 @@ const SideMenu = () => {
   return (
     <aside css={style}>
       <section className="side-icon-menu">{sideIconMenu}</section>
-      <ActiveMenu isActiveMenu={activeMenu}  closeMenu={closeMenu} />
+      <ActiveMenu isActiveMenu={activeMenu} closeMenu={closeMenu}  activeMenu={activeMenu} />
     </aside>
   );
 };
