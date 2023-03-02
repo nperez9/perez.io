@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-import ShowCode from '../components/core/ShowCode';
+import ShowCode from './ShowCode';
 
 const ButtonLink = ({ link, children, isExternal }) => {
 	const external = (

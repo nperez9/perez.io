@@ -2,7 +2,7 @@
 import { jsx } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
 
-import { ShowCode } from '../core/ShowCode';
+import { ShowCode } from '../../library';
 
 const style = {
   textAlign: 'center',
@@ -31,8 +31,10 @@ const HomeTitle = () => {
           {t('home.subtitle')}
         </ShowCode>
       </h2>
-      <h4>       
+      <h4>
+        <ShowCode tag="h4" >
         {t('home.posttitle')}        
+        </ShowCode>  
       </h4>
     </section>
   );
