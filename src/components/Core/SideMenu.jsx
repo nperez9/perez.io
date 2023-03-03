@@ -15,6 +15,7 @@ const style = {
   zIndex: 1,
   fontFamily: fonts.uiFont,
   '.side-icon-menu': {
+    position: 'relative',
     minWidth: '45px',
     borderRight: `1px solid ${colors.uiBorder}`,
     backgroundColor: colors.uiBg,
