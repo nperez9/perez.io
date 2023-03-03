@@ -6,6 +6,7 @@ import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { menuData } from '../../data';
 import { colors, Icons, fonts } from '../../library';
 import { ActiveMenu } from './AsideMenu/ActiveMenu';
+import LanguagePicker from './LenguagePicker';
 
 const style = {
   position: 'fixed',
@@ -14,7 +15,7 @@ const style = {
   zIndex: 1,
   fontFamily: fonts.uiFont,
   '.side-icon-menu': {
-    minWidth: '44px',
+    minWidth: '45px',
     borderRight: `1px solid ${colors.uiBorder}`,
     backgroundColor: colors.uiBg,
     textAlign: 'center',
@@ -58,7 +59,10 @@ export const SideMenu = () => {
 
   return (
     <aside css={style}>
-      <section className="side-icon-menu">{sideIconMenu}</section>
+      <section className="side-icon-menu">
+        {sideIconMenu}
+        <LanguagePicker />
+      </section>
       <ActiveMenu isActiveMenu={activeMenu} closeMenu={closeMenu} activeMenu={activeMenu} />
     </aside>
   );

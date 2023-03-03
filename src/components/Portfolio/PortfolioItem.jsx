@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 
-import { ButtonLink, Divider, colors } from '../../library';
+import { ButtonLink, Divider, colors, ShowCode } from '../../library';
 import { publicResource } from '../../utils';
 
 const style = {
@@ -74,9 +74,13 @@ const PortfolioItem = ({ item }) => {
       </div>
       <div className="item-content">
         <div>
-          <h4>{item.name}</h4>
+          <h4>
+            <ShowCode tag="h4">{item.name}</ShowCode>
+          </h4>
           <Divider />
-          <p>{item.short_description}</p>
+          <p>
+            <ShowCode tag="p">{item.short_description} </ShowCode>
+          </p>
         </div>
         <div className="item-buttons">
           {item.id && (

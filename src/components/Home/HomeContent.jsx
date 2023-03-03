@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import { socialLinks } from '../../data/socialLinks';
 import { tecnologies } from '../../data/tecnologies';
-import { Divider, ButtonLink } from '../../library';
+import { Divider, ButtonLink, ShowCode } from '../../library';
 
 import TecnologiesGroup from './TecnologiesGroup';
 
@@ -12,7 +12,7 @@ const style = {
   textAlign: 'center',
   h4: {
     marginBottom: 30,
-    fontSize: 18
+    fontSize: 18,
   },
   '.social-block': {
     display: 'flex',
@@ -36,31 +36,30 @@ const HomeContent = () => {
   const { t } = useTranslation();
 
   tecnologiesContent = tecnologies.map((tecGroup) => {
-    return <TecnologiesGroup tecGroup={tecGroup} key={tecGroup.groupName} />
+    return <TecnologiesGroup tecGroup={tecGroup} key={tecGroup.groupName} />;
   });
 
   content = socialLinks.map((sl) => {
     return (
       <div key={sl.name}>
-        <ButtonLink link={sl.link}>
-          {sl.name}
-        </ButtonLink>
+        <ButtonLink link={sl.link}>{sl.name}</ButtonLink>
       </div>
     );
   });
 
-
   return (
     <section css={style}>
       <div>
-      <h4>{ t('home.tecnologies') }</h4>
-        <div>
-          { tecnologiesContent }
-        </div>
+        <h4>
+          <ShowCode tag="div">{t('home.tecnologies')}</ShowCode>
+        </h4>
+        <div>{tecnologiesContent}</div>
       </div>
       <Divider />
       <div>
-        <h4>{ t('home.findMe') }</h4>
+        <h4>
+          <ShowCode tag="div">{t('home.findMe')}</ShowCode>
+        </h4>
         <div className="social-block">{content}</div>
       </div>
     </section>

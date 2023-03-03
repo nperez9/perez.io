@@ -39,7 +39,7 @@ const Header = () => {
         {/* <NavLink href="/about" active={pathname === '/about'}>
           About.jsx
         </NavLink>    */}
-        <LenguagePicker />
+        {/* <LenguagePicker /> */}
       </div>
     </nav>
   );
