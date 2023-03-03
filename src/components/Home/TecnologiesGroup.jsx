@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
+import { ShowCode } from '../../library';
 import { publicResource } from '../../utils';
 
 const style = {
@@ -24,27 +25,27 @@ const style = {
       },
       '> span': {
         marginTop: '5px',
-        display: 'inline-block'
-      }
-    }
-  }
+        display: 'inline-block',
+      },
+    },
+  },
 };
 
 const TecnologiesGroup = ({ tecGroup }) => {
   return (
-    <div className='tec-group' css={style}>
-      <h5 className='tec-group-title'>{tecGroup.groupName}:</h5>
+    <div className="tec-group" css={style}>
+      <h5 className="tec-group-title">
+        <ShowCode tag="td">{tecGroup.groupName}:</ShowCode>
+      </h5>
       <div className="tecs-container">
-        {
-          tecGroup.tecs.map((t) => {
-            return (
-              <div className='tec-item' key={t.name}>
-                <img src={publicResource(`/images/${t.logo}`)} alt={t.name} />
-                <span>{t.name}</span>
-              </div>
-            );
-          })
-        }
+        {tecGroup.tecs.map((t) => {
+          return (
+            <div className="tec-item" key={t.name}>
+              <img src={publicResource(`/images/${t.logo}`)} alt={t.name} />
+              <span>{t.name}</span>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

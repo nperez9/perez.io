@@ -4,22 +4,23 @@ import { useTranslation } from 'react-i18next';
 
 const style = {
   display: 'inline-block',
-  float: 'right',
+  position: 'absolute',
+  fontSize: 8,
+  bottom: 100,
+  right: -1,
   '#lng_select': {
-    width: '120px',
-    float: 'left',
     select: {
-      padding: '2px'
-    }
+      padding: '2px',
+    },
   },
   select: {
     backgroundColor: '#272822',
     color: '#d6d6d6',
-    fontFamily: "'Roboto Mono', monospace",
-  }
+    fontFamily: 'sans-serif',
+  },
 };
 
-const LanguagePicker = () => {
+export const LanguagePicker = () => {
   const { i18n } = useTranslation();
 
   const changeLanguage = (event) => {
@@ -28,13 +29,13 @@ const LanguagePicker = () => {
 
   return (
     <div css={style}>
-      <div id="lng_select" >
+      <div id="lng_select">
         <select onChange={changeLanguage}>
           <option value="en" name="language" defaultValue>
-            eng
+            EN
           </option>
           <option value="es" name="language">
-            esp
+            ES
           </option>
         </select>
       </div>

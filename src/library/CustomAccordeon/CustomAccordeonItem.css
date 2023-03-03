@@ -1,0 +1,14 @@
+.cai-container {
+  color: var(--ui-menu-color);
+  transition: 0.2s all;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.cai-container-title {
+  margin-left: 10px;
+}
+
+.cai-container:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

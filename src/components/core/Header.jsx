@@ -1,41 +1,47 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
-import LenguagePicker from './LenguagePicker';
+import { colors, fonts, NavLink } from '../../library';
 
 const style = {
-  maxWidth: '1200px',
-  display: 'block',
-  margin: '0 auto',
-  padding: '10px 0',
-  textAling: 'center',
+  height: '100%',
   marginBottom: 20,
-  '> a': {
-    ':hover': {
-      textDecoration: 'underline',
-    },
-    marginRight: 25,
-    color: '#d6d6d6',
-    fontSize: '1.2em',
+  marginLeft: 44,
+  padding: 0,
+  backgroundColor: colors.uiBg,
+  display: 'flow-root',
+  borderBottom: `1px solid ${colors.uiBorder}`,
+  fontFamily: fonts.uiFont,
+  '> div': {
+    marginTop: '10px',
+    marginBottom: 5,
   },
   LenguagePicker: {
     float: 'right',
     fontSize: '1.2em',
   },
-  '@media (max-width: 1200px)': {
-    paddingLeft: '10px',
-  }
 };
 
 const Header = () => {
+  const { pathname } = useLocation();
+
   return (
     <nav css={style}>
-      <Link to="/home">Home</Link>
-      <Link to="/portfolio">Portfolio</Link>
-      <LenguagePicker />
+      <div>
+        <NavLink href="/home" active={pathname === '/home'}>
+          Home.jsx
+        </NavLink>
+        <NavLink href="/portfolio" active={pathname === '/portfolio'}>
+          Portfolio.jsx
+        </NavLink>
+        {/* <NavLink href="/about" active={pathname === '/about'}>
+          About.jsx
+        </NavLink>    */}
+        {/* <LenguagePicker /> */}
+      </div>
     </nav>
   );
-}
+};
 
 export default Header;

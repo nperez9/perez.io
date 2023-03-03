@@ -1,10 +1,8 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-
-import { ShowCode } from '../core/ShowCode';
-import { Container, Divider } from '../../library';
-
 import { useTranslation } from 'react-i18next';
+
+import { Container, Divider, ShowCode } from '../../library';
 import PortfolioTab from './PortfolioTab';
 
 const style = {
