@@ -10,7 +10,6 @@ const style = {
   width: '100%',
   padding: '20px 0',
   marginTop: '25px',
-  cursor: 'pointer',
   '.item-image': {
     width: '35%',
     overflow: 'hidden',
