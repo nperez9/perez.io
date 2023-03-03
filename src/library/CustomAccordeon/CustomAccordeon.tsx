@@ -22,7 +22,7 @@ export const CustomAccordeon: React.FC<CustomAccordeonProps> = ({ title, childre
         <Icons icon={isOpen ? 'bottomArrow' : 'rightArrow'} />
         <span className="ca-title-content">{title}</span>
       </div>
-      {isOpen && <div className="ca-content">{children}</div>}
+      <div className={`ca-content ${isOpen ? 'ca-content-active' : ''}`}>{children}</div>
     </section>
   );
 };

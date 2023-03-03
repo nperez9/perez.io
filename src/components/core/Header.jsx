@@ -2,7 +2,6 @@
 import { jsx } from '@emotion/core';
 import { useLocation } from 'react-router-dom';
 
-import LenguagePicker from './LenguagePicker';
 import { colors, fonts, NavLink } from '../../library';
 
 const style = {

@@ -13,4 +13,10 @@
 
 .ca-content {
   margin-left: 16px;
+  display: none;
+  transition: 0.2s all;
+}
+
+.ca-content-active {
+  display: block;
 }
