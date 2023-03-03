@@ -1,10 +1,20 @@
-export const tecnologies = [
+export interface Tecs {
+  name: string;
+  logo: string;
+}
+
+export interface Tecnologies {
+  groupName: string;
+  tecs: Tecs[];
+}
+
+export const tecnologies: Tecnologies[] = [
   {
     groupName: 'Videogames',
     tecs: [
       {
         name: 'Unity',
-        logo: 'unity-logo.png'
+        logo: 'unity-logo.png',
       },
       {
         name: 'C#',
@@ -13,15 +23,15 @@ export const tecnologies = [
       {
         name: 'Aseprite',
         logo: 'asesprite-logo.png',
-      },      
-    ]
+      },
+    ],
   },
   {
     groupName: 'Front-end',
     tecs: [
       {
         name: 'React',
-        logo: 'react-icon.svg'
+        logo: 'react-icon.svg',
       },
       {
         name: 'Angular',
@@ -34,19 +44,19 @@ export const tecnologies = [
       {
         name: 'TS',
         logo: 'ts-logo.png',
-      }
-    ]
+      },
+    ],
   },
   {
     groupName: 'Back-end',
     tecs: [
       {
         name: 'NodeJs',
-        logo: 'nodejs-logo.png'
+        logo: 'nodejs-logo.png',
       },
       {
         name: 'MongoDB',
-        logo: 'mongo-logo.png'
+        logo: 'mongo-logo.png',
       },
       {
         name: 'Docker',
@@ -59,7 +69,7 @@ export const tecnologies = [
       {
         name: 'TS',
         logo: 'ts-logo.png',
-      }
-    ]
-  }
+      },
+    ],
+  },
 ];

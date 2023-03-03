@@ -3,8 +3,11 @@ import { jsx } from '@emotion/core';
 import { useState } from 'react';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
+import { menuData } from '../../data';
 import { colors, Icons } from '../../library';
-import { ActiveMenu } from './AsideMenu/ActiveMenu'
+import { ActiveMenu } from './AsideMenu/ActiveMenu';
+
+
 
 const style = {
   position: 'fixed',
@@ -31,9 +34,7 @@ const style = {
   },
 };
 
-const menuItems = [{ key: 'files', tooltip: 'portfolio', title: 'Portfolio' }, { key: 'search', tooltip: 'social networks' }, { key: 'git' }, { key: 'debug' }, { key: 'extensions' }];
-
-const SideMenu = () => {
+export const SideMenu = () => {
   const [activeMenu, setActiveMenu] = useState(null);
 
   const clickIcon = (menuItem) => {
@@ -45,10 +46,10 @@ const SideMenu = () => {
   };
 
   // builds the icons menu
-  const sideIconMenu = menuItems.map((mi) => {
+  const sideIconMenu = menuData.map((mi) => {
     const classname = activeMenu?.key === mi.key ? 'active' : '';
     return (
-      <OverlayTrigger key={mi.key} placement="right" overlay={<Tooltip id={`tooltip-${mi.key}`}>{(mi.tooltip) ? mi.tooltip : mi.key}</Tooltip>}>
+      <OverlayTrigger key={mi.key} placement="right" overlay={<Tooltip id={`tooltip-${mi.key}`}>{mi.tooltip ? mi.tooltip : mi.key}</Tooltip>}>
         <div onClick={() => clickIcon(mi)} className={classname}>
           <Icons icon={mi.key} />
         </div>
@@ -59,7 +60,7 @@ const SideMenu = () => {
   return (
     <aside css={style}>
       <section className="side-icon-menu">{sideIconMenu}</section>
-      <ActiveMenu isActiveMenu={activeMenu} closeMenu={closeMenu}  activeMenu={activeMenu} />
+      <ActiveMenu isActiveMenu={activeMenu} closeMenu={closeMenu} activeMenu={activeMenu} />
     </aside>
   );
 };

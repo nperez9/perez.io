@@ -2,6 +2,7 @@
 import { jsx } from '@emotion/core';
 import React from 'react';
 import { Icons, colors } from '../../../library';
+import { PortfolioMenu } from './PortfolioMenu';
 
 const style = {
   width: '300px',
@@ -35,6 +36,20 @@ const overlay = {
 };
 
 export const ActiveMenu = ({ isActiveMenu, closeMenu, activeMenu }) => {
+  const getCurrentMenu = () => {
+    if (!activeMenu) {
+      return null;
+    }
+
+    switch (activeMenu?.key) {
+      case 'files':
+        return <PortfolioMenu />;
+      default:
+        return null;
+
+    }
+  }
+
   return (
     isActiveMenu && (
       <React.Fragment>
@@ -46,7 +61,7 @@ export const ActiveMenu = ({ isActiveMenu, closeMenu, activeMenu }) => {
             </span>
           </div>
           <div className="menu-container">
-            
+            {getCurrentMenu()}
           </div>
         </section>
         <section css={overlay} onClick={closeMenu} />
