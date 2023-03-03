@@ -4,16 +4,15 @@ import { useState } from 'react';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 import { menuData } from '../../data';
-import { colors, Icons } from '../../library';
+import { colors, Icons, fonts } from '../../library';
 import { ActiveMenu } from './AsideMenu/ActiveMenu';
-
-
 
 const style = {
   position: 'fixed',
   display: 'flex',
   flexFlow: 'row',
   zIndex: 1,
+  fontFamily: fonts.uiFont,
   '.side-icon-menu': {
     minWidth: '44px',
     borderRight: `1px solid ${colors.uiBorder}`,

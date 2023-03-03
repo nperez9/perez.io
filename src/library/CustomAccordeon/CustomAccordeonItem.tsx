@@ -1,17 +1,18 @@
 import React from 'react';
-import { Icons } from '../Icons';
+
+import { Icons, IconsDB } from '../Icons';
+import './CustomAccordeonItem.css';
 
 export interface CustomAccordeonItemProps {
-  link: string;
-  icon: string;
+  icon: IconsDB;
   content: string;
 }
 
-export const CustomAccordeonItem: React.FC<CustomAccordeonItemProps> = ({ link, icon, content }) => {
+export const CustomAccordeonItem: React.FC<CustomAccordeonItemProps> = ({ icon, content }) => {
   return (
-    <div>
+    <div className="cai-container">
       <Icons icon={icon} />
-      <span>{content}</span>
+      <span className="cai-container-title">{content}</span>
     </div>
   );
 };

@@ -4,33 +4,29 @@ import { Link } from 'react-router-dom';
 
 import ShowCode from './ShowCode';
 
-const ButtonLink = ({ link, children, isExternal }) => {
-	const external = (
-		<a className="btn btn-outline-light" href={link} target="_blank" rel="noopener noreferrer">
-			<ShowCode tag={"a"}>
-				{children}
-			</ShowCode>
-		</a>
-	);
-	const internal = (
-		<Link to={link} className="btn btn-outline-light" target="_blank" rel="noopener noreferrer">
-			<ShowCode tag={"a"}>
-				{children}
-			</ShowCode>
-		</Link>
-	);
+export const ButtonLink = ({ link, children, isExternal }) => {
+  const external = (
+    <a className="btn btn-outline-light" href={link} target="_blank" rel="noopener noreferrer">
+      <ShowCode tag={'a'}>{children}</ShowCode>
+    </a>
+  );
+  const internal = (
+    <Link to={link} className="btn btn-outline-light" target="_blank" rel="noopener noreferrer">
+      <ShowCode tag={'a'}>{children}</ShowCode>
+    </Link>
+  );
 
-	return isExternal ? external : internal;
+  return isExternal ? external : internal;
 };
 
 ButtonLink.propTypes = {
-	children: PropTypes.node.isRequired,
-	link: PropTypes.string.isRequired,
-	isExternal: PropTypes.bool,
+  children: PropTypes.node.isRequired,
+  link: PropTypes.string.isRequired,
+  isExternal: PropTypes.bool,
 };
 
 ButtonLink.defaultProps = {
-	isExternal: true,
+  isExternal: true,
 };
 
 export default ButtonLink;

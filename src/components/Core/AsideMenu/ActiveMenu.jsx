@@ -15,6 +15,7 @@ const style = {
     justifyContent: 'space-between',
     textTransform: 'uppercase',
     fontSize: 18,
+    borderBottom: `1px solid ${colors.uiBorder}`,
     '.icon': {
       cursor: 'pointer',
     },
@@ -43,12 +44,11 @@ export const ActiveMenu = ({ isActiveMenu, closeMenu, activeMenu }) => {
 
     switch (activeMenu?.key) {
       case 'files':
-        return <PortfolioMenu />;
+        return <PortfolioMenu closeMenu={closeMenu} />;
       default:
         return null;
-
     }
-  }
+  };
 
   return (
     isActiveMenu && (
@@ -60,9 +60,7 @@ export const ActiveMenu = ({ isActiveMenu, closeMenu, activeMenu }) => {
               <Icons icon="closeAll" classname="icon" />
             </span>
           </div>
-          <div className="menu-container">
-            {getCurrentMenu()}
-          </div>
+          <div className="menu-container">{getCurrentMenu()}</div>
         </section>
         <section css={overlay} onClick={closeMenu} />
       </React.Fragment>

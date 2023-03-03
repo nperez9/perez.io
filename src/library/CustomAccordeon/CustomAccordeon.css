@@ -1,5 +1,14 @@
 .ca-title {
+  padding: 5px;
+}
+
+.ca-title-container {
   cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.ca-title-content {
+  padding-left: 8px;
 }
 
 .ca-content {

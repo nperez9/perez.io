@@ -3,7 +3,7 @@
   color: #d6d6d6;
   font-size: 1.2em;
   display: inline;
-  font-family: sans-serif;
+  font-family: var(--ui-font-family);
   border: 1px solid var(--ui-border);
   transform: 0.3s all;
 }
@@ -27,5 +27,5 @@
   border-top: 2px solid var(--ui-header-nav-active);
   border-right: 1px solid var(--ui-border);
   border-left: 1px solid var(--ui-border);
-  border-bottom: 1px solid  var(--page-background-color);
+  border-bottom: 1px solid var(--page-background-color);
 }

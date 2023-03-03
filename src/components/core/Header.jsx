@@ -3,7 +3,7 @@ import { jsx } from '@emotion/core';
 import { useLocation } from 'react-router-dom';
 
 import LenguagePicker from './LenguagePicker';
-import { colors, NavLink } from '../../library';
+import { colors, fonts, NavLink } from '../../library';
 
 const style = {
   height: '100%',
@@ -13,6 +13,7 @@ const style = {
   backgroundColor: colors.uiBg,
   display: 'flow-root',
   borderBottom: `1px solid ${colors.uiBorder}`,
+  fontFamily: fonts.uiFont,
   '> div': {
     marginTop: '10px',
     marginBottom: 5,
