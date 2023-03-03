@@ -1,6 +1,7 @@
 export const colors = {
   pageColor: '#d6d6d6',
   pageBackgroundColor: '#1e1e1e',
+  codeColor: '#F92672',
   uiBg: '#101112',
   uiBorder: '#666666',
   uiMenuBg: '#010101',
