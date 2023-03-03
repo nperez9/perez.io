@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 
-import { ButtonLink, Divider } from '../../library';
+import { ButtonLink, Divider, colors } from '../../library';
 import { publicResource } from '../../utils';
 
 const style = {
@@ -17,6 +17,7 @@ const style = {
     img: {
       width: '100%',
       borderRadius: '10px',
+      border: `2px solid ${colors.pageColor}`,
     },
   },
   '.item-content': {
@@ -40,6 +41,9 @@ const style = {
   '@media (max-width: 780px)': {
     flexFlow: 'column',
     maxHeight: 'none',
+    h4: {
+      marginTop: '0.5rem',
+    },
     '.item-image': {
       width: '100%',
       padding: '10px',
