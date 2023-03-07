@@ -1,8 +1,10 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
+import React from 'react';
 
 import { ButtonLink, Divider, colors, ShowCode } from '../../library';
 import { publicResource } from '../../utils';
+import { PortfolioList } from '../../data';
 
 const style = {
   display: 'flex',
@@ -63,37 +65,44 @@ const style = {
   },
 };
 
-const PortfolioItem = ({ item }) => {
+export interface PortfolioItemProps {
+  item: PortfolioList;
+}
+
+export const PortfolioItem: React.FC<PortfolioItemProps> = ({ item }) => {
   const goToDetail = () => {};
 
   return (
-    <div className="item-container" css={style} onClick={goToDetail}>
-      <div className="item-image">
-        <img alt={item.name} src={publicResource(item.cover_image)} />
-      </div>
-      <div className="item-content">
-        <div>
-          <h4>
-            <ShowCode tag="h4">{item.name}</ShowCode>
-          </h4>
-          <Divider />
-          <p>
-            <ShowCode tag="p">{item.short_description} </ShowCode>
-          </p>
+    <React.Fragment>
+      {/* @ts-ignore */}
+      <div className="item-container" css={style} onClick={goToDetail}>
+        <div className="item-image">
+          <img alt={item.name} src={publicResource(item.cover_image)} />
         </div>
-        <div className="item-buttons">
-          {item.id && (
-            <ButtonLink link={`/portfolio/detail/${item.id}`} isExternal={false}>
-              Details
-            </ButtonLink>
-          )}
-          {item.github_url && <ButtonLink link={item.github_url}>Code</ButtonLink>}
-          {item.devlog_url && <ButtonLink link={item.devlog_url}>DevLog</ButtonLink>}
-          {item.play_url && item.isPlayable && <ButtonLink link={publicResource(item.play_url)}>Play</ButtonLink>}
-          {item.itch_url && <ButtonLink link={item.itch_url}>Itch.io</ButtonLink>}
+        <div className="item-content">
+          <div>
+            <h4>
+              <ShowCode tag="h4">{item.name}</ShowCode>
+            </h4>
+            <Divider />
+            <p>
+              <ShowCode tag="p">{item.short_description} </ShowCode>
+            </p>
+          </div>
+          <div className="item-buttons">
+            {item.id && (
+              <ButtonLink link={`/portfolio/detail/${item.id}`} isExternal={false}>
+                Details
+              </ButtonLink>
+            )}
+            {item.github_url && <ButtonLink link={item.github_url}>Code</ButtonLink>}
+            {item.devlog_url && <ButtonLink link={item.devlog_url}>DevLog</ButtonLink>}
+            {item.play_url && item.isPlayable && <ButtonLink link={publicResource(item.play_url)}>Play</ButtonLink>}
+            {item.itch_url && <ButtonLink link={item.itch_url}>Itch.io</ButtonLink>}
+          </div>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

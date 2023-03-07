@@ -1,9 +1,10 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
+import React from 'react';
 import { Tab, Tabs } from 'react-bootstrap';
 
 import { portfolioList } from '../../data';
-import PortfolioList from './PortfolioList';
+import PortfolioTab from './PortfolioTab';
 
 const style = {
   justifyContent: 'space-evenly',
@@ -13,24 +14,26 @@ const style = {
     '> button': {
       width: '100%',
       color: 'white',
-    }
-  }
-}
+    },
+  },
+};
 
-const PortfolioTab = () => {
-  const web = portfolioList.filter(p => p.type === 'web');
-  const games = portfolioList.filter(p => p.type === 'videogame');
+export interface PortfolioTabsProps {}
+
+export const PortfolioTabs: React.FC<PortfolioTabsProps> = () => {
+  const web = portfolioList.filter((p) => p.type === 'web');
+  const games = portfolioList.filter((p) => p.type === 'videogame');
 
   return (
     <Tabs defaultActiveKey="games" id="uncontrolled-tab-example" css={style}>
-       <Tab eventKey="games" title="Games">
-        <PortfolioList portfolioList={games} />
+      <Tab eventKey="games" title="Games">
+        <PortfolioTab portfolioList={games} />
       </Tab>
       <Tab eventKey="web" title="Web">
-        <PortfolioList portfolioList={web} />
+        <PortfolioTab portfolioList={web} />
       </Tab>
     </Tabs>
   );
 };
 
-export default PortfolioTab;
+export default PortfolioTabs;

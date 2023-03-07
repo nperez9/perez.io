@@ -23,9 +23,9 @@ const style = {
 
 export const SocialMenu = () => {
   const results = socialLinks.map((sl) => (
-    <CustomAccordeon title={sl.name} isOpenDefault>
+    <a href={sl.link} target="_blank" rel="noopener noreferrer">
       <CustomAccordeonItem content={sl.name} icon={sl?.icon || 'javascript'} />
-    </CustomAccordeon>
+    </a>
   ));
 
   return (
@@ -34,8 +34,12 @@ export const SocialMenu = () => {
         <Icons classname="input-icon" icon="rightArrow" />
         <span className="input-text-box">Nicolas Agustin Perez</span>
       </div>
-      <div className="results-sub-text">{`${socialLinks.length} results in ${socialLinks.length} files`}</div>
-      <div>{results}</div>
+      <div className="results-sub-text">{`${socialLinks.length} results in 1 files`}</div>
+      <div>
+        <CustomAccordeon title={'Social Networks'} isOpenDefault>
+          {results}
+        </CustomAccordeon>
+      </div>
     </div>
   );
 };
