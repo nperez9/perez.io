@@ -11,7 +11,7 @@ export interface CustomAccordeonItemProps {
 export const CustomAccordeonItem: React.FC<CustomAccordeonItemProps> = ({ icon, content }) => {
   return (
     <div className="cai-container">
-      <Icons icon={icon} />
+      <Icons icon={icon} classname="cai-container-icon" />
       <span className="cai-container-title">{content}</span>
     </div>
   );

@@ -24,9 +24,7 @@ export const PortfolioMenu = ({ closeMenu }) => {
       <CustomAccordeon title="Games" isOpenDefault>
         {games}
       </CustomAccordeon>
-      <CustomAccordeon title="Web" isOpenDefault>
-        {web}
-      </CustomAccordeon>
+      <CustomAccordeon title="Web">{web}</CustomAccordeon>
     </CustomAccordeon>
   );
 };

@@ -1,13 +1,15 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 import React from 'react';
-import { Icons, colors } from '../../../library';
+
+import { Icons, colors, fonts } from '../../../library';
 import { PortfolioMenu } from './PortfolioMenu';
+import { SocialMenu } from './SocialMenu';
 
 const style = {
   width: '300px',
   backgroundColor: 'black',
-  fontFamily: 'sans-serif',
+  fontFamily: fonts.uiFont,
   borderRight: `1px solid ${colors.uiBorder}`,
   '.title': {
     padding: '15px',
@@ -45,6 +47,8 @@ export const ActiveMenu = ({ isActiveMenu, closeMenu, activeMenu }) => {
     switch (activeMenu?.key) {
       case 'files':
         return <PortfolioMenu closeMenu={closeMenu} />;
+      case 'search':
+        return <SocialMenu />;
       default:
         return null;
     }
