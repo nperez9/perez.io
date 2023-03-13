@@ -4,6 +4,7 @@ import React from 'react';
 
 import { Icons, colors, fonts } from '../../../library';
 import { PortfolioMenu } from './PortfolioMenu';
+import { SettingsMenu } from './SettingsMenu';
 import { SocialMenu } from './SocialMenu';
 
 const style = {
@@ -49,6 +50,8 @@ export const ActiveMenu = ({ isActiveMenu, closeMenu, activeMenu }) => {
         return <PortfolioMenu closeMenu={closeMenu} />;
       case 'search':
         return <SocialMenu />;
+      case 'settings':
+        return <SettingsMenu />;
       default:
         return null;
     }

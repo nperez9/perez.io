@@ -4,10 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 const style = {
   display: 'inline-block',
-  position: 'absolute',
-  fontSize: 8,
-  bottom: 100,
-  right: -1,
+  marginLeft: '10px',
   '#lng_select': {
     select: {
       padding: '2px',
