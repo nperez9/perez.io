@@ -90,7 +90,7 @@ export const PortfolioItem: React.FC<PortfolioItemProps> = ({ item }) => {
             </p>
           </div>
           <div className="item-buttons">
-            {item.id && (
+            {item.id && false && (
               <ButtonLink link={`/portfolio/detail/${item.id}`} isExternal={false}>
                 Details
               </ButtonLink>

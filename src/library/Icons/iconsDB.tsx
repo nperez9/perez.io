@@ -168,4 +168,7 @@ export const iconsDB = {
       ></path>
     </svg>
   ),
+  github: <svg></svg>,
+  gmail: <svg></svg>,
+  stackoverflow: <svg></svg>,
 };

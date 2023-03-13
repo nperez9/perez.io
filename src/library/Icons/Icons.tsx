@@ -1,4 +1,7 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
 import React from 'react';
+
 import { iconsDB } from './iconsDB';
 
 export type IconsDB = keyof typeof iconsDB;

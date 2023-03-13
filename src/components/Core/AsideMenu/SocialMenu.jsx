@@ -19,11 +19,14 @@ const style = {
       width: '90%',
     },
   },
+  '.results-sub-text': {
+    padding: '10px 7px',
+  },
 };
 
 export const SocialMenu = () => {
   const results = socialLinks.map((sl) => (
-    <a href={sl.link} target="_blank" rel="noopener noreferrer">
+    <a key={sl.link} href={sl.link} target="_blank" rel="noopener noreferrer">
       <CustomAccordeonItem content={sl.name} icon={sl?.icon || 'javascript'} />
     </a>
   ));
