@@ -1,6 +1,6 @@
 {
   "name": "perez.io",
-  "version": "0.1.0",
+  "version": "3.0.2",
   "private": true,
   "dependencies": {
     "@emotion/core": "^10.0.28",
