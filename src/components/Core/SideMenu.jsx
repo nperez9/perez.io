@@ -38,6 +38,9 @@ export const SideMenu = () => {
   const [activeMenu, setActiveMenu] = useState(null);
 
   const clickIcon = (menuItem) => {
+    if (menuItem.key === activeMenu?.key) {
+      return setActiveMenu(null);
+    }
     setActiveMenu(menuItem);
   };
 
