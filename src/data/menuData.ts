@@ -16,6 +16,4 @@ export const menuData: MenuData[] = [
     title: 'Social Network',
   },
   { key: 'settings', tooltip: 'settings', title: 'Page Settings' },
-  // { key: 'debug' },
-  // { key: 'extensions' },
 ];
