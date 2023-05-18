@@ -1,10 +1,9 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/core';
+import  React, { CSSProperties } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { ShowCode } from '../../library';
 
-const style = {
+const style: CSSProperties = {
   textAlign: 'center',
   position: 'relative',  
 };
@@ -14,7 +13,7 @@ export const AboutHeader = () => {
   const { t } = useTranslation();
 
   return (
-    <section css={style}>
+    <section style={style}>
       <h1>
         <ShowCode tag="h1">{t('about.title')}</ShowCode>
       </h1>

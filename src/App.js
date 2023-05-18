@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 
 import './translator.js';
 import Router from './components/Router';
-import Layout from './components/core/Layout';
+import Layout from './components/Core/Layout';
 
 function App() {
   return (
