@@ -1,26 +1,10 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-/** @jsx jsx */
-import { jsx } from '@emotion/core';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { container } from '../../library/styles/grid';
 import { socialLinks } from '../../data/socialLinks';
+import styles from './Contact.scss';
 
-const style = {
-  ...container,
-  textAlign: 'center',
-  a: {
-    display: 'block',
-    margin: 12,
-    i: {
-      heigth: 24,
-      width: 24,
-      marginRight: 14,
-    },
-  },
-};
-
-const contact = () => {
+const Contact = () => {
   const contactLinks = ['linkedin', 'gmail'];
   const { t } = useTranslation();
 
@@ -28,7 +12,7 @@ const contact = () => {
     if (!contactLinks.includes(name.toLocaleLowerCase())) {
       return null;
     }
-    console.info(text);
+
     return (
       <a key={name} href={link} target="_blank" rel="noopener noreferrer">
         <i className={`nes-icon ${name.toLocaleLowerCase()} is-small`} />
@@ -38,11 +22,11 @@ const contact = () => {
   });
 
   return (
-    <main css={style}>
+    <main className={styles.Contact}>
       <h1>Contact me!</h1>
       <div>{contentSocialLinks}</div>
     </main>
   );
 };
 
-export default contact;
+export default Contact;
