@@ -1,6 +1,7 @@
 export const colors = {
   pageColor: '#d6d6d6',
   pageBackgroundColor: '#1e1e1e',
+  linkHoverColor: '#8a92d9',
   codeColor: '#F92672',
   uiBg: '#101112',
   uiBorder: '#666666',

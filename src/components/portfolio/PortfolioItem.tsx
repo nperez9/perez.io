@@ -1,6 +1,8 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 import React from 'react';
+// @ts-ignore
+import { Link } from 'react-router-dom';
 
 import { ButtonLink, Divider, colors, ShowCode } from '../../library';
 import { publicResource } from '../../utils';
@@ -27,6 +29,13 @@ const style = {
     display: 'flex',
     flexFlow: 'column',
     justifyContent: 'space-between',
+    a: {
+      color: colors.pageColor,
+      transition: '0.3s all',
+      ':hover': {
+        color: colors.linkHoverColor,
+      },
+    },
     '.item-buttons': {
       display: 'flex',
       flexWrap: 'wrap!important',
@@ -82,7 +91,9 @@ export const PortfolioItem: React.FC<PortfolioItemProps> = ({ item }) => {
         <div className="item-content">
           <div>
             <h4>
-              <ShowCode tag="h4">{item.name}</ShowCode>
+              <ShowCode tag="h4">
+                <Link to={`/portfolio/detail/${item.id}`}>{item.name}</Link>
+              </ShowCode>
             </h4>
             <Divider />
             <p>
