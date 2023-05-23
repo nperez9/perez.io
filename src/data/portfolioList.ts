@@ -44,7 +44,7 @@ export const portfolioList: PortfolioList[] = [
     cover_image: '/images/portfolio/pokeclon/pc-3.png',
     description_images: ['/images/portfolio/pokeclon/pc-2.png', '/images/portfolio/pokeclon/pc-4.png'],
     videos: [],
-    description: 'A full action arcade game, inspired by donkey kong country',
+    description: 'A',
     short_description: 'A fan mande pokemon game made in unity',
     github_url: 'https://github.com/nperez9/poketSouls',
     isPlayable: false,

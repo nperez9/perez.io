@@ -5,7 +5,7 @@ import { PortfolioList } from '../../../data';
 import { ShowCode } from '../../../library';
 import styles from './DetailBody.module.scss';
 
-export const DetailBody: React.FC<PortfolioList> = ({ name, cover_image, description_images, description }) => {
+export const DetailBody: React.FC<PortfolioList> = ({ name, short_description, cover_image, description_images, description }) => {
   const images = [cover_image, ...(description_images ? description_images : [])];
   const carouselItems = images.map((image) => {
     return (
@@ -20,7 +20,12 @@ export const DetailBody: React.FC<PortfolioList> = ({ name, cover_image, descrip
       <h1>
         <ShowCode tag="h1">{name}</ShowCode>
       </h1>
-      <Carousel interval={2000}>{carouselItems}</Carousel>
+      <h6>
+        <ShowCode tag="h2">{short_description}</ShowCode>
+      </h6>
+      <Carousel className={styles.CarruselContainer} interval={2000}>
+        {carouselItems}
+      </Carousel>
       <p>
         <ShowCode tag="p">{description}</ShowCode>
       </p>

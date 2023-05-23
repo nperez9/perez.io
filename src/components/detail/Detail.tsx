@@ -5,6 +5,7 @@ import { Redirect, useParams } from 'react-router-dom';
 import { container } from '../../library';
 import { portfolioList } from '../../data';
 import { DetailBody } from './components/DetailBody';
+import { DetailLinks } from './components/DetailLinks';
 
 const style = {
   ...container,
@@ -22,6 +23,7 @@ const Detail = () => {
   return (
     <main style={style}>
       <DetailBody {...item} />
+      <DetailLinks {...item} />
     </main>
   );
 };
