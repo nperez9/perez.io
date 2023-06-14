@@ -17,10 +17,10 @@ const style = {
   '.item-image': {
     width: '35%',
     overflow: 'hidden',
+    borderRadius: '10px',
+    border: `2px solid ${colors.pageColor}`,
     img: {
       width: '100%',
-      borderRadius: '10px',
-      border: `2px solid ${colors.pageColor}`,
     },
   },
   '.item-content': {
@@ -56,7 +56,6 @@ const style = {
     },
     '.item-image': {
       width: '100%',
-      padding: '10px',
     },
     '.item-content': {
       width: '100%',
