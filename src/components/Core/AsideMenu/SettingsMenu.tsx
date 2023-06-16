@@ -9,8 +9,14 @@ const style = {};
 export const SettingsMenu: React.FC<any> = () => {
   return (
     <section css={style}>
-      Lenguage:
-      <LanguagePicker />
+      <div>
+        Lenguage:
+        <LanguagePicker />
+      </div>
+      <div>
+        Theme:
+        <select name="">c</select>
+      </div>
     </section>
   );
 };
