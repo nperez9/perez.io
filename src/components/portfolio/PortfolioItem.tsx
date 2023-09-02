@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 import { ButtonLink, Divider, colors, ShowCode } from '../../library';
 import { publicResource } from '../../utils';
-import { PortfolioList } from '../../data';
+import { PortfolioItem } from '../../types';
 
 const style = {
   display: 'flex',
@@ -74,10 +74,10 @@ const style = {
 };
 
 export interface PortfolioItemProps {
-  item: PortfolioList;
+  item: PortfolioItem;
 }
 
-export const PortfolioItem: React.FC<PortfolioItemProps> = ({ item }) => {
+export const PortfolioItemComponent: React.FC<PortfolioItemProps> = ({ item }) => {
   const goToDetail = () => {};
 
   return (
@@ -116,4 +116,4 @@ export const PortfolioItem: React.FC<PortfolioItemProps> = ({ item }) => {
   );
 };
 
-export default PortfolioItem;
+export default PortfolioItemComponent;

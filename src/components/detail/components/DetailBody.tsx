@@ -1,11 +1,11 @@
 import React from 'react';
 import { Carousel, CarouselItem } from 'react-bootstrap';
 
-import { PortfolioList } from '../../../data';
+import { PortfolioItem } from '../../../types';
 import { ShowCode } from '../../../library';
 import styles from './DetailBody.module.scss';
 
-export const DetailBody: React.FC<PortfolioList> = ({ name, short_description, cover_image, description_images, description }) => {
+export const DetailBody: React.FC<PortfolioItem> = ({ name, short_description, cover_image, description_images, description }) => {
   const images = [cover_image, ...(description_images ? description_images : [])];
   const carouselItems = images.map((image) => {
     return (

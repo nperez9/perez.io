@@ -1,24 +1,6 @@
-export interface PortfolioList {
-  id: number;
-  type: 'videogame' | 'web';
-  name: string;
-  cover_image: string;
-  description_images?: string[];
-  videos?: string[];
-  description?: string;
-  description_en?: string;
-  description_es?: string;
-  short_description: string;
-  short_description_en?: string;
-  short_description_es?: string;
-  github_url?: string;
-  isPlayable?: boolean;
-  play_url?: string;
-  itch_url?: string;
-  devlog_url?: string;
-}
+import { PortfolioItem } from '../types';
 
-export const portfolioList: PortfolioList[] = [
+export const portfolioList: PortfolioItem[] = [
   {
     id: 1,
     type: 'videogame',
@@ -33,8 +15,6 @@ export const portfolioList: PortfolioList[] = [
     short_description_en: 'An arcade 2D game full of action, based in barrel mechanincs, go to the end of the level and grab the coins!',
     short_description_es: 'Un juego de acción arcade en 2D, basado en la mecanica de barilles de Donkey Kong ¡Ve al final del nivel y junta todas las monedas!',
     github_url: 'https://github.com/nperez9/cannon-blast',
-    isPlayable: false,
-    play_url: '/proyects/cannon-blast',
     itch_url: 'https://nperez9.itch.io/super-cannon-blast',
   },
   {

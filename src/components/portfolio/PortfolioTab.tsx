@@ -2,24 +2,24 @@
 import { jsx } from '@emotion/core';
 import React from 'react';
 
-import { PortfolioList } from '../../data';
+import { PortfolioItem } from '../../types';
 import { Divider } from '../../library';
 
-import PortfolioItem from './PortfolioItem';
+import { PortfolioItemComponent } from './PortfolioItem';
 
 const style = {
   marginTop: '25px',
 };
 
 export interface PortfolioTabProps {
-  portfolioList: PortfolioList[];
+  portfolioList: PortfolioItem[];
 }
 
 export const PortfolioTab: React.FC<PortfolioTabProps> = ({ portfolioList }) => {
   const itemList = portfolioList.map((item) => {
     return (
       <article key={item.id}>
-        <PortfolioItem item={item} />
+        <PortfolioItemComponent item={item} />
         <Divider />
       </article>
     );

@@ -1,13 +1,13 @@
 // Here should be a list of LINKS to the past
 import React from 'react';
 
-import { PortfolioList } from '../../../data';
+import { PortfolioItem } from '../../../types';
 import { ButtonLink, ShowCode } from '../../../library';
 import { publicResource } from '../../../utils';
 
 import styles from './DetailLinks.module.scss';
 
-export const DetailLinks: React.FC<PortfolioList> = ({ itch_url, github_url, devlog_url, play_url }) => {
+export const DetailLinks: React.FC<PortfolioItem> = ({ itch_url, github_url, devlog_url, play_url }) => {
   return (
     <div className={styles.DetailLinks}>
       <div>
