@@ -6,7 +6,7 @@ import { publicResource } from '../../utils';
 const style = {
   '.tec-group-title': {
     marginBottom: '15px',
-    fontSize: '16px',
+    fontSize: '18px',
   },
   '.tecs-container': {
     display: 'flex',
