@@ -20,7 +20,8 @@
     "typescript": "^3.9.10"
   },
   "scripts": {
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "new-start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "build-git": "set PUBLIC_URL=https://nperez9.github.io/nperez.io&& npm run build",
     "build-prod": "set PUBLIC_URL=/&& npm run build",
