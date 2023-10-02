@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.js": "/perez.io/static/js/main.e7f01089.chunk.js",
-    "main.js.map": "/perez.io/static/js/main.e7f01089.chunk.js.map",
-    "runtime-main.js": "/perez.io/static/js/runtime-main.a6641b29.js",
-    "runtime-main.js.map": "/perez.io/static/js/runtime-main.a6641b29.js.map",
-    "static/js/2.2e169bc8.chunk.js": "/perez.io/static/js/2.2e169bc8.chunk.js",
-    "static/js/2.2e169bc8.chunk.js.map": "/perez.io/static/js/2.2e169bc8.chunk.js.map",
-    "index.html": "/perez.io/index.html",
-    "precache-manifest.f1854b7aa9c72843404ca242da0fa3ee.js": "/perez.io/precache-manifest.f1854b7aa9c72843404ca242da0fa3ee.js",
-    "service-worker.js": "/perez.io/service-worker.js",
-    "static/js/2.2e169bc8.chunk.js.LICENSE.txt": "/perez.io/static/js/2.2e169bc8.chunk.js.LICENSE.txt"
+    "main.css": "https://nperez9.github.io/nperez.io/static/css/main.d55a8117.chunk.css",
+    "main.js": "https://nperez9.github.io/nperez.io/static/js/main.e96680e7.chunk.js",
+    "main.js.map": "https://nperez9.github.io/nperez.io/static/js/main.e96680e7.chunk.js.map",
+    "runtime-main.js": "https://nperez9.github.io/nperez.io/static/js/runtime-main.4c63ccc2.js",
+    "runtime-main.js.map": "https://nperez9.github.io/nperez.io/static/js/runtime-main.4c63ccc2.js.map",
+    "static/js/2.8be3ba52.chunk.js": "https://nperez9.github.io/nperez.io/static/js/2.8be3ba52.chunk.js",
+    "static/js/2.8be3ba52.chunk.js.map": "https://nperez9.github.io/nperez.io/static/js/2.8be3ba52.chunk.js.map",
+    "index.html": "https://nperez9.github.io/nperez.io/index.html",
+    "precache-manifest.5d0503ee8fc79f0939a14e86ffb1851d.js": "https://nperez9.github.io/nperez.io/precache-manifest.5d0503ee8fc79f0939a14e86ffb1851d.js",
+    "service-worker.js": "https://nperez9.github.io/nperez.io/service-worker.js",
+    "static/css/main.d55a8117.chunk.css.map": "https://nperez9.github.io/nperez.io/static/css/main.d55a8117.chunk.css.map",
+    "static/js/2.8be3ba52.chunk.js.LICENSE.txt": "https://nperez9.github.io/nperez.io/static/js/2.8be3ba52.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a6641b29.js",
-    "static/js/2.2e169bc8.chunk.js",
-    "static/js/main.e7f01089.chunk.js"
+    "static/js/runtime-main.4c63ccc2.js",
+    "static/js/2.8be3ba52.chunk.js",
+    "static/css/main.d55a8117.chunk.css",
+    "static/js/main.e96680e7.chunk.js"
   ]
 }
