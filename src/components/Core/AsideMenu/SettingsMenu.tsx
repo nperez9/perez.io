@@ -13,10 +13,7 @@ export const SettingsMenu: React.FC<any> = () => {
         Lenguage:
         <LanguagePicker />
       </div>
-      <div>
-        Theme:
-        <select name="">c</select>
-      </div>
+      <div></div>
     </section>
   );
 };
