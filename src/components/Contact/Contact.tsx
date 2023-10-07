@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { socialLinks } from '../../data/socialLinks';
-import styles from './Contact.scss';
+import styles from './Contact.module.scss';
 
 const Contact = () => {
   const contactLinks = ['linkedin', 'gmail'];

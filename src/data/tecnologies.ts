@@ -24,6 +24,14 @@ export const tecnologies: Tecnologies[] = [
         name: 'Aseprite',
         logo: 'asesprite-logo.png',
       },
+      {
+        name: 'Godot',
+        logo: 'godot_icon_color.png',
+      },
+      {
+        name: 'Phaser',
+        logo: 'phaser-logo.png',
+      },
     ],
   },
   {
