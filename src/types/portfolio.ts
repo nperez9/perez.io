@@ -16,4 +16,5 @@ export interface PortfolioItem {
   play_url?: string;
   itch_url?: string;
   devlog_url?: string;
+  download_url?: string;
 }
