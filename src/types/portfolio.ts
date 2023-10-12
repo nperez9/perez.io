@@ -17,4 +17,8 @@ export interface PortfolioItem {
   itch_url?: string;
   devlog_url?: string;
   download_url?: string;
+  video?: {
+    title: string;
+    url: string;
+  };
 }

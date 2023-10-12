@@ -13,7 +13,6 @@ const router = () => {
       <Route path="/about" exact component={About} />
       <Route path="/portfolio" exact component={Portfolio} />
       <Route path="/portfolio/detail/:id" exact component={Detail} />
-      <Redirect exact from="/" to="/home" />
     </Switch>
   );
 };

@@ -23,6 +23,9 @@ const style = {
       width: '100%',
     },
   },
+  '.decription': {
+    fontSize: '1.25rem',
+  },
   '.item-content': {
     padding: '0 20px',
     width: '65%',
@@ -95,7 +98,7 @@ export const PortfolioItemComponent: React.FC<PortfolioItemProps> = ({ item }) =
               </ShowCode>
             </h4>
             <Divider />
-            <p>
+            <p className="description">
               <ShowCode tag="p">{item.short_description} </ShowCode>
             </p>
           </div>
