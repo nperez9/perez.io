@@ -10,7 +10,7 @@ const Portfolio = () => {
   const { t } = useTranslation();
 
   return (
-    <Container>
+    <Container maxWidth={1500}>
       <h1 style={style}>
         <ShowCode tag={'h1'}>{t('portfolio.title')}</ShowCode>
       </h1>

@@ -7,8 +7,23 @@ const style = {
   ...container,
 };
 
-export const Container: React.FC<any> = ({ children }) => {
-  return <section css={style}> {children} </section>;
+export interface ContainerProps {
+  maxWidth?: number;
+}
+
+export const Container: React.FC<ContainerProps> = ({ children, maxWidth }) => {
+  let customStyle;
+  if (maxWidth) {
+    customStyle = {
+      ...style,
+      maxWidth: maxWidth,
+      margin: '0 auto',
+    };
+  } else {
+    customStyle = style;
+  }
+
+  return <section css={customStyle}> {children} </section>;
 };
 
 export default Container;
