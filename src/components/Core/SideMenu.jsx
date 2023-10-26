@@ -11,7 +11,7 @@ const style = {
   position: 'fixed',
   display: 'flex',
   flexFlow: 'row',
-  zIndex: 1,
+  zIndex: 100,
   fontFamily: fonts.uiFont,
   '.side-icon-menu': {
     position: 'relative',

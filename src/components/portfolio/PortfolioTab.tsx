@@ -3,12 +3,15 @@ import { jsx } from '@emotion/core';
 import React from 'react';
 
 import { PortfolioItem } from '../../types';
-import { Divider } from '../../library';
 
-import { PortfolioItemComponent } from './PortfolioItem';
+import PortfolioCard from './components/PortfolioCard';
 
 const style = {
   marginTop: '25px',
+  display: 'flex',
+  'flex-wrap': 'wrap',
+  alignContent: 'space-between',
+  justifyContent: 'space-around',
 };
 
 export interface PortfolioTabProps {
@@ -17,12 +20,7 @@ export interface PortfolioTabProps {
 
 export const PortfolioTab: React.FC<PortfolioTabProps> = ({ portfolioList }) => {
   const itemList = portfolioList.map((item) => {
-    return (
-      <article key={item.id}>
-        <PortfolioItemComponent item={item} />
-        <Divider />
-      </article>
-    );
+    return <PortfolioCard item={item} key={item.id} />;
   });
 
   return <div style={style}>{itemList}</div>;
