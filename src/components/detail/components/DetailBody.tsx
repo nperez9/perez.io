@@ -4,13 +4,14 @@ import { Carousel, CarouselItem } from 'react-bootstrap';
 import { PortfolioItem } from '../../../types';
 import { ShowCode } from '../../../library';
 import styles from './DetailBody.module.scss';
+import { publicResource } from '../../../utils';
 
 export const DetailBody: React.FC<PortfolioItem> = ({ name, tech, short_description, cover_image, description_images, description, video }) => {
   const images = [cover_image, ...(description_images ? description_images : [])];
   const carouselItems = images.map((image) => {
     return (
       <CarouselItem key={image}>
-        <img src={image} alt={name} className="cover-images" height={400} />
+        <img src={publicResource(image)} alt={name} className="cover-images" height={400} />
       </CarouselItem>
     );
   });

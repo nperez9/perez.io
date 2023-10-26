@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { CustomAccordeon, CustomAccordeonItem } from '../../../library';
 import { portfolioList } from '../../../data';
@@ -7,16 +8,16 @@ export const PortfolioMenu = ({ closeMenu }) => {
   const games = portfolioList
     .filter((pl) => pl.type === 'videogame')
     .map((pl) => (
-      <a href={`/#/portfolio/detail/${pl.id}`} target="_blank" rel="noopener noreferrer" key={pl.id}>
-        <CustomAccordeonItem icon="unity" content={pl.name} />
-      </a>
+      <Link to={`/portfolio/detail/${pl.id}`} key={pl.id}>
+        <CustomAccordeonItem icon={pl.tech ? pl.tech : 'unity'} content={pl.name} />
+      </Link>
     ));
   const web = portfolioList
     .filter((pl) => pl.type === 'web')
     .map((pl) => (
-      <a href={`/#/portfolio/detail/${pl.id}`} target="_blank" rel="noopener noreferrer" key={pl.id}>
-        <CustomAccordeonItem icon="javascript" content={pl.name} />
-      </a>
+      <Link to={`/portfolio/detail/${pl.id}`} key={pl.id}>
+        <CustomAccordeonItem icon={pl.tech ? pl.tech : 'javascript'} content={pl.name} />
+      </Link>
     ));
 
   return (
@@ -26,6 +27,14 @@ export const PortfolioMenu = ({ closeMenu }) => {
       </CustomAccordeon>
       <CustomAccordeon title="Web" isOpenDefault>
         {web}
+      </CustomAccordeon>
+      <CustomAccordeon title="Pages" isOpenDefault>
+        <Link to={`/home`} >  
+          <CustomAccordeonItem icon="javascript" content={"Home"} />
+        </Link>
+        <Link to={`/portfolio`} >
+          <CustomAccordeonItem icon="javascript" content={"Portfolio"} />
+        </Link>
       </CustomAccordeon>
     </CustomAccordeon>
   );
