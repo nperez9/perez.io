@@ -53,6 +53,10 @@ export const tecnologies: Tecnologies[] = [
         name: 'TS',
         logo: 'ts-logo.png',
       },
+      {
+        name: 'JS',
+        logo: 'js-logo.png',
+      },
     ],
   },
   {
@@ -77,6 +81,10 @@ export const tecnologies: Tecnologies[] = [
       {
         name: 'TS',
         logo: 'ts-logo.png',
+      },
+      {
+        name: 'PHP',
+        logo: 'php-logo.png',
       },
     ],
   },

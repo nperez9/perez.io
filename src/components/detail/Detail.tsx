@@ -2,14 +2,10 @@ import React from 'react';
 // @ts-ignore
 import { Redirect, useParams } from 'react-router-dom';
 
-import { container } from '../../library';
 import { portfolioList } from '../../data';
 import { DetailBody } from './components/DetailBody';
 import { DetailLinks } from './components/DetailLinks';
-
-const style = {
-  ...container,
-};
+import { Container } from '../../library';
 
 const Detail = () => {
   const { id } = useParams<any>();
@@ -21,9 +17,11 @@ const Detail = () => {
   }
 
   return (
-    <main style={style}>
-      <DetailBody {...item} />
-      <DetailLinks {...item} />
+    <main>
+      <Container maxWidth={1400}>
+        <DetailBody {...item} />
+        <DetailLinks {...item} />
+      </Container>
     </main>
   );
 };

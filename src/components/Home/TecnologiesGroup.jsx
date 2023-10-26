@@ -22,10 +22,12 @@ const style = {
         height: '130px',
         margin: 'auto',
         display: 'block',
+        borderRadius: 5,
       },
       '> span': {
         marginTop: '5px',
         display: 'inline-block',
+        fontSize: '1.25em'
       },
     },
   },
@@ -41,7 +43,7 @@ const TecnologiesGroup = ({ tecGroup }) => {
         {tecGroup.tecs.map((t) => {
           return (
             <div className="tec-item" key={t.name}>
-              <img src={publicResource(`/images/${t.logo}`)} alt={t.name} />
+              <img src={publicResource(`/images/techlogos/${t.logo}`)} alt={t.name} />
               <span>{t.name}</span>
             </div>
           );
