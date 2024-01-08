@@ -4,7 +4,7 @@ import React from 'react';
 // @ts-ignore
 import { Link } from 'react-router-dom';
 
-import { ButtonLink, Divider, colors, ShowCode } from '../../../library';
+import { ButtonLink, Divider, colors } from '../../../library';
 import { publicResource } from '../../../utils';
 import { PortfolioItem } from '../../../types';
 
@@ -28,6 +28,7 @@ const style = {
     overflow: 'hidden',
     borderRadius: '10px',
     marginBottom: 15,
+    backgroundColor: '#000',
     img: {
       display: 'block',
       marginLeft: 'auto',
@@ -89,7 +90,7 @@ export const PortfolioCard: React.FC<PortfolioItemProps> = ({ item }) => {
   return (
     <React.Fragment>
       {/* @ts-ignore */}
-      <div className="item-container" css={style} onClick={goToDetail}>
+      <div className="item-container" css={style}>
         <Link to={`/portfolio/detail/${item.id}`}>
           <div className="item-image">
             <img alt={item.name} src={publicResource(item.cover_image)} />
