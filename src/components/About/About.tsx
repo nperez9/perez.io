@@ -2,10 +2,10 @@
 import { jsx } from '@emotion/core';
 
 import { container } from '../../library';
-import { AboutHeader } from './AboutHeader';
+import { AboutHeader } from './components/AboutHeader';
 
 const style = {
-  ...container
+  ...container,
 };
 
 const About = () => {

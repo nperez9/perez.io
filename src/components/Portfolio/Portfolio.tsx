@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { Container, Divider, ShowCode } from '../../library';
-import PortfolioTabs from './PortfolioTabs';
+import PortfolioTabs from './components/PortfolioTabs';
 
 const style = { textAlign: 'center' } as React.CSSProperties;
 

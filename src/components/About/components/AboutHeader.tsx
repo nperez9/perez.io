@@ -1,13 +1,12 @@
-import  React, { CSSProperties } from 'react';
+import React, { CSSProperties } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { ShowCode } from '../../library';
+import { ShowCode } from '../../../library';
 
 const style: CSSProperties = {
   textAlign: 'center',
-  position: 'relative',  
+  position: 'relative',
 };
-
 
 export const AboutHeader = () => {
   const { t } = useTranslation();

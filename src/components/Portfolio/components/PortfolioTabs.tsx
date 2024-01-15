@@ -3,7 +3,7 @@ import { jsx } from '@emotion/core';
 import React from 'react';
 import { Tab, Tabs } from 'react-bootstrap';
 
-import { portfolioList } from '../../data';
+import { portfolioList } from '../../../data';
 import PortfolioTab from './PortfolioTab';
 
 const style = {

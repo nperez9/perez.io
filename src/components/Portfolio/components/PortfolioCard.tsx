@@ -11,7 +11,7 @@ import { PortfolioItem } from '../../../types';
 const style = {
   display: 'flex',
   flexFlow: 'column',
-  width: '350px',
+  width: 360,
   border: `1px solid ${colors.pageColor}`,
   margin: '20px 10px',
   padding: 10,
@@ -85,8 +85,6 @@ export interface PortfolioItemProps {
 }
 
 export const PortfolioCard: React.FC<PortfolioItemProps> = ({ item }) => {
-  const goToDetail = () => {};
-
   return (
     <React.Fragment>
       {/* @ts-ignore */}
