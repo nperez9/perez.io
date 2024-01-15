@@ -1,6 +1,6 @@
 import { PortfolioItem } from '../../../types';
 
-export const supperCannonBlast: PortfolioItem = {
+export const lethalWing: PortfolioItem = {
   id: 7,
   type: 'videogame',
   name: 'Lethal Wing',
