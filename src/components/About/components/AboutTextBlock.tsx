@@ -19,13 +19,18 @@ export const AboutTextBlock: React.FC<AboutTextBlockProps> = ({ textKey, numOfTe
 
   let renderBlocks = [];
   for (let i = 1; i <= numOfTextBlocks; i++) {
+    const imageIndex = i - 1;
+
     renderBlocks.push(
       <div className={styles.TextBlock}>
         <p key={i}>
           <ShowCode tag="p">{t(`about.${textKey}${i}`)}</ShowCode>
         </p>
-        {typeof images[textKey][i] === 'string' && (
-          <img src={publicResource(`/images/about/${textKey}/${images[textKey][i] as string}`)} alt={textKey} />
+        {typeof images[textKey][imageIndex] === 'string' && (
+          <img
+            src={publicResource(`/images/about/${textKey}/${images[textKey][imageIndex] as string}`)}
+            alt={textKey}
+          />
         )}
       </div>,
     );

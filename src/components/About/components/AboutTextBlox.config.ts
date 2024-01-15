@@ -1,3 +1,3 @@
 export const images = {
-  history: [null, 'haedo.jpeg', null, 'metroid.gif', null, 'editor.jpg', null],
+  history: ['haedo.jpeg', null, 'metroid.gif', 'fistpc.jpg', 'editor.jpg', null],
 };
