@@ -1,12 +1,13 @@
 import React from 'react';
-//@ts-ignore
+// @ts-ignore
 import { Link } from 'react-router-dom';
 
 import ShowCode from './ShowCode';
 
 export interface ButtonLinkProps {
-  link?: string;
+  link: string;
   isExternal?: boolean;
+  children: React.ReactNode;
 }
 
 export const ButtonLink: React.FC<ButtonLinkProps> = ({ link, children, isExternal }) => {

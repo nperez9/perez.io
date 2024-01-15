@@ -3,6 +3,7 @@ import { colors } from './styles';
 
 export interface ShowCodeProps {
   tag: string;
+  children: React.ReactNode;
 }
 
 export const ShowCode: React.FC<ShowCodeProps> = ({ tag, children }) => {
