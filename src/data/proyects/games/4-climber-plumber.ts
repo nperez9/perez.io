@@ -13,4 +13,5 @@ export const climberPlumber: PortfolioItem = {
   github_url: 'https://github.com/nperez9/climber-plumber',
   external_play_url: 'https://nperez9.github.io/climber-plumber/',
   isPlayable: true,
+  sortNumber: 5,
 };

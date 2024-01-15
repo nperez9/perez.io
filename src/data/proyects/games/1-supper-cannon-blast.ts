@@ -7,8 +7,12 @@ export const supperCannonBlast: PortfolioItem = {
   tech: 'unity',
   sortNumber: 1,
   cover_image: '/images/portfolio/cannon-blast/cover-imag.png',
-  description_images: ['/images/portfolio/cannon-blast/screen-level-1.png', '/images/portfolio/cannon-blast/screen-level-2.png'],
-  short_description: 'An arcade 2D game full of action, based in barrel mechanincs, go to the end of the level and grab the coins!',
+  description_images: [
+    '/images/portfolio/cannon-blast/screen-level-1.png',
+    '/images/portfolio/cannon-blast/screen-level-2.png',
+  ],
+  short_description:
+    'An arcade 2D game full of action, based in barrel mechanincs, go to the end of the level and grab the coins!',
   github_url: 'https://github.com/nperez9/cannon-blast',
   itch_url: 'https://nperez9.itch.io/super-cannon-blast',
   description: `

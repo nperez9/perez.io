@@ -15,4 +15,5 @@ export const timberChopper: PortfolioItem = {
   devlog_url: '',
   play_url: '/proyects/wood-cutter',
   itch_url: '',
+  sortNumber: 11,
 };

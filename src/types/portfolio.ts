@@ -9,7 +9,7 @@ export interface PortfolioItem {
   description: string;
   tech?: Tech;
   description_images?: string[];
-  sortNumber?: number;
+  sortNumber: number;
   github_url?: string;
   isPlayable?: boolean;
   play_url?: string;

@@ -12,4 +12,5 @@ export const greenWild: PortfolioItem = {
     'GreenWild is a charming little platform game created in Godot, designed for adventure seekers of all ages. With two thrilling levels, your mission is to explore the lush, vibrant world, collecting shimmering coins along the way. Jump, run, and overcome obstacles in this delightful quest for treasure. Can you gather all the coins and conquer the GreenWild?',
   github_url: 'https://github.com/nperez9/learnPlatform',
   isPlayable: true,
+  sortNumber: 10,
 };

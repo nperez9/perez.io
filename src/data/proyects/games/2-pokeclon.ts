@@ -20,4 +20,5 @@ export const pokeClon: PortfolioItem = {
     Explore a vibrant, pixelated world teeming with colorful creatures, mysterious trainers, 
     and endless opportunities for epic battles and friendship.
   `,
+  sortNumber: 2,
 };

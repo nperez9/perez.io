@@ -5,7 +5,7 @@ export const lethalWing: PortfolioItem = {
   type: 'videogame',
   name: 'Lethal Wing',
   tech: 'unity',
-  sortNumber: 0,
+  sortNumber: 1,
   cover_image: '/images/portfolio/lethal-wing/cover.png',
   short_description: 'Coming soon!',
   description: `

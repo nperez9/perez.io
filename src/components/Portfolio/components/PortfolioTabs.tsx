@@ -21,8 +21,8 @@ const style = {
 export interface PortfolioTabsProps {}
 
 export const PortfolioTabs: React.FC<PortfolioTabsProps> = () => {
-  const web = portfolioList.filter((p) => p.type === 'web');
-  const games = portfolioList.filter((p) => p.type === 'videogame');
+  const web = portfolioList.filter((p) => p.type === 'web').sort((a, b) => a.sortNumber - b.sortNumber);
+  const games = portfolioList.filter((p) => p.type === 'videogame').sort((a, b) => a.sortNumber - b.sortNumber);
 
   return (
     <Tabs defaultActiveKey="games" id="uncontrolled-tab-example" css={style}>

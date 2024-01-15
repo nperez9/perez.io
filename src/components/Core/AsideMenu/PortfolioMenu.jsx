@@ -7,6 +7,7 @@ import { portfolioList } from '../../../data';
 export const PortfolioMenu = ({ closeMenu }) => {
   const games = portfolioList
     .filter((pl) => pl.type === 'videogame')
+    .sort((a, b) => a.sortNumber - b.sortNumber)
     .map((pl) => (
       <Link to={`/portfolio/detail/${pl.id}`} key={pl.id}>
         <CustomAccordeonItem icon={pl.tech ? pl.tech : 'unity'} content={pl.name} />
@@ -14,6 +15,7 @@ export const PortfolioMenu = ({ closeMenu }) => {
     ));
   const web = portfolioList
     .filter((pl) => pl.type === 'web')
+    .sort((a, b) => a.sortNumber - b.sortNumber)
     .map((pl) => (
       <Link to={`/portfolio/detail/${pl.id}`} key={pl.id}>
         <CustomAccordeonItem icon={pl.tech ? pl.tech : 'javascript'} content={pl.name} />
