@@ -37,6 +37,9 @@ export const PortfolioMenu = ({ closeMenu }) => {
         <Link to={`/portfolio`} >
           <CustomAccordeonItem icon="javascript" content={"Portfolio"} />
         </Link>
+        <Link to={`/about`} >  
+          <CustomAccordeonItem icon="javascript" content={"About"} />
+        </Link>
       </CustomAccordeon>
     </CustomAccordeon>
   );
