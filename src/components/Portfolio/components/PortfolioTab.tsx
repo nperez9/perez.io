@@ -5,6 +5,7 @@ import React from 'react';
 import { PortfolioItem } from '../../../types';
 
 import PortfolioCard from './PortfolioCard';
+import styleClasses from './PortfolioTab.module.css';
 
 const style = {
   marginTop: '25px',
