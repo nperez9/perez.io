@@ -13,6 +13,6 @@ export const superDragonsLair: PortfolioItem = {
   description:
     'Super Dragons Lair is an exhilarating arcade game built using Phaser and TypeScript. Challenge your dexterity and cunning as you navigate a perilous path, much like Frogger, by skillfully crossing the treacherous dragon-infested terrain to reach the coveted treasure. Can you outwit the dragons and secure the ultimate prize? Embark on the Dragon Treasure Quest and find out',
   github_url: 'https://github.com/nperez9/super-dragon-lair',
-  external_play_url: 'https://nperez9.github.io/super-dragon-lair/',
+  external_play_url: 'https://gato.us/game/super-dragons-lair',
   isPlayable: true,
 };
