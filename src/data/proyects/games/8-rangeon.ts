@@ -13,6 +13,6 @@ export const rangeon: PortfolioItem = {
     Enter in the rageon, pass trought the levels, get the keys, evade the enemies and get to the end of the level!
   `,
   github_url: 'https://github.com/nperez9/rangeon',
-  play_url: 'https://nperez9.github.io/rangeon/',
+  external_play_url: 'https://nperez9.github.io/rangeon/',
   isPlayable: true,
 };
