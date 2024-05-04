@@ -21,6 +21,9 @@ const style = {
     float: 'right',
     fontSize: '1.2em',
   },
+  [`@media (max-width: 480px)`]: {
+    display: 'none',
+  }
 };
 
 const Header = () => {

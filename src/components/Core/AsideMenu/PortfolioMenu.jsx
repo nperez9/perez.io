@@ -24,13 +24,13 @@ export const PortfolioMenu = ({ closeMenu }) => {
 
   return (
     <CustomAccordeon title="NPEREZ.IO" isOpenDefault>
-      <CustomAccordeon title="Games" isOpenDefault>
+      <CustomAccordeon title="Games">
         {games}
       </CustomAccordeon>
-      <CustomAccordeon title="Web" isOpenDefault>
+      <CustomAccordeon title="Web">
         {web}
       </CustomAccordeon>
-      <CustomAccordeon title="Pages" isOpenDefault>
+      <CustomAccordeon title="Pages">
         <Link to={`/home`} >  
           <CustomAccordeonItem icon="javascript" content={"Home"} />
         </Link>

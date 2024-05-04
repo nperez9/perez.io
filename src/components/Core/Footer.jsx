@@ -34,6 +34,9 @@ const style = {
     '> span': {
       marginRight: '15px',
     },
+    [`@media (max-width: 480px)`]: {
+      display: 'none',
+    }
   },
 };
 
