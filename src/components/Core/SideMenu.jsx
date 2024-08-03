@@ -24,6 +24,7 @@ const style = {
     '> div': {
       padding: '14px 5px',
       cursor: 'pointer',
+      transition: 'all linear 0.2s',
     },
     '> div:hover': {
       backgroundColor: 'rgba(255, 255, 255, 0.2)',

@@ -7,13 +7,13 @@ export interface MenuData {
 export const menuData: MenuData[] = [
   {
     key: 'files',
-    tooltip: 'portfolio',
-    title: 'Portfolio',
+    tooltip: 'Proyects',
+    title: 'Proyects',
   },
   {
     key: 'search',
     tooltip: 'social networks',
-    title: 'Social Network',
+    title: 'Social Networks',
   },
-  { key: 'settings', tooltip: 'settings', title: 'Page Settings' },
+  { key: 'settings', tooltip: 'Page Settings', title: 'Page Settings' },
 ];
