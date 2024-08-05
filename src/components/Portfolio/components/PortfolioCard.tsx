@@ -19,6 +19,8 @@ const style = {
   transition: '0.5s all',
   ':hover': {
     background: 'rgba(255, 255, 255, 0.1)',
+    boxShadow: '0 0 10px 4px rgba(255, 255, 255, 0.3)',
+    transform: 'scale(1.05)',
   },
   '.item-image': {
     width: '100%',

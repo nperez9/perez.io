@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Icons } from '../../library/Icons';
+import { GitIcon } from '../../library/Icons';
 
 import classes from './Footer.module.scss';
 
@@ -24,7 +24,7 @@ export const Footer: React.FC<any> = () => {
     <footer className={classes.Footer}>
       <div>
         <span className={classes['left-side']}>
-          <Icons icon="git" classname={classes['icon']} />
+          <GitIcon height={14} width={14} className={classes.Icon} />
           <span>release v3.0.2</span>
         </span>
         <span className={classes['right-side']}>
