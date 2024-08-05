@@ -1,5 +1,3 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/core';
 import React from 'react';
 import { container } from './styles/grid';
 import PropTypes from 'prop-types';
@@ -21,7 +19,7 @@ const Divider: React.FC<DividerProps> = ({ color = '#d6d6d6', height = 1 }) => {
   style.backgroundColor = color;
   style.height = height;
 
-  return <div css={style}></div>;
+  return <div style={style}></div>;
 };
 
 Divider.propTypes = {

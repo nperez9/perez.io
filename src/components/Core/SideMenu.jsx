@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/core';
+import React from 'react';
 import { useState } from 'react';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 

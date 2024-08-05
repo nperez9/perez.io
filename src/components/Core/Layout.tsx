@@ -4,7 +4,11 @@ import Header from './Header';
 import Footer from './Footer';
 import SideMenu from './SideMenu';
 
-const Layout: React.FC<{}> = ({ children }) => (
+export interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => (
   <Fragment>
     <SideMenu />
     <Header />

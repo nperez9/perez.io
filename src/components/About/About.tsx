@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/core';
+import React from 'react';
 
 import { Divider, container } from '../../library';
 import { AboutHeader } from './components/AboutHeader';
@@ -11,7 +10,7 @@ const style = {
 
 const About = () => {
   return (
-    <main css={style}>
+    <main style={style}>
       <AboutHeader />
       <Divider />
       <AboutTextBlock textKey="history" numOfTextBlocks={6} />

@@ -1,0 +1,12 @@
+.portfolio-tab {
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  width: 50%;
+  font-size: 1.25em;
+  > button {
+    width: 100%;
+    color: white;
+  }
+}

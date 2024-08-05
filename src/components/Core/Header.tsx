@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/core';
+import React from 'react';
 import { useLocation } from 'react-router-dom';
 
 import { colors, fonts, NavLink } from '../../library';
@@ -23,7 +22,7 @@ const style = {
   },
   [`@media (max-width: 480px)`]: {
     display: 'none',
-  }
+  },
 };
 
 const Header = () => {

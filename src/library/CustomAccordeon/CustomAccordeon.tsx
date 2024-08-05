@@ -8,9 +8,16 @@ export interface CustomAccordeonProps {
   isArrowIcon?: boolean;
   isOpenDefault?: boolean;
   icon?: IconsDB;
+  children: React.ReactNode;
 }
 
-export const CustomAccordeon: React.FC<CustomAccordeonProps> = ({ title, children, isArrowIcon = true, isOpenDefault = false, icon = null }) => {
+export const CustomAccordeon: React.FC<CustomAccordeonProps> = ({
+  title,
+  children,
+  isArrowIcon = true,
+  isOpenDefault = false,
+  icon = null,
+}) => {
   const [isOpen, setIsOpen] = useState(isOpenDefault);
 
   const onClickToggle = () => {
