@@ -1,6 +1,6 @@
 import React from 'react';
 // @ts-ignore
-import { Redirect, useParams } from 'react-router-dom';
+import { redirect, useParams } from 'react-router-dom';
 
 import { portfolioList } from '../../data';
 import { DetailBody } from './components/DetailBody';
@@ -13,7 +13,7 @@ const Detail = () => {
   const item = portfolioList.find((p) => p.id === parseInt(id));
 
   if (!item) {
-    return <Redirect to={'/portfolio'} />;
+    return redirect('/portfolio');
   }
 
   return (

@@ -1,11 +1,11 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/core';
 import React from 'react';
 
 import { Icons, colors, fonts } from '../../../library';
 import { PortfolioMenu } from './PortfolioMenu';
 import { SettingsMenu } from './SettingsMenu';
 import { SocialMenu } from './SocialMenu';
+
+import './ActiveMenu.css';
 
 const style = {
   width: '300px',
@@ -69,7 +69,7 @@ export const ActiveMenu = ({ isActiveMenu, closeMenu, activeMenu }) => {
           </div>
           <div className="menu-container">{getCurrentMenu()}</div>
         </section>
-        <section css={overlay} onClick={closeMenu} />
+        <section style={overlay} onClick={closeMenu} />
       </React.Fragment>
     )
   );

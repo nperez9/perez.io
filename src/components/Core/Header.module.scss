@@ -1,0 +1,19 @@
+.Header {
+  height: 100%;
+  margin-bottom: 20px;
+  margin-left: 44px;
+  padding: 0;
+  background-color: var(--colors-ui-bg);
+  display: flow-root;
+  border-bottom: 1px solid var(--colors-ui-border);
+  font-family: var(--fonts-ui-font);
+
+  > div {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { PortfolioItem } from '../../../types';
-
 import PortfolioCard from './PortfolioCard';
 
 const style = {

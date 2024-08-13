@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/core';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { socialLinks } from '../../data/socialLinks';

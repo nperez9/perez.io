@@ -3,7 +3,7 @@ import { Tab, Tabs } from 'react-bootstrap';
 
 import { portfolioList } from '../../../data';
 import PortfolioTab from './PortfolioTab';
-import 'PortfolioTabs.css';
+import './PortfolioTabs.css';
 
 export interface PortfolioTabsProps {}
 
