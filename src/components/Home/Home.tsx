@@ -4,7 +4,7 @@ import HomeTitle from './HomeTitle';
 import HomeContent from './HomeContent';
 
 const style = {
-  ...container
+  ...container,
 };
 
 const Home = () => {

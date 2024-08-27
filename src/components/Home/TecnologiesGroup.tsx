@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import { ShowCode } from '../../library';
 import { publicResource } from '../../utils';
 

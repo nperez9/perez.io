@@ -1,0 +1,11 @@
+.HomeTitle {
+  text-align: center;
+  position: relative;
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  > * {
+    margin-bottom: 20px;
+  }
+}

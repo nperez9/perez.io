@@ -53,7 +53,14 @@ const HomeContent = () => {
           <ShowCode tag="h3">{t('home.playMe')}</ShowCode>
         </h3>
         <div>
-        <iframe title='Super Cannon blast!' src="https://itch.io/embed/1474485?linkback=true&amp;border_width=0&amp;bg_color=000000&amp;fg_color=ffffff&amp;link_color=f43a3a&amp;border_color=000000" width="550" height="165"><a href="https://nperez9.itch.io/super-cannon-blast">Super Cannon blast! by Nicolas Agustin</a></iframe>
+          <iframe
+            title="Super Cannon blast!"
+            src="https://itch.io/embed/1474485?linkback=true&amp;border_width=0&amp;bg_color=000000&amp;fg_color=ffffff&amp;link_color=f43a3a&amp;border_color=000000"
+            width="550"
+            height="165"
+          >
+            <a href="https://nperez9.itch.io/super-cannon-blast">Super Cannon blast! by Nicolas Agustin</a>
+          </iframe>
         </div>
       </div>
       <Divider />
