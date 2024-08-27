@@ -8,7 +8,7 @@ const style = {
   ...container,
 };
 
-const About = () => {
+export const About = () => {
   return (
     <main style={style}>
       <AboutHeader />
