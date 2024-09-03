@@ -19,20 +19,16 @@ const style = {
 export const LanguagePicker = () => {
   const { i18n } = useTranslation();
 
-  const changeLanguage = (event) => {
+  const changeLanguage = (event: any) => {
     i18n.changeLanguage(event.target.value);
   };
 
   return (
-    <div css={style}>
+    <div>
       <div id="lng_select">
         <select onChange={changeLanguage}>
-          <option value="en" name="language" defaultValue>
-            EN
-          </option>
-          <option value="es" name="language">
-            ES
-          </option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
         </select>
       </div>
     </div>

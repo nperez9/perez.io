@@ -52,7 +52,11 @@ export const SideMenu = () => {
   const sideIconMenu = menuData.map((mi) => {
     const classname = activeMenu?.key === mi.key ? 'active' : '';
     return (
-      <OverlayTrigger key={mi.key} placement="right" overlay={<Tooltip id={`tooltip-${mi.key}`}>{mi.tooltip ? mi.tooltip : mi.key}</Tooltip>}>
+      <OverlayTrigger
+        key={mi.key}
+        placement="right"
+        overlay={<Tooltip id={`tooltip-${mi.key}`}>{mi.tooltip ? mi.tooltip : mi.key}</Tooltip>}
+      >
         <div onClick={() => clickIcon(mi)} className={classname}>
           <Icons icon={mi.key} />
         </div>
