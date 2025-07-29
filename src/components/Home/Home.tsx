@@ -1,6 +1,4 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/core';
-
+import React from 'react';
 import { container, Divider } from '../../library';
 import HomeTitle from './HomeTitle';
 import HomeContent from './HomeContent';
@@ -9,9 +7,9 @@ const style = {
   ...container
 };
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
-    <main css={style}>
+    <main style={style}>
       <HomeTitle />
       <Divider />
       <HomeContent />

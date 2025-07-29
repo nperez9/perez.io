@@ -33,8 +33,8 @@ export const SocialMenu = () => {
 
   return (
     <div css={style}>
-      <div className="input">
-        <Icons classname="input-icon" icon="rightArrow" />
+      <div className="tw-flex">
+        <Icons classname="tw-p-1 tw-w-[10%]" icon="rightArrow" />
         <span className="input-text-box">Nicolas Agustin Perez</span>
       </div>
       <div className="results-sub-text">{`${socialLinks.length} results in 1 files`}</div>
