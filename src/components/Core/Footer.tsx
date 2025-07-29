@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { GitIcon } from '../../library/Icons';
 
-import classes from './Footer.module.scss';
+import classes from './Footer.module.css';
 
 export const Footer: React.FC<any> = () => {
   const [mousePos, setMousePos] = useState({ x: 1, y: 1 });

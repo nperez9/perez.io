@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import { ShowCode } from '../../../library';
 import { images } from './AboutTextBlox.config';
-import styles from './AboutTextBlock.module.scss';
+import styles from './AboutTextBlock.module.css';
 import { publicResource } from '../../../utils';
 
 export type TextKey = 'history';

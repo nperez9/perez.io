@@ -1,0 +1,14 @@
+.languagePicker {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#lng_select select {
+  padding: 2px;
+}
+
+select {
+  background-color: #272822;
+  color: #d6d6d6;
+  font-family: sans-serif;
+}

@@ -1,0 +1,28 @@
+.homeContent {
+  text-align: center;
+}
+
+.homeContent h3 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.socialBlock {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@media (max-width: 780px) {
+  .socialBlock {
+    flex-direction: column;
+  }
+
+  .socialBlock > div {
+    margin: 10px auto;
+  }
+}
+
+.socialBlock > div {
+  padding: 0 20px;
+}

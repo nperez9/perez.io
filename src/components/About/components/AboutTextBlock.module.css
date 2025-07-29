@@ -1,0 +1,19 @@
+.AboutTextBlock {
+  text-align: center;
+}
+
+.AboutTextBlock h3 {
+  margin: 20px 0;
+}
+
+.AboutTextBlock .TextBlock {
+  font-size: 1.2em;
+}
+
+.AboutTextBlock .TextBlock > img {
+  max-height: 500px;
+  max-width: 500px;
+  border-radius: 15px;
+  margin: 15px 0;
+  width: 100%;
+}

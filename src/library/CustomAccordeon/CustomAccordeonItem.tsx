@@ -2,9 +2,10 @@ import React from 'react';
 
 import { Icons, IconsDB } from '../Icons';
 import './CustomAccordeonItem.css';
+import { Tech } from '../../types';
 
 export interface CustomAccordeonItemProps {
-  icon: IconsDB;
+  icon: IconsDB | Tech;
   content: string;
 }
 

@@ -1,5 +1,3 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
 
 import { socialLinks } from '../../data/socialLinks';
@@ -7,28 +5,7 @@ import { tecnologies } from '../../data/tecnologies';
 import { Divider, ButtonLink, ShowCode } from '../../library';
 
 import TecnologiesGroup from './TecnologiesGroup';
-
-const style = {
-  textAlign: 'center',
-  h3: {
-    marginBottom: 30,
-    fontSize: 24,
-  },
-  '.social-block': {
-    display: 'flex',
-    justifyContent: 'center',
-    flexDirection: 'row',
-    '@media (max-width: 780px)': {
-      flexDirection: 'column',
-      '> div': {
-        margin: '10px auto',
-      },
-    },
-    '> div': {
-      padding: '0 20px',
-    },
-  },
-};
+import styles from './HomeContent.module.css';
 
 const HomeContent = () => {
   let tecnologiesContent = null;
@@ -48,7 +25,7 @@ const HomeContent = () => {
   });
 
   return (
-    <section css={style}>
+    <section className={styles.homeContent}>
       <div>
         <h3>
           <ShowCode tag="h3">{t('home.playMe')}</ShowCode>
@@ -69,7 +46,7 @@ const HomeContent = () => {
         <h3>
           <ShowCode tag="h3">{t('home.findMe')}</ShowCode>
         </h3>
-        <div className="social-block">{content}</div>
+        <div className={styles.socialBlock}>{content}</div>
       </div>
     </section>
   );

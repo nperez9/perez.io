@@ -1,5 +1,3 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/core';
 import React from 'react';
 import { container } from './styles/grid';
 
@@ -23,7 +21,7 @@ export const Container: React.FC<ContainerProps> = ({ children, maxWidth }) => {
     customStyle = style;
   }
 
-  return <section css={customStyle}> {children} </section>;
+  return <section style={customStyle}> {children} </section>;
 };
 
 export default Container;

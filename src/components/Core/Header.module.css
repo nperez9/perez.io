@@ -1,0 +1,26 @@
+.header {
+  height: 100%;
+  margin-bottom: 20px;
+  margin-left: 44px;
+  padding: 0;
+  background-color: var(--ui-bg);
+  display: flow-root;
+  border-bottom: 1px solid var(--ui-border);
+  font-family: var(--ui-font);
+}
+
+.header > div {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.header .LenguagePicker {
+  float: right;
+  font-size: 1.2em;
+}
+
+@media (max-width: 480px) {
+  .header {
+    display: none;
+  }
+}

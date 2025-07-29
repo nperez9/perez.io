@@ -7,10 +7,11 @@ import { iconsDB } from './iconsDB';
 export type IconsDB = keyof typeof iconsDB;
 
 export interface IconsProps {
-  icon?: IconsDB;
+  icon?: string;
   classname?: string;
 }
 
 export const Icons: React.FC<IconsProps> = ({ icon = 'javascript', classname = '' }) => {
+  { /* @ts-ignore */ }
   return <span className={classname}>{iconsDB[icon]}</span>;
 };
