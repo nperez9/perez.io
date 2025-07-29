@@ -15,8 +15,38 @@
   margin-left: 16px;
   display: none;
   transition: 0.2s all;
+  overflow: hidden;
+}
+
+.ca-content-exit {
+  animation: close 0.2s ease-out forwards;
 }
 
 .ca-content-active {
   display: block;
+  animation: open 0.2s ease-out forwards;
+}
+
+@keyframes open {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes close {
+  0% {
+    display: block;
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    transform: scaleY(0) translateY(-100%);
+    opacity: 0;
+  }
 }

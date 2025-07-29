@@ -5,12 +5,18 @@
   display: inline;
   font-family: var(--ui-font-family);
   border: 1px solid var(--ui-border);
-  transform: 0.3s all;
+  transition: 0.3s all;
 }
 
 .nav-link:hover {
   color: #d6d6d6;
   background-color: #333;
+}
+
+.nav-link:hover .nav-link-icon {
+  filter: brightness(1.2);
+  transition: filter 0.3s ease-in-out;
+  animation: rotate 0.3s ease-in-out forwards;
 }
 
 .nav-link-icon-container {
@@ -28,4 +34,13 @@
   border-right: 1px solid var(--ui-border);
   border-left: 1px solid var(--ui-border);
   border-bottom: 1px solid var(--page-background-color);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
 }

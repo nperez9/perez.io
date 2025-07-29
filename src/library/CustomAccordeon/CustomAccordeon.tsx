@@ -24,7 +24,7 @@ export const CustomAccordeon: React.FC<CustomAccordeonProps> = ({ title, childre
         {icon && <Icons icon={icon} />}
         <span className="ca-title-content">{title}</span>
       </div>
-      <div className={`ca-content ${isOpen ? 'ca-content-active' : ''}`}>{children}</div>
+      <div className={`ca-content ${isOpen ? 'ca-content-active' : 'ca-content-exit'}`}>{children}</div>
     </section>
   );
 };
