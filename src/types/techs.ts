@@ -1,1 +1,1 @@
-export type Tech = 'godot' | 'unity' | 'phaser' | 'react' | 'node' | 'typescript' | 'javascript';
+export type Tech = 'godot' | 'unity' | 'phaser' | 'react' | 'node' | 'typescript' | 'javascript' | 'nextjs';

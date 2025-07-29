@@ -1,6 +1,8 @@
 import { PortfolioItem } from '../../../types';
+import { stoneTowerStudio } from './1-stone-tower-studio';
 
 export const websPortfolio: PortfolioItem[] = [
+  stoneTowerStudio,
   {
     id: 101,
     type: 'web',

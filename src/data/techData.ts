@@ -16,4 +16,5 @@ export const techData: TechData = {
   node: {},
   react: {},
   typescript: {},
+  nextjs: {}
 };

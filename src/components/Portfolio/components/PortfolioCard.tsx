@@ -115,6 +115,11 @@ export const PortfolioCard: React.FC<PortfolioItemProps> = ({ item }) => {
           {item.play_url && item.isPlayable && <ButtonLink link={publicResource(item.play_url)}>Play</ButtonLink>}
           {item.external_play_url && <ButtonLink link={item.external_play_url}>Play</ButtonLink>}
           {item.itch_url && <ButtonLink link={item.itch_url}>Itch.io</ButtonLink>}
+          {item.website_url && (
+            <ButtonLink link={item.website_url} isExternal={true}>
+              Website
+            </ButtonLink>
+          )}
         </div>
       </div>
     </React.Fragment>
