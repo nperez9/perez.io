@@ -8,6 +8,8 @@
   --code-color: #f92672;
 
   /** uiVariables **/
+  --ui-text-color: #eee;
+  --ui-text-color-secondary: #808a95;
   --ui-bg: #101112;
   --ui-border: #666666;
   --ui-header-nav-active: #c1863d;
@@ -19,8 +21,8 @@
 }
 
 html {
-  background-color: #111;
-  color: #eee;
+  background-color: var(--ui-bg);
+  color: var(--ui-text-color);
 }
 
 a {
