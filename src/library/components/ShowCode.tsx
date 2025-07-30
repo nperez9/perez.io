@@ -1,5 +1,5 @@
 import React from 'react';
-import { colors } from './styles';
+import { colors } from '../styles';
 
 export interface ShowCodeProps {
   tag: string;

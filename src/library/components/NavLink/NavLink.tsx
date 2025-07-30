@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import './NavLink.css';
-import { ReactIcon } from '../Icons';
+import { ReactIcon } from '../../Icons';
 
 export interface NavLinkProps {
   children: React.ReactNode;
