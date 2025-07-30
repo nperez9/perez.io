@@ -1,0 +1,25 @@
+.socialMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  display: flex;
+}
+
+.inputIcon {
+  padding-top: 3px;
+  width: 10%;
+}
+
+.inputTextBox {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--page-background-color);
+  border: 1px solid var(--ui-footer-color);
+  width: 90%;
+}
+
+.resultsSubText {
+  padding: 10px 7px;
+}

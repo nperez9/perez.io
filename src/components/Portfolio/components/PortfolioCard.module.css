@@ -1,0 +1,84 @@
+.portfolioCard {
+  display: flex;
+  flex-flow: column;
+  width: 360px;
+  border: 1px solid var(--page-color);
+  margin: 20px 10px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s all;
+}
+
+.portfolioCard:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.itemImage {
+  width: 100%;
+  min-height: 250px;
+  max-height: 250px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: #000;
+}
+
+.itemImage img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: var(--page-color);
+  transition: 0.3s all;
+  height: 105px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+  margin: 0;
+}
+
+.description:hover {
+  color: var(--link-hover-color);
+}
+
+.itemContent {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.itemContent a {
+  color: var(--page-color);
+}
+
+.itemContent h4 {
+  text-align: center;
+  margin: 0;
+  color: var(--page-color);
+  transition: 0.3s all;
+}
+
+.itemContent h4:hover {
+  color: var(--link-hover-color);
+}
+
+.itemButtons {
+  display: flex;
+  flex-wrap: wrap !important;
+  flex-flow: row;
+  gap: 5px;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.itemButtons > a {
+  min-width: 150px;
+}

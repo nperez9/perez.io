@@ -1,22 +1,8 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/core';
 import React from 'react';
 import { Tab, Tabs } from 'react-bootstrap';
-
 import { portfolioList } from '../../../data';
 import PortfolioTab from './PortfolioTab';
-
-const style = {
-  justifyContent: 'space-evenly',
-  '.nav-item': {
-    width: '50%',
-    fontSize: '1.25em',
-    '> button': {
-      width: '100%',
-      color: 'white',
-    },
-  },
-};
+import styles from './PortfolioTabs.module.css';
 
 export interface PortfolioTabsProps {}
 
@@ -25,11 +11,11 @@ export const PortfolioTabs: React.FC<PortfolioTabsProps> = () => {
   const games = portfolioList.filter((p) => p.type === 'videogame').sort((a, b) => a.sortNumber - b.sortNumber);
 
   return (
-    <Tabs defaultActiveKey="games" id="uncontrolled-tab-example" css={style}>
-      <Tab eventKey="games" title="Games">
+    <Tabs defaultActiveKey="games" id="uncontrolled-tab-example" className={styles.tabs}>
+      <Tab eventKey="games" title="Games" className={styles.navItem}>
         <PortfolioTab portfolioList={games} />
       </Tab>
-      <Tab eventKey="web" title="Web">
+      <Tab eventKey="web" title="Web" className={styles.navItem}>
         <PortfolioTab portfolioList={web} />
       </Tab>
     </Tabs>
