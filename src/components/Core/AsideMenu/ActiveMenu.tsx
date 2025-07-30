@@ -20,6 +20,7 @@ export interface ActiveMenuProps {
   activeMenu: { key: string; title: string } | null;
 }
 
+// @ts-ignore
 export const ActiveMenu: React.FC<ActiveMenuProps> = ({ isActiveMenu, closeMenu, activeMenu }) => {
   const getCurrentMenu = () => {
     if (!activeMenu) {
@@ -45,7 +46,7 @@ export const ActiveMenu: React.FC<ActiveMenuProps> = ({ isActiveMenu, closeMenu,
           <div className={styles.title}>
             <span>{activeMenu?.title}</span>
             <span onClick={closeMenu}>
-              <Icons icon="closeAll" classname={styles.icon} />
+              <Icons icon="closeAll" className={styles.icon} />
             </span>
           </div>
           <div className={styles.menuContainer}>{getCurrentMenu()}</div>
