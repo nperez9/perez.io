@@ -242,8 +242,8 @@ export const iconsDB = {
         d="M5.515,8H8v32H5.515C4.126,40,3,38.874,3,37.485V10.515C3,9.126,4.126,8,5.515,8z M42.485,8 H40v32h2.485C43.874,40,45,38.874,45,37.485V10.515C45,9.126,43.874,8,42.485,8z"
       />
       <linearGradient id="6769YB8EDCGhMGPdL9zwWd" x1="24" x2="24" y1="8" y2="38.181" gradientUnits="userSpaceOnUse">
-        <stop offset="0" stop-opacity=".15" />
-        <stop offset="1" stop-opacity=".03" />
+        <stop offset="0" stopOpacity=".15" />
+        <stop offset="1" stopOpacity=".03" />
       </linearGradient>
       <path
         fill="url(#6769YB8EDCGhMGPdL9zwWd)"
@@ -345,8 +345,8 @@ export const iconsDB = {
   ),
   nextjs: (
     <svg width="16" height="16" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
+      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
       <g id="SVGRepo_iconCarrier"> <path d="M4.5 4.5L4.90534 4.20725C4.77836 4.03144 4.55252 3.95753 4.34617 4.02425C4.13981 4.09098 4 4.28313 4 4.5H4.5ZM7.5 14C3.91015 14 1 11.0899 1 7.5H0C0 11.6421 3.35786 15 7.5 15V14ZM14 7.5C14 11.0899 11.0899 14 7.5 14V15C11.6421 15 15 11.6421 15 7.5H14ZM7.5 1C11.0899 1 14 3.91015 14 7.5H15C15 3.35786 11.6421 0 7.5 0V1ZM7.5 0C3.35786 0 0 3.35786 0 7.5H1C1 3.91015 3.91015 1 7.5 1V0ZM5 12V4.5H4V12H5ZM4.09466 4.79275L10.5947 13.7927L11.4053 13.2073L4.90534 4.20725L4.09466 4.79275ZM10 4V10H11V4H10Z" fill="#007acc"/> </g>
     </svg>
   )

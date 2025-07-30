@@ -2,12 +2,10 @@ import React from 'react';
 import { container } from './styles/grid';
 import PropTypes from 'prop-types';
 
-const style = {
-  ...container,
-  padding: '0px !important',
+let style = {
   margin: '20px auto',
   backgroundColor: '#d6d6d6',
-  height: 1,
+  height: '1px',
 };
 
 export interface DividerProps {
@@ -16,9 +14,6 @@ export interface DividerProps {
 }
 
 const Divider: React.FC<DividerProps> = ({ color = '#d6d6d6', height = 1 }) => {
-  style.backgroundColor = color;
-  style.height = height;
-
   return <div style={style}></div>;
 };
 

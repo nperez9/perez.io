@@ -50,3 +50,30 @@
     opacity: 0;
   }
 }
+
+
+.ca-arrow-open > svg {
+  animation: openArrow 0.2s ease-out forwards;
+}
+.ca-arrow-close > svg {
+  animation: closeArrow 0.2s ease-out forwards;
+}
+
+
+@keyframes openArrow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes closeArrow {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

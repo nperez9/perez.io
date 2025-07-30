@@ -8,10 +8,10 @@ export type IconsDB = keyof typeof iconsDB;
 
 export interface IconsProps {
   icon?: string;
-  classname?: string;
+  className?: string;
 }
 
-export const Icons: React.FC<IconsProps> = ({ icon = 'javascript', classname = '' }) => {
+export const Icons: React.FC<IconsProps> = ({ icon = 'javascript', className = '' }) => {
   { /* @ts-ignore */ }
-  return <span className={classname}>{iconsDB[icon]}</span>;
+  return <span className={className}>{iconsDB[icon]}</span>;
 };

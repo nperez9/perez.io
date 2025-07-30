@@ -1,26 +1,14 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/core';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { ShowCode } from '../../library';
-
-const style = {
-  textAlign: 'center',
-  position: 'relative',
-  img: {
-    width: '200px',
-    heigth: '200px',
-  },
-  '> *': {
-    marginBottom: '20px'
-  }
-};
+import styles from './HomeTitle.module.css';
 
 const HomeTitle = () => {
   const { t } = useTranslation();
 
   return (
-    <section css={style}>
+    <section className={styles.homeTitle}>
       <h1>
         <ShowCode tag="h1"> 
           { t('home.title') } 

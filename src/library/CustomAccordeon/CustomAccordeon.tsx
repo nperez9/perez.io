@@ -17,10 +17,11 @@ export const CustomAccordeon: React.FC<CustomAccordeonProps> = ({ title, childre
     setIsOpen(!isOpen);
   };
 
+
   return (
     <section className="ca-title">
       <div className="ca-title-container" onClick={onClickToggle}>
-        <Icons icon={isOpen ? 'bottomArrow' : 'rightArrow'} />
+        <Icons icon={'rightArrow'} className={`ca-arrow ${isOpen ? 'ca-arrow-open' : 'ca-arrow-close'}`} />
         {icon && <Icons icon={icon} />}
         <span className="ca-title-content">{title}</span>
       </div>

@@ -1,0 +1,13 @@
+.homeTitle {
+  text-align: center;
+  position: relative;
+}
+
+.homeTitle img {
+  width: 200px;
+  height: 200px;
+}
+
+.homeTitle > * {
+  margin-bottom: 20px;
+}
