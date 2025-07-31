@@ -25,4 +25,6 @@
 
 .menuContainer {
   padding: 15px;
+  max-height: calc(100vh - 65px);
+  overflow: scroll;
 }

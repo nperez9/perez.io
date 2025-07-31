@@ -1,18 +1,28 @@
 .portfolioCard {
   display: flex;
-  flex-flow: column;
-  width: 360px;
+  width: 100%;
   border: 1px solid var(--page-color);
   margin: 20px 10px;
-  padding: 10px;
+  padding: 14px;
   border-radius: 10px;
-  transition: 0.5s all;
+  transition: 0.4s all ease-out;
+  gap: 20px;
 }
 
 .portfolioCard:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.3);
-  transform: scale(1.05);
+  transform: scale(1.02);
+  color: var(--page-color);
+  filter: brightness(1.1);
+}
+
+.portfiolioContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  color: var(--page-color)!important;
 }
 
 .itemImage {
@@ -22,7 +32,6 @@
   height: 100%;
   overflow: hidden;
   border-radius: 10px;
-  margin-bottom: 15px;
   background-color: #000;
 }
 
@@ -31,6 +40,12 @@
   margin-left: auto;
   margin-right: auto;
   height: 100%;
+}
+
+.portfolioTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: 0.3s all;
 }
 
 .description {
@@ -42,6 +57,7 @@
   text-overflow: ellipsis;
   padding: 0 5px;
   margin: 0;
+  font-style: italic;
 }
 
 .description:hover {
@@ -53,10 +69,6 @@
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-}
-
-.itemContent a {
-  color: var(--page-color);
 }
 
 .itemContent h4 {
@@ -81,4 +93,32 @@
 
 .itemButtons > a {
   min-width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+@media (max-width: 768px) {
+  .portfolioCard {
+    padding: 10px;
+  }
+
+  .portfiolioContainer {
+    flex-direction: column;
+  }
+
+  .itemImage {
+    min-height: 200px;
+    max-height: 200px;
+  }
+
+  .itemButtons {
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+
+  .description {
+    height: 80px;
+  }
 }

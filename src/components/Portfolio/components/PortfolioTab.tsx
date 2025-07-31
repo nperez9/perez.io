@@ -13,7 +13,7 @@ export const PortfolioTab: React.FC<PortfolioTabProps> = ({ portfolioList }) => 
     return <PortfolioCard item={item} key={item.id} />;
   });
 
-  return <div className={styles.portfolioTab}>{itemList}</div>;
+  return <div className={styles.PortfolioTab}>{itemList}</div>;
 };
 
 export default PortfolioTab;
