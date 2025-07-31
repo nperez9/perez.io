@@ -50,10 +50,8 @@
 
 .description {
   font-size: 1.125rem;
-  color: var(--page-color);
-  transition: 0.3s all;
-  height: 105px;
-  overflow: hidden;
+  height: 112px;
+  overflow: auto;
   text-overflow: ellipsis;
   padding: 0 5px;
   margin: 0;

@@ -22,9 +22,8 @@ export const PortfolioCard: React.FC<PortfolioItemProps> = ({ item }) => {
             <div>
               <h4 className={styles.portfolioTitle}>{item.name}</h4>
               <Divider />
-              <p className={styles.decription}>{item.short_description}</p>
+              <p className={styles.description}>{item.short_description}</p>
             </div>
-            <Divider />
             <div className={styles.itemButtons}>
               {item.id && false && (
                 <ButtonLink link={`/portfolio/detail/${item.id}`} isExternal={false}>

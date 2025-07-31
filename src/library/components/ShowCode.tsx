@@ -4,16 +4,17 @@ import { colors } from '../styles';
 export interface ShowCodeProps {
   tag: string;
   children: React.ReactNode;
+  className?: string;
 }
 
-export const ShowCode: React.FC<ShowCodeProps> = ({ tag, children }) => {
+export const ShowCode: React.FC<ShowCodeProps> = ({ tag, children, className = '' }) => {
   const style = { color: colors.codeColor };
 
   return (
     <>
-      <span style={style}>{`<${tag}> `}</span>
+      <span style={style} className={className}>{`<${tag}> `}</span>
       {children}
-      <span style={style}>{` </${tag}>`}</span>
+      <span style={style} className={className}>{` </${tag}>`}</span>
     </>
   );
 };
