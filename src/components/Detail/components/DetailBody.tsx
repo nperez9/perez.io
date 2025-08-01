@@ -3,7 +3,7 @@ import { Carousel, CarouselItem } from 'react-bootstrap';
 
 import { PortfolioItem } from '../../../types';
 import { ShowCode } from '../../../library';
-import styles from './DetailBody.module.scss';
+import styles from './DetailBody.module.css';
 import { publicResource } from '../../../utils';
 
 export const DetailBody: React.FC<PortfolioItem> = ({ name, tech, short_description, cover_image, description_images, description, video }) => {

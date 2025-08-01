@@ -1,9 +1,9 @@
 .DetailBody {
   text-align: center;
+}
 
-  img {
-    max-width: 100%;
-  }
+.DetailBody img {
+  max-width: 100%;
 }
 
 .CarruselContainer {

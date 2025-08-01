@@ -17,14 +17,6 @@ export const tecnologies: Tecnologies[] = [
         logo: 'unity-logo.png',
       },
       {
-        name: 'C#',
-        logo: 'c-logo.png',
-      },
-      {
-        name: 'Aseprite',
-        logo: 'asesprite-logo.png',
-      },
-      {
         name: 'Godot',
         logo: 'godot_icon_color.png',
       },
@@ -42,21 +34,21 @@ export const tecnologies: Tecnologies[] = [
         logo: 'react-icon.svg',
       },
       {
+        name: 'NextJs',
+        logo: 'next-logo.png',
+      },
+      {
+        name: 'Tailwind',
+        logo: 'tailwind-logo.png',
+      },
+      {
         name: 'Angular',
         logo: 'angular-logo.png',
       },
       {
-        name: 'Webpack',
-        logo: 'webpack-logo.png',
-      },
-      {
-        name: 'TS',
-        logo: 'ts-logo.png',
-      },
-      {
-        name: 'JS',
-        logo: 'js-logo.png',
-      },
+        name: 'Redux',
+        logo: 'redux-logo.png',
+      }
     ],
   },
   {
@@ -79,12 +71,12 @@ export const tecnologies: Tecnologies[] = [
         logo: 'mysql-logo.png',
       },
       {
-        name: 'TS',
-        logo: 'ts-logo.png',
-      },
-      {
         name: 'PHP',
         logo: 'php-logo.png',
+      },
+      {
+        name: 'PostgreSQL',
+        logo: 'postgresql-logo.png',
       },
     ],
   },

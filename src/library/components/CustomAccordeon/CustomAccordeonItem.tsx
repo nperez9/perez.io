@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Icons, IconsDB } from '../Icons';
+import { Icons, IconsDB } from '../../Icons';
 import './CustomAccordeonItem.css';
-import { Tech } from '../../types';
+import { Tech } from '../../../types';
 
 export interface CustomAccordeonItemProps {
   icon: IconsDB | Tech;

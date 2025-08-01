@@ -1,0 +1,30 @@
+.ButtonPlatform {
+  padding: 4px;
+  margin-right: 1.25rem;
+  background-color: black;
+  display: inline-block;
+  border-radius: 6px;
+  width: 72px;
+  height: 72px;
+  transition: all 0.4s;
+  --box-shadow-size: 0 0 10px 4px;
+  cursor: pointer;
+}
+
+.ButtonPlatform:hover {
+  background-color: #f1f1f1 !important;
+  color: black;
+  transform: scale(1.1);
+}
+
+.Gato:hover {
+  box-shadow: rgb(229, 246, 140) var(--box-shadow-size);
+}
+
+.GamePix:hover {
+  box-shadow: #4587c5 var(--box-shadow-size);
+}
+
+.Itch:hover {
+  box-shadow: #fa5c5c var(--box-shadow-size);
+}

@@ -7,9 +7,9 @@ import { ActiveMenu } from './AsideMenu/ActiveMenu';
 import styles from './SideMenu.module.css';
 
 export const SideMenu = () => {
-  const [activeMenu, setActiveMenu] = useState(null);
+  const [activeMenu, setActiveMenu] = useState<any>(null);
 
-  const clickIcon = (menuItem) => {
+  const clickIcon = (menuItem: any) => {
     if (menuItem.key === activeMenu?.key) {
       return setActiveMenu(null);
     }
@@ -20,8 +20,7 @@ export const SideMenu = () => {
     setActiveMenu(null);
   };
 
-  // builds the icons menu
-  const sideIconMenu = menuData.map((mi) => {
+  const sideIconMenu = menuData.map((mi: any) => {
     const classname = activeMenu?.key === mi.key ? 'active' : '';
     return (
       <OverlayTrigger key={mi.key} placement="right" overlay={<Tooltip id={`tooltip-${mi.key}`}>{mi.tooltip ? mi.tooltip : mi.key}</Tooltip>}>
@@ -35,7 +34,7 @@ export const SideMenu = () => {
   return (
     <aside className={styles.sideMenu}>
       <section className={styles.sideIconMenu}>{sideIconMenu}</section>
-      <ActiveMenu isActiveMenu={activeMenu} closeMenu={closeMenu} activeMenu={activeMenu} />
+      <ActiveMenu isActiveMenu={!!activeMenu} closeMenu={closeMenu} activeMenu={activeMenu} />
     </aside>
   );
 };

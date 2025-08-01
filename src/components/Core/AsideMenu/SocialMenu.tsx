@@ -1,28 +1,7 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/core';
-
+import React from 'react';
 import { socialLinks } from '../../../data';
 import { colors, CustomAccordeon, CustomAccordeonItem, Icons } from '../../../library';
-
-const style = {
-  '.input': {
-    display: 'flex',
-    '.input-icon': {
-      paddingTop: 3,
-      width: '10%',
-    },
-    '.input-text-box': {
-      padding: 5,
-      borderRadius: 5,
-      backgroundColor: colors.pageBackgroundColor,
-      border: `1px solid ${colors.uiFooterColor}`,
-      width: '90%',
-    },
-  },
-  '.results-sub-text': {
-    padding: '10px 7px',
-  },
-};
+import styles from './SocialMenu.module.css';
 
 export const SocialMenu = () => {
   const results = socialLinks.map((sl) => (
@@ -32,12 +11,12 @@ export const SocialMenu = () => {
   ));
 
   return (
-    <div css={style}>
-      <div className="input">
-        <Icons classname="input-icon" icon="rightArrow" />
-        <span className="input-text-box">Nicolas Agustin Perez</span>
+    <div className={styles.socialMenu}>
+      <div className={styles.input}>
+        <Icons className={styles.inputIcon} icon="rightArrow" />
+        <span className={styles.inputTextBox}>Nicolas Agustin Perez</span>
       </div>
-      <div className="results-sub-text">{`${socialLinks.length} results in 1 files`}</div>
+      <div className={styles.resultsSubText}>{`${socialLinks.length} results in 1 files`}</div>
       <div>
         <CustomAccordeon title={'Social Networks'} isOpenDefault>
           {results}

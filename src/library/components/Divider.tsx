@@ -1,5 +1,5 @@
 import React from 'react';
-import { container } from './styles/grid';
+import { container } from '../styles/grid';
 import PropTypes from 'prop-types';
 
 let style = {

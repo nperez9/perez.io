@@ -1,0 +1,13 @@
+.tabs {
+  justify-content: space-evenly;
+}
+
+.tabs > .nav-item {
+  width: 50%;
+  font-size: 1.25em;
+}
+
+.nav-item > button {
+  width: 100%;
+  color: white;
+}

@@ -2,10 +2,21 @@
 
 :root {
   /** pageVariables **/
+  
+  /** MONOKAI THEME **/
   --page-color: #d6d6d6;
   --page-background-color: #1e1e1e;
   --page-font-family: monospace;
   --code-color: #f92672;
+  --code-color-secondary: #66d9ef;
+  --code-color-tertiary: #a6e22e;
+  --code-color-params:  #d18c0c;
+  --code-string-color: #e6db74;
+
+
+  /** PEACOCK THEME **/
+  --ui-peacock-bg: #c0c0c0;
+
 
   /** uiVariables -> aside menu, header, footer **/
   --ui-text-color: #eee;
@@ -18,6 +29,8 @@
   --ui-footer-bg: #191b1e;
   --ui-footer-color: #808a95;
   --ui-font-family: arial, sans-serif;
+
+
 }
 
 html {

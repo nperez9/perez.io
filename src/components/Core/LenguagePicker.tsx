@@ -12,11 +12,11 @@ export const LanguagePicker = () => {
   return (
     <div className={styles.languagePicker}>
       <div id="lng_select">
-        <select onChange={changeLanguage}>
-          <option value="en" name="language" defaultValue>
+        <select onChange={changeLanguage} name="language" defaultValue="en">
+          <option value="en">
             EN
           </option>
-          <option value="es" name="language">
+          <option value="es">
             ES
           </option>
         </select>

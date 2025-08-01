@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Icons, IconsDB } from '../Icons';
+import { Icons, IconsDB } from '../../Icons';
 import './CustomAccordeon.css';
 
 export interface CustomAccordeonProps {

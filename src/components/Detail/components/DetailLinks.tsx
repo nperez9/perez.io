@@ -5,7 +5,7 @@ import { PortfolioItem } from '../../../types';
 import { ButtonLink, ShowCode } from '../../../library';
 import { publicResource } from '../../../utils';
 
-import styles from './DetailLinks.module.scss';
+import styles from './DetailLinks.module.css';
 
 export const DetailLinks: React.FC<PortfolioItem> = ({ itch_url, github_url, devlog_url, play_url, external_play_url, website_url }) => {
   return (
