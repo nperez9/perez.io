@@ -2,12 +2,12 @@
   justify-content: space-evenly;
 }
 
-.tabs > .navItem {
+.tabs > .nav-item {
   width: 50%;
   font-size: 1.25em;
 }
 
-.navItem > button {
+.nav-item > button {
   width: 100%;
   color: white;
 }

@@ -1,11 +1,12 @@
 export * from './styles';
 export * from './types';
+export * from './utils';
+export * from './Icons';
 export { default as Container } from './components/Container';
 export { default as Divider } from './components/Divider';
 export { default as ButtonLink } from './components/ButtonLink';
 export * from './components/Button';
 export * from './components/NavLink/NavLink';
-export * from './Icons';
 export * from './components/ShowCode';
 export * from './components/CustomAccordeon';
 export * from './components/NavLink/NavLink';

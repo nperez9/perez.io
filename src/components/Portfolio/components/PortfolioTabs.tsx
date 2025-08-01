@@ -2,7 +2,7 @@ import React from 'react';
 import { Tab, Tabs } from 'react-bootstrap';
 import { portfolioList } from '../../../data';
 import PortfolioTab from './PortfolioTab';
-import styles from './PortfolioTabs.module.css';
+import './PortfolioTabs.css';
 
 export interface PortfolioTabsProps {}
 
@@ -11,11 +11,11 @@ export const PortfolioTabs: React.FC<PortfolioTabsProps> = () => {
   const games = portfolioList.filter((p) => p.type === 'videogame').sort((a, b) => a.sortNumber - b.sortNumber);
 
   return (
-    <Tabs defaultActiveKey="games" id="uncontrolled-tab-example" className={styles.tabs}>
-      <Tab eventKey="games" title="Games" className={styles.navItem}>
+    <Tabs defaultActiveKey="games" id="uncontrolled-tab-example" className="tabs">
+      <Tab eventKey="games" title="Games">
         <PortfolioTab portfolioList={games} />
       </Tab>
-      <Tab eventKey="web" title="Web" className={styles.navItem}>
+      <Tab eventKey="web" title="Web">
         <PortfolioTab portfolioList={web} />
       </Tab>
     </Tabs>
