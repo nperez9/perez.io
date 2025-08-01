@@ -11,8 +11,8 @@ export const HomeCheckMyCv = () => {
         <ShowCode tag="h3">{t('home.cv')}</ShowCode>
       </h3>
       <div>
-        <ButtonLink link="/cv">{t('home.cvLink')}</ButtonLink>
-        <ButtonLink link="/cv">{t('home.cvLink')}</ButtonLink>
+        <ButtonLink link="/cv">Download ENG</ButtonLink>
+        <ButtonLink link="/cv">Download ES</ButtonLink>
       </div>
     </div>
   );
