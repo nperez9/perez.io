@@ -10,7 +10,7 @@ export const HomeCheckMyCv = () => {
       <h3>
         <ShowCode tag="h3">{t('home.cv')}</ShowCode>
       </h3>
-      <div>
+      <div style={{ display: 'flex', gap: '4'}}>
         <ButtonLink link="/cv">Download ENG</ButtonLink>
         <ButtonLink link="/cv">Download ES</ButtonLink>
       </div>
