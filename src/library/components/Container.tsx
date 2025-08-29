@@ -7,11 +7,19 @@ const style = {
 
 export interface ContainerProps {
   maxWidth?: number;
+  full?: boolean;
 }
 
-export const Container: React.FC<ContainerProps> = ({ children, maxWidth }) => {
+export const Container: React.FC<ContainerProps> = ({ children, maxWidth, full }) => {
   let customStyle;
-  if (maxWidth) {
+  if (full) {
+    customStyle = {
+      marginLeft: 45,
+      width: '100%',
+      margin: 0,
+    };
+  }
+  else if (maxWidth) {
     customStyle = {
       ...style,
       maxWidth: maxWidth,

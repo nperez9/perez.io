@@ -1,6 +1,7 @@
 .homeTitle {
   text-align: center;
-  position: relative;
+  height: 100vh;
+  margin-left: 45px;
 }
 
 .homeTitle img {

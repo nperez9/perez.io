@@ -3,6 +3,7 @@
   background-color: black;
   font-family: var(--ui-font);
   border-right: 1px solid var(--ui-border);
+  z-index: 100;
 }
 
 .title {
@@ -26,5 +27,4 @@
 .menuContainer {
   padding: 15px;
   max-height: calc(100vh - 65px);
-  overflow: scroll;
 }

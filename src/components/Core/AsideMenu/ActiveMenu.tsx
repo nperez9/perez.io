@@ -1,4 +1,5 @@
 import React from 'react';
+import { AnimatePresence, motion } from 'motion/react';
 
 import { Icons } from '../../../library';
 import { PortfolioMenu } from './PortfolioMenu';
@@ -23,10 +24,6 @@ export interface ActiveMenuProps {
 // @ts-ignore
 export const ActiveMenu: React.FC<ActiveMenuProps> = ({ isActiveMenu, closeMenu, activeMenu }) => {
   const getCurrentMenu = () => {
-    if (!activeMenu) {
-      return null;
-    }
-
     switch (activeMenu?.key) {
       case 'files':
         return <PortfolioMenu closeMenu={closeMenu} />;
@@ -40,19 +37,22 @@ export const ActiveMenu: React.FC<ActiveMenuProps> = ({ isActiveMenu, closeMenu,
   };
 
   return (
-    isActiveMenu && (
-      <React.Fragment>
-        <section className={styles.activeMenu}>
-          <div className={styles.title}>
-            <span>{activeMenu?.title}</span>
-            <span onClick={closeMenu}>
-              <Icons icon="closeAll" className={styles.icon} />
-            </span>
-          </div>
-          <div className={styles.menuContainer}>{getCurrentMenu()}</div>
-        </section>
-        <section style={overlay} onClick={closeMenu} />
-      </React.Fragment>
-    )
+    <AnimatePresence>
+      {isActiveMenu && (
+        <React.Fragment>
+          <motion.section exit={{ x: -300 }} initial={{ x: -300 }} animate={{ x: 0 }} duration={0.2}  className={styles.activeMenu}>
+            <div className={styles.title}>
+              <span>{activeMenu?.title}</span>
+              <span onClick={closeMenu}>
+                <Icons icon="closeAll" className={styles.icon} />
+              </span>
+            </div>
+            <div className={styles.menuContainer}>{getCurrentMenu()}</div>
+          </motion.section>
+          <motion.section exit={{ opacity: 0 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} duration={0.2}  style={overlay} onClick={closeMenu}>
+          </motion.section>
+        </React.Fragment>
+      )}
+    </AnimatePresence>
   );
 };

@@ -2,7 +2,8 @@
 
 :root {
   /** pageVariables **/
-  
+  --ui-menu-side-active-width: 45px;
+
   /** MONOKAI THEME **/
   --page-color: #d6d6d6;
   --page-background-color: #1e1e1e;

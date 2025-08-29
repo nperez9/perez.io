@@ -5,6 +5,8 @@ import { colors, fonts, NavLink } from '../../library';
 import styles from './Header.module.css';
 
 const Header = () => {
+  return null;
+  
   const { pathname } = useLocation();
 
   return (

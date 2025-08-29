@@ -1,5 +1,5 @@
 import React from 'react';
-import { container, Divider } from '../../library';
+import { Container, container, Divider } from '../../library';
 import HomeTitle from './HomeTitle';
 import HomeContent from './HomeContent';
 
@@ -9,10 +9,12 @@ const style = {
 
 const Home: React.FC = () => {
   return (
-    <main style={style}>
+    <main>
       <HomeTitle />
-      <Divider />
-      <HomeContent />
+      <Container>
+        <Divider />
+        <HomeContent />
+      </Container>
     </main>
   );
 };

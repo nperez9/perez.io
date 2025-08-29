@@ -5,7 +5,6 @@ import { ShowCode } from '../../../library';
 
 const style: CSSProperties = {
   textAlign: 'center',
-  position: 'relative',
 };
 
 export const AboutHeader = () => {

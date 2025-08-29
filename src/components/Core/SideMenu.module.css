@@ -2,18 +2,18 @@
   position: fixed;
   display: flex;
   flex-flow: row;
-  z-index: 100;
   font-family: var(--ui-font-family);
 }
 
 .sideIconMenu {
   position: relative;
-  min-width: 45px;
+  min-width: var(--ui-menu-side-active-width);
   border-right: 1px solid var(--ui-border);
   background-color: var(--ui-bg);
   text-align: center;
   height: 100vh;
   font-size: 1.2em;
+  z-index: 500;
 }
 
 .sideIconMenu > div {
