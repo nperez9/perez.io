@@ -24,7 +24,7 @@ export const MatrixRain: React.FC = () => {
       ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      ctx.fillStyle = '#1b9d2aff'; // pink color
+      ctx.fillStyle = '#168923ff'; // pink color
       ctx.font = fontSize + 'px monospace';
 
       for (let i = 0; i < drops.length; i++) {
@@ -43,5 +43,5 @@ export const MatrixRain: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return <canvas ref={canvasRef} className="w-full h-full block" style={{ position: 'absolute', top: 0, left: 0, opacity: 0.3, zIndex: 1, marginLeft: '45px', marginTop: '45px', paddingBottom: '20px' }} />;
+  return <canvas ref={canvasRef} style={{ position: 'absolute', top: 0, left: 0, opacity: 0.75, zIndex: 1, marginLeft: '45px' }} />;
 }

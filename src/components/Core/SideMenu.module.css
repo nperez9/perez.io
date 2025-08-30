@@ -3,6 +3,7 @@
   display: flex;
   flex-flow: row;
   font-family: var(--ui-font-family);
+  z-index: 20;
 }
 
 .sideIconMenu {
