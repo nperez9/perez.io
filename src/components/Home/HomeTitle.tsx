@@ -27,7 +27,7 @@ const HomeTitle = () => {
           <h1>
             <ShowCode tag="h1">
               <Typewriter
-                options={{ delay: 70 }}
+                options={{ delay: 60 }}
                 onInit={(typewriter) => {
                   typewriter.typeString(t('home.title')).start().callFunction(hideFunc);
                 }}
@@ -37,7 +37,7 @@ const HomeTitle = () => {
           <h2>
             <ShowCode tag="h2">
               <Typewriter
-                options={{ delay: 60 }}
+                options={{ delay: 50 }}
                 onInit={(typewriter) => {
                   typewriter
                     .callFunction(hideFunc)
@@ -50,26 +50,27 @@ const HomeTitle = () => {
               />
             </ShowCode>
           </h2>
-          <h4>
-            <ShowCode tag="h4">
+          <h4 style={{ marginTop: '40px' }}>
               <Typewriter
                 options={{ delay: 30 }}
                 onInit={(typewriter) => {
                   typewriter
                     .callFunction(hideFunc)
-                    .pauseFor(3500)
+                    .pauseFor(3600)
                     .callFunction(showFunc)
                     .typeString(t('home.posttitle'))
                     .start()
-                    .callFunction(hideFunc);
                 }}
               />
-            </ShowCode>
           </h4>
         </div>
       </section>
     </>
   );
 };
+
+/** 
+ * 
+ */
 
 export default HomeTitle;

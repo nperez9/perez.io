@@ -1,9 +1,9 @@
 {
   "header.about": "About",
   "header.contact": "Contact",
-  "home.title": "Hello! I'm <i>Nicolas</i>",
-  "home.subtitle": "Videogames and web developer",
-  "home.posttitle": "A website crafted by a guy who spends way too much time staring at his code editor.",
+  "home.title": "Hello! I'm ${<i style=\"color: #66d9ef;\">Nicolas</i>};",
+  "home.subtitle": "(<strong>Web</strong> && <strong>Videogames</strong>) developer;",
+  "home.posttitle": "<span style=\"color: #9c9c9c; margin-right: 10px;\" >//</span><i style=\"color: #9c9c9c;\">A website crafted by a guy who spends way too much time staring at his code editor.</i>",
   "home.tecnologies": "Technologies I work with:",
   "home.findMe": "You can find me in:",
   "home.playMe": "Play my games!",

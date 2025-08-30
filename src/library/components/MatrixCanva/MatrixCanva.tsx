@@ -41,7 +41,7 @@ export const MatrixRain: React.FC = () => {
 
     const interval = setInterval(draw, 35);
     return () => clearInterval(interval);
-  }, []);
+  }, [canvasRef.current?.width, canvasRef.current?.height]);
 
   return <canvas ref={canvasRef} style={{ position: 'absolute', top: 0, left: 0, opacity: 0.75, zIndex: 1, marginLeft: '45px' }} />;
 }
