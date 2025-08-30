@@ -28,14 +28,15 @@ const HomeContent = () => {
 
   return (
     <section className={styles.homeContent}>
+      <Divider />
+      <HomeCheckMyCv />
+      <Divider />
       <div>
         <h3>
           <ShowCode tag="h3">{t('home.tecnologies')}</ShowCode>
         </h3>
         <div>{tecnologiesContent}</div>
       </div>
-      <Divider />
-      <HomeCheckMyCv />
       <Divider />
       <div>
         <h3>

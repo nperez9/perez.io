@@ -12,7 +12,6 @@ const Home: React.FC = () => {
     <main>
       <HomeTitle />
       <Container>
-        <Divider />
         <HomeContent />
       </Container>
     </main>

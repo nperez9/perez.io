@@ -5,6 +5,7 @@ export * from './Icons';
 export { default as Container } from './components/Container';
 export { default as Divider } from './components/Divider';
 export { default as ButtonLink } from './components/ButtonLink';
+export * from './components/MatrixCanva/MatrixCanva';
 export * from './components/Button';
 export * from './components/NavLink/NavLink';
 export * from './components/ShowCode';

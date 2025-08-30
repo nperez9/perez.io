@@ -1,7 +1,10 @@
 .homeTitle {
   text-align: center;
-  height: 100vh;
+  height: calc(100vh - 70px);
   margin-left: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .homeTitle img {
@@ -11,4 +14,9 @@
 
 .homeTitle > * {
   margin-bottom: 20px;
+}
+
+.homeHero {
+  padding: 14px;
+  padding-bottom: 300px;
 }

@@ -1,7 +1,7 @@
 {
   "header.about": "About",
   "header.contact": "Contact",
-  "home.title": "Hello! I'm Nicolas",
+  "home.title": "Hello! I'm <i>Nicolas</i>",
   "home.subtitle": "Videogames and web developer",
   "home.posttitle": "A website crafted by a guy who spends way too much time staring at his code editor.",
   "home.tecnologies": "Technologies I work with:",

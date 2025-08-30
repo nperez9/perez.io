@@ -12,7 +12,7 @@ export const menuData: MenuData[] = [
   },
   {
     key: 'search',
-    tooltip: 'social networks',
+    tooltip: 'Social Networks',
     title: 'Social Networks',
   },
   { key: 'settings', tooltip: 'Page Settings', title: 'Page Settings' },
