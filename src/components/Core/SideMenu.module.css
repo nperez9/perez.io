@@ -20,7 +20,9 @@
 .sideIconMenu > div {
   padding: 14px 5px;
   cursor: pointer;
-  transition: all linear 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sideIconMenu > div:hover {

@@ -19,22 +19,22 @@ const HomeTitle = () => {
 
   return (
     <>
-      <div style={{ position: 'relative', zIndex: 2 }}>
+      <div className="z-2 relative">
         <MatrixRain />
       </div>
       <section className={styles.homeTitle}>
-        <div className={styles.homeHero} style={{ zIndex: 3 }}>
-          <h1>
-            <ShowCode tag="h1">
-              <Typewriter
-                options={{ delay: 60 }}
-                onInit={(typewriter) => {
-                  typewriter.typeString(t('home.title')).start().callFunction(hideFunc);
-                }}
-              />
+        <div className={styles.homeHero + ' z-10'}>
+          <h1 className="text-[38px] flex flex-col gap-1">
+            <ShowCode tag="h1" className=''>
+                <Typewriter
+                  options={{ delay: 60 }}
+                  onInit={(typewriter) => {
+                    typewriter.typeString(t('home.title')).start().callFunction(hideFunc);
+                  }}
+                />
             </ShowCode>
           </h1>
-          <h2>
+          <h2 className="text-[30px] flex flex-col gap-1">
             <ShowCode tag="h2">
               <Typewriter
                 options={{ delay: 50 }}
@@ -50,18 +50,18 @@ const HomeTitle = () => {
               />
             </ShowCode>
           </h2>
-          <h4 style={{ marginTop: '40px' }}>
-              <Typewriter
-                options={{ delay: 30 }}
-                onInit={(typewriter) => {
-                  typewriter
-                    .callFunction(hideFunc)
-                    .pauseFor(3600)
-                    .callFunction(showFunc)
-                    .typeString(t('home.posttitle'))
-                    .start()
-                }}
-              />
+          <h4 className='mt-[40px] text-2xl'>
+            <Typewriter
+              options={{ delay: 30 }}
+              onInit={(typewriter) => {
+                typewriter
+                  .callFunction(hideFunc)
+                  .pauseFor(3600)
+                  .callFunction(showFunc)
+                  .typeString(t('home.posttitle'))
+                  .start();
+              }}
+            />
           </h4>
         </div>
       </section>
@@ -69,8 +69,8 @@ const HomeTitle = () => {
   );
 };
 
-/** 
- * 
+/**
+ *
  */
 
 export default HomeTitle;

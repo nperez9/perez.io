@@ -16,6 +16,7 @@
 .Footer .left-side {
   margin-left: 6px;
   float: left;
+  display: flex;
 }
 
 .Footer .left-side > span {

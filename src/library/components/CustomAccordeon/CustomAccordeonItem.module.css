@@ -3,6 +3,7 @@
   transition: 0.2s all;
   padding: 5px;
   border-radius: 5px;
+  display: flex;
 }
 
 .cai-container-title {

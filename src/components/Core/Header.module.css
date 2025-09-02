@@ -8,10 +8,6 @@
   font-family: var(--ui-font);
 }
 
-.header > div {
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
 
 .header .LenguagePicker {
   float: right;

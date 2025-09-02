@@ -2,10 +2,12 @@
   padding: 10px;
   color: #d6d6d6;
   font-size: 1.2em;
-  display: inline;
+  display: inline-block;
   font-family: var(--ui-font-family);
   border: 1px solid var(--ui-border);
   transition: 0.3s all;
+  box-sizing: border-box;
+   border-top: 2px solid var(--page-background-color);
 }
 
 .nav-link:hover {

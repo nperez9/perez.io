@@ -4,17 +4,17 @@ import { useTranslation } from 'react-i18next';
 import { Container, Divider, ShowCode } from '../../library';
 import PortfolioTabs from './components/PortfolioTabs';
 
-const style = { textAlign: 'center' } as React.CSSProperties;
+const style = { textAlign: 'center', marginTop: '20px', marginBottom: '30px' } as React.CSSProperties;
 
 const Portfolio = () => {
   const { t } = useTranslation();
 
   return (
     <Container maxWidth={1800}>
-      <h1 style={style}>
+      <h1 style={style} className="text-3xl">
         <ShowCode tag={'h1'}>{t('portfolio.title')}</ShowCode>
       </h1>
-      <h3 style={style}>
+      <h3 style={style} className='text-2xl'>
         <ShowCode tag={'h2'}>{t('portfolio.subtitle')} &#128517;</ShowCode>
       </h3>
       <Divider />
