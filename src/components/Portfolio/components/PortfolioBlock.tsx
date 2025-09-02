@@ -1,51 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { ButtonLink, Divider } from '../../../library';
-import { publicResource } from '../../../utils';
 import { PortfolioItem } from '../../../types';
-import styles from './PortfolioCard.module.css';
+import { Icons } from '../../../library';
 
 export interface PortfolioItemProps {
   item: PortfolioItem;
 }
 
-export const PortfolioCard: React.FC<PortfolioItemProps> = ({ item }) => {
+export const PortfolioBlock: React.FC<PortfolioItemProps> = ({ item }) => {
   return (
-    <React.Fragment>
-      <div className={styles.portfolioCard}>
-        <Link to={`/portfolio/detail/${item.id}`} className={styles.portfiolioContainer}>
-          <div className={styles.itemImage}>
-            <img alt={item.name} src={publicResource(item.cover_image)} />
-          </div>
-          <div className={styles.itemContent}>
-            <div>
-              <h4 className={styles.portfolioTitle}>{item.name}</h4>
-              <Divider />
-              <p className={styles.description}>{item.short_description}</p>
-            </div>
-            <div className={styles.itemButtons}>
-              {item.id && false && (
-                <ButtonLink link={`/portfolio/detail/${item.id}`} isExternal={false}>
-                  Details
-                </ButtonLink>
-              )}
-              {item.github_url && <ButtonLink link={item.github_url}>Code</ButtonLink>}
-              {item.devlog_url && <ButtonLink link={item.devlog_url}>DevLog</ButtonLink>}
-              {item.play_url && item.isPlayable && <ButtonLink link={publicResource(item.play_url)}>Play!</ButtonLink>}
-              {item.external_play_url && <ButtonLink link={item.external_play_url}>Play!</ButtonLink>}
-              {item.itch_url && <ButtonLink link={item.itch_url}>Play!</ButtonLink>}
-              {item.website_url && (
-                <ButtonLink link={item.website_url} isExternal={true}>
-                  Website
-                </ButtonLink>
-              )}
-            </div>
-          </div>
-        </Link>
-      </div>
-    </React.Fragment>
+    <Link to={`/portfolio/detail/${item.id}`}>
+      <article
+        className="relative flex h-64 w-64 flex-col justify-end overflow-hidden rounded-xl transition-all duration-200 hover:scale-105 hover:!shadow-none hover:brightness-110"
+        style={{
+          backgroundImage: `url(${item.cover_image})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          boxShadow: 'inset 0 0 30px 8px rgba(0, 0, 0, 0.3), inset 0 0 60px 15px rgba(0, 0, 0, 0.3)',
+        }}
+      >
+        <div className="absolute top-2 left-2"> 
+          <Icons icon={item.tech ? item.tech : 'javascript'}/> 
+        </div>
+        <header className="flex w-full items-center justify-start bg-black bg-opacity-50 p-2">
+          <h3 className="text-xl text-white italic">{item.name}</h3>
+        </header>
+      </article>
+    </Link>
   );
 };
-
-export default PortfolioCard;
