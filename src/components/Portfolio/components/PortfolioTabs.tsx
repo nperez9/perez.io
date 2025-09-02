@@ -3,6 +3,7 @@ import { Tab, Tabs } from 'react-bootstrap';
 import { portfolioList } from '../../../data';
 import PortfolioTab from './PortfolioTab';
 import './PortfolioTabs.css';
+import { ShowCode } from '../../../library';
 
 export interface PortfolioTabsProps {}
 
@@ -12,12 +13,12 @@ export const PortfolioTabs: React.FC<PortfolioTabsProps> = () => {
 
   return (
     <div className="portfolio-tabs">
-      <section className="mb-4 flex flex-col gap-3">
-        <h2 className="text-2xl font-bold italic">Games</h2>
+      <section className="mb-4 flex flex-col gap-3 items-center">
+        <h2 className="text-2xl font-bold italic"><ShowCode tag='section' className='hidden md:inline' >Games</ShowCode></h2>
         <PortfolioTab portfolioList={games} />
       </section>
-      <section className="mb-6 flex flex-col gap-3">
-        <h2 className="text-2xl font-bold italic">Web Projects</h2>
+      <section className="mb-6 flex flex-col gap-3 items-center">
+        <h2 className="text-2xl font-bold italic"><ShowCode tag='section' className='hidden md:inline' >Web Projects</ShowCode></h2>
         <PortfolioTab portfolioList={web} />
       </section>
     </div>

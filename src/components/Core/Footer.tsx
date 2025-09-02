@@ -32,7 +32,7 @@ export const Footer: React.FC<any> = () => {
   return (
     <footer className={classes.Footer}>
       <div>
-        <span className={classes['left-side']}>
+        <span className={classes['left-side']+ " hidden md:inline-flex"}>
           <GitIcon height={14} width={14} className={classes.Icon} />
           <span>release v3.0.2</span>
         </span>

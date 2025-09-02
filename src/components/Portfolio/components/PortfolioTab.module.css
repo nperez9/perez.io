@@ -1,5 +1,9 @@
-.PortfolioTab {  
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
+/* Alternative approach using CSS Grid for better control */
+.PortfolioTab {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(256px, max-content));
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
 }
+

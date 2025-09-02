@@ -36,7 +36,7 @@
   margin-right: 20px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
   .Footer .right-side {
     display: none;
   }
