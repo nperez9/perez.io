@@ -26,7 +26,7 @@ export const SideMenu = () => {
     return (
       <OverlayTrigger key={mi.key} placement="right" overlay={<Tooltip id={`tooltip-${mi.key}`}>{mi.tooltip ? mi.tooltip : mi.key}</Tooltip>}>
         <div onClick={() => clickIcon(mi)} className={classname}>
-          <Icons icon={mi.key} />
+          <Icons icon={mi.key} size='24px'/>
         </div>
       </OverlayTrigger>
     );

@@ -1,20 +1,13 @@
 import React from 'react';
-import { Carousel, CarouselItem } from 'react-bootstrap';
 
 import { PortfolioItem } from '../../../types';
-import { ShowCode } from '../../../library';
+import { Icons, Icons, ShowCode } from '../../../library';
 import styles from './DetailBody.module.css';
 import { publicResource } from '../../../utils';
+import { Icon } from 'lucide-react';
 
 export const DetailBody: React.FC<PortfolioItem> = ({ name, tech, short_description, cover_image, description_images, description, video }) => {
   const images = [cover_image, ...(description_images ? description_images : [])];
-  const carouselItems = images.map((image) => {
-    return (
-      <CarouselItem key={image}>
-        <img src={publicResource(image)} alt={name} className="cover-images" height={400} />
-      </CarouselItem>
-    );
-  });
 
   return (
     <div className={styles.DetailBody}>
@@ -24,17 +17,21 @@ export const DetailBody: React.FC<PortfolioItem> = ({ name, tech, short_descript
       <h2>
         <ShowCode tag="h2">{short_description}</ShowCode>
       </h2>
-      <Carousel className={styles.CarruselContainer} interval={2000}>
-        {carouselItems}
-      </Carousel>
-      {tech && <div className={styles.BuildIn}></div>}
+      <div className="flex flex-wrap justify-center gap-2 my-4">
+        {images.map((img, index) => (
+          <div key={index} className={styles.ImageContainer}>
+            <img src={publicResource(img)} alt={name} className="cover-image max-w-80 max-h-80 hover:scale-125 transition-all duration-200" />
+          </div>
+        ))}
+      </div>
+      {tech && <div className="flex items-center justify-center m-4 gap-2"><span>Build With: {tech.toUpperCase()}</span><Icons icon={tech} size='25px' /></div>}
       {!!description && (
-        <p>
+        <p className='my-5'>
           <ShowCode tag="p">{description}</ShowCode>
         </p>
       )}
       {video && (
-        <div>
+        <div className="flex flex-col my-4 justify-center gap-3 items-center">
           <h3>
             <ShowCode tag="h3">{video.title}</ShowCode>
           </h3>

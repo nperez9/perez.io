@@ -1,6 +1,7 @@
 import { PortfolioItem } from '../../../types';
 
 import { supperCannonBlast } from './1-supper-cannon-blast';
+import { bricksMayCry } from './10-bricks-may-cry';
 import { pokeClon } from './2-pokeclon';
 import { timberChopper } from './3-timber-chopper';
 import { climberPlumber } from './4-climber-plumber';
@@ -18,6 +19,7 @@ export const gamesPortfolio: PortfolioItem[] = [
   lethalWing,
   rangeon,
   superDragonsLairTwo,
+  bricksMayCry
 ];
 
 export default gamesPortfolio;

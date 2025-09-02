@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { PortfolioItem } from '../../../types';
 import { ButtonLink, Icons } from '../../../library';
-import { GitBranch, GitBranchIcon, Github, Play } from 'lucide-react';
+import { FolderGit2, Github, Play } from 'lucide-react';
 
 export interface PortfolioItemProps {
   item: PortfolioItem;
@@ -50,7 +50,7 @@ export const PortfolioBlock: React.FC<PortfolioItemProps> = ({ item }) => {
               className="h-9 w-9 rounded-full bg-opacity-75 bg-slate-800 flex items-center justify-center transition-all hover:bg-slate-700 hover:scale-125 text-white"
               onClick={handleGitHubLink}
             >
-              <GitBranchIcon width={18} height={18} />
+              <Github width={18} height={18} />
             </a>
           )}
         </div>

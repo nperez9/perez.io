@@ -1,7 +1,7 @@
 import { PortfolioItem } from '../../../types';
 
 export const greenWild: PortfolioItem = {
-  id: 10,
+  id: 6,
   type: 'videogame',
   name: 'GreenWild',
   tech: 'godot',

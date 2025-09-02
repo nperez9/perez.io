@@ -11,7 +11,19 @@ export interface IconsProps {
 }
 
 export const Icons: React.FC<IconsProps> = ({ icon = 'javascript', className = '', size = '16px' }) => {
-  const component = iconsDB[icon] || <></>;
-  { /* @ts-ignore */ }
-  return <span className={className} style={{ fontSize: size }}>{component} </span>;
+  // Get the SVG component from iconsDB
+  const svgComponent = iconsDB[icon as keyof typeof iconsDB];
+  
+  if (!svgComponent) {
+    return <span className={className}></span>;
+  }
+
+  // Clone the SVG element and add/override the size props
+  const clonedSvg = React.cloneElement(svgComponent as React.ReactElement, {
+    width: size,
+    height: size,
+    className: className
+  });
+
+  return clonedSvg;
 };
