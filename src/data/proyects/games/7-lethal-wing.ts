@@ -5,7 +5,7 @@ export const lethalWing: PortfolioItem = {
   type: 'videogame',
   name: 'Lethal Wing',
   tech: 'unity',
-  sortNumber: 1,
+  sortNumber: 3,
   cover_image: '/images/games/lethal-wing/cover.png',
   short_description: 'An 3D arcade game like 1942, built with Unity, available on itch.io for Android',
   description: `

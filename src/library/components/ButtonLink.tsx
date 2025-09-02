@@ -7,16 +7,19 @@ export interface ButtonLinkProps {
   link: string;
   isExternal?: boolean;
   children: React.ReactNode;
+  className?: string;
 }
 
-export const ButtonLink: React.FC<ButtonLinkProps> = ({ link, children, isExternal }) => {
+export const ButtonLink: React.FC<ButtonLinkProps> = ({ link, children, isExternal, className = '' }) => {
+  const combinedClassName = `btn btn-outline-light ${className}`.trim();
+  
   const external = (
-    <a className="btn btn-outline-light" href={link} target="_blank" rel="noopener noreferrer">
+    <a className={combinedClassName} href={link} target="_blank" rel="noopener noreferrer">
       <ShowCode tag={'a'}>{children}</ShowCode>
     </a>
   );
   const internal = (
-    <Link to={link} className="btn btn-outline-light" target="_blank" rel="noopener noreferrer">
+    <Link to={link} className={combinedClassName} target="_blank" rel="noopener noreferrer">
       <ShowCode tag={'a'}>{children}</ShowCode>
     </Link>
   );

@@ -11,14 +11,16 @@ export const PortfolioTabs: React.FC<PortfolioTabsProps> = () => {
   const games = portfolioList.filter((p) => p.type === 'videogame').sort((a, b) => a.sortNumber - b.sortNumber);
 
   return (
-    <Tabs defaultActiveKey="games" id="uncontrolled-tab-example" className="tabs">
-      <Tab eventKey="games" title="Games">
+    <div className="portfolio-tabs">
+      <section className="mb-4 flex flex-col gap-3">
+        <h2 className="text-2xl font-bold italic">Games</h2>
         <PortfolioTab portfolioList={games} />
-      </Tab>
-      <Tab eventKey="web" title="Web">
+      </section>
+      <section className="mb-6 flex flex-col gap-3">
+        <h2 className="text-2xl font-bold italic">Web Projects</h2>
         <PortfolioTab portfolioList={web} />
-      </Tab>
-    </Tabs>
+      </section>
+    </div>
   );
 };
 
