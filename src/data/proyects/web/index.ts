@@ -1,8 +1,10 @@
 import { PortfolioItem } from '../../../types';
 import { stoneTowerStudio } from './1-stone-tower-studio';
+import { pokemodoro } from './2-pokemodoro';
 
 export const websPortfolio: PortfolioItem[] = [
   stoneTowerStudio,
+  pokemodoro,
   {
     id: 101,
     type: 'web',

@@ -13,13 +13,13 @@ export const PortfolioTabs: React.FC<PortfolioTabsProps> = () => {
 
   return (
     <div className="portfolio-tabs">
+      <section className="mb-6 flex flex-col gap-3 items-center">
+        <h2 className="text-2xl font-bold italic"><ShowCode tag='section' className='hidden md:inline' >Applications</ShowCode></h2>
+        <PortfolioTab portfolioList={web} />
+      </section>
       <section className="mb-4 flex flex-col gap-3 items-center">
         <h2 className="text-2xl font-bold italic"><ShowCode tag='section' className='hidden md:inline' >Games</ShowCode></h2>
         <PortfolioTab portfolioList={games} />
-      </section>
-      <section className="mb-6 flex flex-col gap-3 items-center">
-        <h2 className="text-2xl font-bold italic"><ShowCode tag='section' className='hidden md:inline' >Web Projects</ShowCode></h2>
-        <PortfolioTab portfolioList={web} />
       </section>
     </div>
   );
