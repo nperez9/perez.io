@@ -9,7 +9,7 @@ export interface PortfolioTabsProps {}
 
 export const PortfolioTabs: React.FC<PortfolioTabsProps> = () => {
   const web = portfolioList.filter((p) => p.type === 'web').sort((a, b) => a.sortNumber - b.sortNumber);
-  const games = portfolioList.filter((p) => p.type === 'videogame').sort((a, b) => a.sortNumber - b.sortNumber);
+  const games = portfolioList.filter((p) => p.type === 'videogame');
 
   return (
     <div className="portfolio-tabs">
